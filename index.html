@@ -2,61 +2,98 @@
 <html lang="en">
 
 <head>
-	
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2H1P705S9W"></script>
-	<script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2H1P705S9W"></script>
+    <script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 
 	  gtag('config', 'G-2H1P705S9W');
-	</script>
 
-	<meta charset="UTF-8">
-	<title>Ivan Franchin - Website</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Ivan Franchin - Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
 </head>
 
 <body>
-	<header>
+<header>
 
-	</header>
+</header>
 
-	<main>
-		<div class="ui container">
+<main>
+    <!--
+    <div class="ui big inverted blue menu">
+        <a class="header item">
+            Ivan Franchin
+        </a>
+        <a class="item">
+            Projects
+        </a>
+    </div>
+    -->
 
-			<div class="ui center aligned basic segment">
-				<p style="font-size: 1.5em;">Hi there! This page is still under construction.</p>
-				<p style="font-size: 1.5em;">My social links:
-					<a class="ui large blue label" href="https://www.linkedin.com/in/ivanfranchin/">
-						<i class="linkedin icon"></i>
-						LinkedIn
-					</a>
-					<a class="ui large blue label" href="https://twitter.com/ivangfr">
-						<i class="twitter icon"></i>
-						Twitter
-					</a>
-					<a class="ui large black label" href="https://medium.com/@ivangfr">
-						<i class="medium icon"></i>
-						Medium
-					</a>
-				</p>
-			</div>
-		</div>
-	</main>
+    <div class="ui basic segment">
+        <div class="ui stackable grid">
+            <div class="four wide column">
+                <div class="ui basic segment">
+                    <img class="ui centered medium circular image" src="https://avatars.githubusercontent.com/u/10564548?v=4">
+                </div>
+                <div class="ui center aligned basic segment">
+                    <h3 class="ui dividing header">
+                        Ivan Franchin
+                    </h3>
+                    <a class="ui circular linkedin icon huge button" href="https://www.linkedin.com/in/ivanfranchin/">
+                        <i class="linkedin icon"></i>
+                    </a>
+                    <a class="ui circular twitter icon huge button" href="https://twitter.com/ivangfr">
+                        <i class="twitter icon"></i>
+                    </a>
+                    <a class="ui circular black icon huge button" href="https://medium.com/@ivangfr">
+                        <i class="medium icon"></i>
+                    </a>
+                    <div class="ui divider"></div>
+                    <p>Hello everyone,</p>
+                    <p>On this website, I have compiled my GitHub projects and Medium articles. You can easily search for the technology you are interested in by using the filter. Who knows, perhaps I have already implemented a proof of concept (PoC) or written an article about what you are looking for.</p>
+                </div>
+            </div>
+            <div class="twelve wide column">
+                <div class="ui blue big label">
+                    Projects & Articles
+                </div>
+                <div class="ui dropdown multiple">
+                    <i class="filter icon"></i>
+                    <span class="text">Filter</span>
+                    <div class="menu">
+                        <div class="ui icon search input">
+                            <i class="search icon"></i>
+                            <input type="text" placeholder="Search tags...">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="header">
+                            <i class="tags icon"></i>
+                            Tag Label
+                        </div>
+                        <div class="scrolling menu"></div>
+                    </div>
+                </div>
+                <div class="ui relaxed big celled selection list" style="height: 86vh; overflow: overlay"></div>
+            </div>
+        </div>
+    </div>
+</main>
 
-	<!--
-	<footer style="padding-top: 5em;">
-		<div class="ui inverted vertical footer white segment">
-			<div class="ui container">
-				<h4 class="ui center aligned inverted header">Ivan Franchin&nbsp;&copy; 2023</h4>
-			</div>
-		</div>
-	</footer>
-	-->
+<footer>
+    <div class="ui inverted vertical footer basic grey segment" style="padding:0">
+        <h5 class="ui center aligned inverted header">Ivan Franchin&nbsp;&copy; 2023</h5>
+    </div>
+</footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
