@@ -502,9 +502,9 @@ const projects = [
         source: "medium"
     },
     {
-        name: "How To Secure A Simple Spring Boot API With Keycloak",
+        name: "Implementing and Securing a Simple Spring Boot REST API with Keycloak",
         url: "https://medium.com/spring-boot/how-to-secure-a-spring-boot-app-with-keycloak-5a931ee12c5a",
-        description: "A step-by-step guide on how to use Keycloak to secure the endpoints of Simple Spring Boot API",
+        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Keycloak",
         tags: ["java", "web", "spring-boot", "keycloak", "spring-security", "oauth2-resource-server"],
         source: "medium"
     },
@@ -670,9 +670,9 @@ const projects = [
         source: "medium"
     },
     {
-        name: "How To Secure A Simple Spring Boot UI (Thymeleaf + RBAC) With Keycloak",
+        name: "Implementing and Securing a Simple Spring Boot UI (Thymeleaf + RBAC) with Keycloak",
         url: "https://medium.com/spring-boot/how-to-secure-a-simple-spring-boot-ui-thymeleaf-rbac-with-keycloak-ba9f30b9cb2b",
-        description: "A complete guide on how to implement a Simple Spring Boot UI with Thymeleaf and that uses RBAC and how to secure it with Keycloak",
+        description: "A complete guide on implementing a Simple Spring Boot UI with Thymeleaf and that uses RBAC and securing it with Keycloak",
         tags: ["java", "web", "spring-boot", "thymeleaf", "spring-security", "oauth2-client", "oauth2-resource-server", "keycloak", "semantic-ui"],
         source: "medium"
     },
