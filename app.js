@@ -676,4 +676,18 @@ const projects = [
         tags: ["java", "web", "spring-boot", "thymeleaf", "spring-security", "oauth2-client", "oauth2-resource-server", "keycloak", "semantic-ui"],
         source: "medium"
     },
+    {
+        name: "Implementing and Securing a Spring Boot GraphQL API with Keycloak",
+        url: "https://medium.com/javarevisited/implementing-and-securing-a-spring-boot-graphql-api-with-keycloak-c461c86e3972",
+        description: "A complete guide on implementing a Spring Boot GraphQL API and securing it with Keycloak",
+        tags: ["java", "graphql", "web", "spring-boot", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-resource-server", "spring-graphql"],
+        source: "medium"
+    },
+    {
+        name: "Implementing and Securing a Simple Spring Boot REST API with Okta",
+        url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-rest-api-with-okta-a5143696cd60",
+        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Okta",
+        tags: ["java", "web", "spring-boot", "spring-security", "okta"],
+        source: "medium"
+    },
 ]
