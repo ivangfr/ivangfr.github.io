@@ -253,7 +253,7 @@ const projects = [
         name: "okta-springboot-react",
         url: "https://github.com/ivangfr/okta-springboot-react",
         description: "The goal of this project is to implement an application where a user can manage (create/read/update/delete) jobs. For it, we will create: a backend Restful API called jobs-api and a frontend user interface called jobs-ui. Furthermore, we will use Okta to secure the complete application.",
-        tags: ["javascript", "java", "docker", "elasticsearch", "web", "spring-boot", "reactjs", "materializecss", "okta", "spring-data-elasticsearch", "materialize-css", "springdoc-openapi", "okta-spring-boot"],
+        tags: ["javascript", "java", "docker", "elasticsearch", "web", "spring-boot", "reactjs", "materializecss", "okta", "spring-data-elasticsearch", "springdoc-openapi", "okta-spring-boot"],
         source: "github"
     },
     {
@@ -688,6 +688,48 @@ const projects = [
         url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-rest-api-with-okta-a5143696cd60",
         description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Okta",
         tags: ["java", "web", "spring-boot", "spring-security", "okta"],
+        source: "medium"
+    },
+    {
+        name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Introduction",
+        url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-introduction-2814a4829aed",
+        description: "A complete guide on how to implement a single Spring Boot application, called StarVote, with Keycloak or Okta as Identity Provider",
+        tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Backend Implementation",
+        url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-backend-implementation-40c13943fc04",
+        description: "A step-by-step guide for implementing the backend of the StarVote application",
+        tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Frontend Implementation",
+        url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-frontend-implementation-38d210c5d04e",
+        description: "A step-by-step guide for implementing the frontend of the StarVote application",
+        tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Adding Security",
+        url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-adding-security-15c7943a963b",
+        description: "A step-by-step guide on how to secure the StarVote application",
+        tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Enabling Keycloak as IdP",
+        url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-enabling-keycloak-as-idp-e0e84798848e",
+        description: "A step-by-step guide on how to enable Keycloak as Identity Provider to the StarVote application",
+        tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Enabling Okta as IdP",
+        url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-enabling-okta-as-idp-5dbebed78434",
+        description: "A step-by-step guide on how to enable Okta as Identity Provider to the StarVote application",
+        tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
         source: "medium"
     },
 ]
