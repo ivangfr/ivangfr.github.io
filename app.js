@@ -732,4 +732,11 @@ const projects = [
         tags: ["javascript", "java", "web", "spring-boot", "thymeleaf", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-client", "okta", "oauth2-resource-server"],
         source: "medium"
     },
+    {
+        name: "Keycloak Cluster Setup with Vagrant, Virtual Machines, and JDBC-PING for Distributed Caching",
+        url: "https://medium.com/javarevisited/keycloak-cluster-setup-with-vagrant-virtual-machines-and-jdbc-ping-for-distributed-caching-bd09708219d1",
+        description: "Step-by-step guide on how to use Vagrant to deploy and manage a cluster of three Keycloak instances, each one in a Virtual Machine, using JDBC-PING for distributed caching",
+        tags: ["vagrant", "keycloak", "virtualbox", "postgresql", "jdbc-ping", "keycloak-cluster"],
+        source: "medium"
+    },
 ]
