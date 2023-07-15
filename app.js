@@ -691,6 +691,13 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Implementing and Securing a Simple Spring Boot UI (Thymeleaf + RBAC) with Okta",
+        url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-ui-thymeleaf-rbac-with-okta-9489cbbcec25",
+        description: "A complete guide on implementing a Simple Spring Boot UI with Thymeleaf and that uses RBAC and securing it with Okta",
+        tags: ["java", "web", "spring-boot", "thymeleaf", "spring-security", "rbac", "okta"],
+        source: "medium"
+    },
+    {
         name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Introduction",
         url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-introduction-2814a4829aed",
         description: "A complete guide on how to implement a single Spring Boot application, called StarVote, with Keycloak or Okta as Identity Provider",
@@ -737,6 +744,13 @@ const projects = [
         url: "https://medium.com/javarevisited/keycloak-cluster-setup-with-vagrant-virtual-machines-and-jdbc-ping-for-distributed-caching-bd09708219d1",
         description: "Step-by-step guide on how to use Vagrant to deploy and manage a cluster of three Keycloak instances, each one in a Virtual Machine, using JDBC-PING for distributed caching",
         tags: ["vagrant", "keycloak", "virtualbox", "postgresql", "jdbc-ping", "keycloak-cluster"],
+        source: "medium"
+    },
+    {
+        name: "Keycloak Cluster Setup with Docker Compose and UDP for Distributed Caching",
+        url: "Step-by-step guide on how to use Docker Compose to start a cluster of three Keycloak Docker containers using UDP for distributed caching",
+        description: "https://medium.com/javarevisited/keycloak-cluster-setup-with-docker-compose-and-udp-for-distributed-caching-9123be1de12d",
+        tags: ["keycloak", "mysql", "udp", "keycloak-cluster", "docker-compose"],
         source: "medium"
     },
 ]
