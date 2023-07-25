@@ -698,6 +698,13 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Implementing and Securing a Spring Boot GraphQL API with Okta",
+        url: "https://medium.com/javarevisited/implementing-and-securing-a-spring-boot-graphql-api-with-okta-78bc997359b4",
+        description: "A complete guide on implementing a Spring Boot GraphQL API and securing it with Okta",
+        tags: ["java", "graphql", "web", "spring-boot", "okta", "spring-security", "spring-data-jpa", "h2", "oauth2-resource-server", "spring-graphql"],
+        source: "medium"
+    },
+    {
         name: "Building a Single Spring Boot App with Keycloak or Okta as IdP: Introduction",
         url: "https://medium.com/@ivangfr/building-a-single-spring-boot-app-with-keycloak-or-okta-as-idp-introduction-2814a4829aed",
         description: "A complete guide on how to implement a single Spring Boot application, called StarVote, with Keycloak or Okta as Identity Provider",
@@ -751,6 +758,20 @@ const projects = [
         url: "Step-by-step guide on how to use Docker Compose to start a cluster of three Keycloak Docker containers using UDP for distributed caching",
         description: "https://medium.com/javarevisited/keycloak-cluster-setup-with-docker-compose-and-udp-for-distributed-caching-9123be1de12d",
         tags: ["keycloak", "mysql", "udp", "keycloak-cluster", "docker-compose"],
+        source: "medium"
+    },
+    {
+        name: "Keycloak Cluster Setup with Docker Compose and JDBC-PING for Distributed Caching",
+        url: "https://medium.com/javarevisited/keycloak-cluster-setup-with-docker-compose-and-jdbc-ping-for-distributed-caching-3623fb6ee513",
+        description: "Step-by-step guide on how to use Docker Compose to start a cluster of three Keycloak Docker containers using JDBC-PING for distributed caching",
+        tags: ["keycloak", "mysql", "jdbc-ping", "keycloak-cluster", "docker-compose"],
+        source: "medium"
+    },
+    {
+        name: "Implementing A Full Stack Web App Using Spring-Boot and React",
+        url: "https://medium.com/javarevisited/implementing-a-full-stack-web-app-using-spring-boot-and-react-7db598df4452",
+        description: "A complete guide on how to implement the MyToDoList application",
+        tags: ["java", "javascript", "spring-boot", "reactjs", "ant-design", "h2", "web", "spring-data-jpa"],
         source: "medium"
     },
 ]
