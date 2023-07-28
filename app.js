@@ -70,8 +70,8 @@ const projects = [
     {
         name: "springboot-react-keycloak",
         url: "https://github.com/ivangfr/springboot-react-keycloak",
-        description: "The goal of this project is to secure movies-app using Keycloak (with PKCE). movies-app consists of two applications: one is a Spring Boot Rest API called movies-api and another is a ReactJS application called movies-ui.",
-        tags: ["javascript", "java", "docker", "web", "spring-boot", "mongodb", "keycloak", "reactjs", "postgresql", "spring-security", "omdb-api", "mapstruct", "spring-data-mongodb", "semantic-ui-react", "pkce", "oauth2-resource-server", "dicebear", "springdoc-openapi"],
+        description: "The goal of this project is to secure movies-app using Keycloak (with PKCE). movies-app consists of two applications: one is a Spring Boot Rest API called movies-api and another is a React application called movies-ui.",
+        tags: ["javascript", "java", "docker", "web", "spring-boot", "mongodb", "keycloak", "react", "postgresql", "spring-security", "omdb-api", "mapstruct", "spring-data-mongodb", "semantic-ui-react", "pkce", "oauth2-resource-server", "dicebear", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -105,8 +105,8 @@ const projects = [
     {
         name: "springboot-react-social-login",
         url: "https://github.com/ivangfr/springboot-react-social-login",
-        description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a font-end ReactJS application called movie-ui. Besides, we will use OAuth2 (Social Login) to secure both applications.",
-        tags: ["javascript", "java", "docker", "web", "spring-boot", "reactjs", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "social-login", "oauth2-client", "semantic-ui-react", "google-oauth2", "springdoc-openapi", "github-oauth2", "github-oauth-login", "google-oauth-login"],
+        description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a font-end React application called movie-ui. Besides, we will use OAuth2 (Social Login) to secure both applications.",
+        tags: ["javascript", "java", "docker", "web", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "social-login", "oauth2-client", "semantic-ui-react", "google-oauth2", "springdoc-openapi", "github-oauth2", "github-oauth-login", "google-oauth-login"],
         source: "github"
     },
     {
@@ -119,8 +119,8 @@ const projects = [
     {
         name: "springboot-react-jwt-token",
         url: "https://github.com/ivangfr/springboot-react-jwt-token",
-        description: "The goal of this project is to implement an application called order-app to manage orders. For it, we will implement a back-end Spring Boot application called order-api and a font-end ReactJS application called order-ui. Besides, we will use JWT Authentication to secure both applications.",
-        tags: ["javascript", "java", "docker", "web", "spring-boot", "reactjs", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "jwt-authentication", "semantic-ui-react", "jtw", "springdoc-openapi"],
+        description: "The goal of this project is to implement an application called order-app to manage orders. For it, we will implement a back-end Spring Boot application called order-api and a font-end React application called order-ui. Besides, we will use JWT Authentication to secure both applications.",
+        tags: ["javascript", "java", "docker", "web", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "jwt-authentication", "semantic-ui-react", "jtw", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -168,8 +168,8 @@ const projects = [
     {
         name: "springboot-react-basic-auth",
         url: "https://github.com/ivangfr/springboot-react-basic-auth",
-        description: "The goal of this project is to implement an application called book-app to manage books. For it, we will implement a back-end Spring Boot application called book-api and a font-end ReactJS application called book-ui. Besides, we will use Basic Authentication to secure both applications.",
-        tags: ["javascript", "java", "docker", "npm", "web", "spring-boot", "reactjs", "postgresql", "spring-security", "basic-authentication", "spring-data-jpa", "semantic-ui-react", "springdoc-openapi"],
+        description: "The goal of this project is to implement an application called book-app to manage books. For it, we will implement a back-end Spring Boot application called book-api and a font-end React application called book-ui. Besides, we will use Basic Authentication to secure both applications.",
+        tags: ["javascript", "java", "docker", "npm", "web", "spring-boot", "react", "postgresql", "spring-security", "basic-authentication", "spring-data-jpa", "semantic-ui-react", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -224,8 +224,8 @@ const projects = [
     {
         name: "https-springboot-react",
         url: "https://github.com/ivangfr/https-springboot-react",
-        description: "The goal of this project is to play with HTTPS and enable it in Spring Boot applications. For it, we will implement a Spring Boot Rest API that will have its endpoints ready to accept and server over HTTPS. Furthermore, a Spring Boot Shell Java application and a Frontend ReactJS application will be implemented to consume movies-api.",
-        tags: ["javascript", "java", "web", "spring-boot", "reactjs", "https", "spring-data-jpa", "h2", "spring-shell", "pkcs12", "semantic-ui-react", "keytool", "springdoc-openapi"],
+        description: "The goal of this project is to play with HTTPS and enable it in Spring Boot applications. For it, we will implement a Spring Boot Rest API that will have its endpoints ready to accept and server over HTTPS. Furthermore, a Spring Boot Shell Java application and a Frontend React application will be implemented to consume movies-api.",
+        tags: ["javascript", "java", "web", "spring-boot", "react", "https", "spring-data-jpa", "h2", "spring-shell", "pkcs12", "semantic-ui-react", "keytool", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -253,7 +253,7 @@ const projects = [
         name: "okta-springboot-react",
         url: "https://github.com/ivangfr/okta-springboot-react",
         description: "The goal of this project is to implement an application where a user can manage (create/read/update/delete) jobs. For it, we will create: a backend Restful API called jobs-api and a frontend user interface called jobs-ui. Furthermore, we will use Okta to secure the complete application.",
-        tags: ["javascript", "java", "docker", "elasticsearch", "web", "spring-boot", "reactjs", "materializecss", "okta", "spring-data-elasticsearch", "springdoc-openapi", "okta-spring-boot"],
+        tags: ["javascript", "java", "docker", "elasticsearch", "web", "spring-boot", "react", "materializecss", "okta", "spring-data-elasticsearch", "springdoc-openapi", "okta-spring-boot"],
         source: "github"
     },
     {
@@ -294,8 +294,8 @@ const projects = [
     {
         name: "ethereum-springboot-react",
         url: "https://github.com/ivangfr/ethereum-springboot-react",
-        description: "Goals: Implement an Ethereum Smart Contract called SoccerManager and deploy it to Ethereum Blockchain running locally; Implement 2 Spring Boot BE applications, ethereum-api and player-api, that uses Web3j to communicate with Ethereum blockchain; Implement 2 ReactJS FE applications, ethereum-ui and player-ui, that communicate to their respective BE.",
-        tags: ["java", "web", "spring-boot", "reactjs", "ethereum", "smart-contracts", "solidity", "web3j", "remix", "ethereum-blockchain", "springdoc-openapi"],
+        description: "Goals: Implement an Ethereum Smart Contract called SoccerManager and deploy it to Ethereum Blockchain running locally; Implement 2 Spring Boot BE applications, ethereum-api and player-api, that uses Web3j to communicate with Ethereum blockchain; Implement 2 React FE applications, ethereum-ui and player-ui, that communicate to their respective BE.",
+        tags: ["java", "web", "spring-boot", "react", "ethereum", "smart-contracts", "solidity", "web3j", "remix", "ethereum-blockchain", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -357,8 +357,8 @@ const projects = [
     {
         name: "react-graphql-databases",
         url: "https://github.com/ivangfr/react-graphql-databases",
-        description: "The goal of this project is to implement two front-end ReactJS applications, author-book-ui and book-review-ui. They will consume the GraphQL endpoints of the two back-end (BE) applications present in the project springboot-graphql-databases, author-book-api and book-review-api.",
-        tags: ["javascript", "graphql", "reactjs", "material-ui", "semantic-ui-react"],
+        description: "The goal of this project is to implement two front-end React applications, author-book-ui and book-review-ui. They will consume the GraphQL endpoints of the two back-end (BE) applications present in the project springboot-graphql-databases, author-book-api and book-review-api.",
+        tags: ["javascript", "graphql", "react", "material-ui", "semantic-ui-react"],
         source: "github"
     },
     {
@@ -610,7 +610,7 @@ const projects = [
         name: "Implementing Social Login in a Spring Boot and React App",
         url: "https://medium.com/@ivangfr/implementing-social-login-in-a-spring-boot-and-react-app-6ce073c9983c",
         description: "Implementing Social Login in a Spring Boot and React App for Seamless Access and Enhanced User Experience",
-        tags: ["java", "spring-boot", "reactjs", "spring-security", "social-login", "oauth2-client", "github-oauth2"],
+        tags: ["java", "spring-boot", "react", "spring-security", "social-login", "oauth2-client", "github-oauth2"],
         source: "medium"
     },
     {
@@ -771,7 +771,7 @@ const projects = [
         name: "Implementing A Full Stack Web App Using Spring-Boot and React",
         url: "https://medium.com/javarevisited/implementing-a-full-stack-web-app-using-spring-boot-and-react-7db598df4452",
         description: "A complete guide on how to implement the MyToDoList application",
-        tags: ["java", "javascript", "spring-boot", "reactjs", "ant-design", "h2", "web", "spring-data-jpa"],
+        tags: ["java", "javascript", "spring-boot", "react", "ant-design", "h2", "web", "spring-data-jpa"],
         source: "medium"
     },
 ]
