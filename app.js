@@ -502,13 +502,6 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Implementing and Securing a Simple Spring Boot REST API with Keycloak",
-        url: "https://medium.com/spring-boot/how-to-secure-a-spring-boot-app-with-keycloak-5a931ee12c5a",
-        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Keycloak",
-        tags: ["java", "web", "spring-boot", "keycloak", "spring-security", "oauth2-resource-server"],
-        source: "medium"
-    },
-    {
         name: "Setting Up OpenLDAP With Keycloak For User Federation",
         url: "https://medium.com/@ivangfr/setting-up-openldap-with-keycloak-for-user-federation-82c643b3a0e6",
         description: "Unified User Management: Setting Up OpenLDAP with Keycloak for Seamless User Federation",
@@ -670,6 +663,20 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Implementing and Securing a Simple Spring Boot REST API with Keycloak",
+        url: "https://medium.com/spring-boot/how-to-secure-a-spring-boot-app-with-keycloak-5a931ee12c5a",
+        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Keycloak",
+        tags: ["java", "web", "spring-boot", "keycloak", "spring-security", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Testing a Simple Spring Boot REST API secured with Keycloak using Testcontainers",
+        url: "https://medium.com/javarevisited/testing-a-simple-spring-boot-rest-api-secured-with-keycloak-using-testcontainers-a514ef997a74",
+        description: "Using Testcontainers to spin up a Keycloak Docker container while testing a Spring Boot REST API",
+        tags: ["spring-boot", "keycloak", "testcontainers", "java", "web", "spring-security", "oauth2-resource-server", "integration-testing", "docker"],
+        source: "medium"
+    },
+    {
         name: "Implementing and Securing a Simple Spring Boot UI (Thymeleaf + RBAC) with Keycloak",
         url: "https://medium.com/spring-boot/how-to-secure-a-simple-spring-boot-ui-thymeleaf-rbac-with-keycloak-ba9f30b9cb2b",
         description: "A complete guide on implementing a Simple Spring Boot UI with Thymeleaf and that uses RBAC and securing it with Keycloak",
@@ -768,10 +775,24 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Keycloak Cluster Setup with UDP for Distributed Caching in Minikube (Kubernetes)",
+        url: "https://medium.com/javarevisited/keycloak-cluster-setup-with-udp-for-distributed-caching-in-minikube-kubernetes-8fd0860d3b95",
+        description: "Step-by-step guide on how to start a cluster of three Keycloak instances using UDP for distributed caching in Minikube",
+        tags: ["keycloak", "postgres", "udp", "minikube"],
+        source: "medium"
+    },
+    {
         name: "Implementing A Full Stack Web App Using Spring-Boot and React",
         url: "https://medium.com/javarevisited/implementing-a-full-stack-web-app-using-spring-boot-and-react-7db598df4452",
         description: "A complete guide on how to implement the MyToDoList application",
         tags: ["java", "javascript", "spring-boot", "react", "ant-design", "h2", "web", "spring-data-jpa"],
+        source: "medium"
+    },
+    {
+        name: "Using Kong to secure a Simple Spring Boot REST API with Basic Authentication plugin",
+        url: "https://medium.com/javarevisited/using-kong-to-secure-a-simple-spring-boot-rest-api-with-basic-authentication-plugin-90f3529043f3",
+        description: "Configuring the Basic Authentication plugin in Kong to secure a sensitive endpoint in a Simple Spring Boot REST API",
+        tags: ["kong", "java", "web", "spring-boot", "basic-authentication"],
         source: "medium"
     },
 ]
