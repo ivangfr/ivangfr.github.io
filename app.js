@@ -789,10 +789,24 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Using Keycloak to secure a Full Stack Web App implemented with Spring-Boot and React",
+        url: "https://medium.com/javarevisited/using-keycloak-to-secure-a-full-stack-web-app-implemented-with-spring-boot-and-react-6b2d80fc5c12",
+        description: "A complete guide on how to secure the MyToDoList application using Keycloak",
+        tags: ["java", "javascript", "spring-boot", "react", "ant-design", "h2", "web", "spring-data-jpa", "keycloak", "spring-security", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
         name: "Using Kong to secure a Simple Spring Boot REST API with Basic Authentication plugin",
         url: "https://medium.com/javarevisited/using-kong-to-secure-a-simple-spring-boot-rest-api-with-basic-authentication-plugin-90f3529043f3",
         description: "Configuring the Basic Authentication plugin in Kong to secure a sensitive endpoint in a Simple Spring Boot REST API",
         tags: ["kong", "java", "web", "spring-boot", "basic-authentication"],
+        source: "medium"
+    },
+    {
+        name: "How to run a Simple Spring Boot REST API secured by a Keycloak Cluster in Minikube",
+        url: "https://medium.com/@ivangfr/how-to-run-a-simple-spring-boot-rest-api-secured-by-a-keycloak-cluster-in-minikube-ed626453335f",
+        description: "Use Minikube to simulate a production-like solution compose of three Simple API instances secured by a cluster of three Keycloak instances",
+        tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "web", "spring-security", "oauth2-resource-server", "postgres", "udp"],
         source: "medium"
     },
 ]
