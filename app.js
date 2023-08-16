@@ -691,6 +691,13 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Testing a Spring Boot GraphQL API secured with Keycloak using Testcontainers",
+        url: "https://medium.com/javarevisited/testing-a-spring-boot-graphql-api-secured-with-keycloak-using-testcontainers-93f91f4bee72",
+        description: "Using Testcontainers to spin up a Keycloak Docker container while testing a Spring Boot GraphQL API",
+        tags: ["java", "graphql", "web", "spring-boot", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-resource-server", "spring-graphql", "testcontainers", "integration-testing", "docker"],
+        source: "medium"
+    },
+    {
         name: "Implementing and Securing a Simple Spring Boot REST API with Okta",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-rest-api-with-okta-a5143696cd60",
         description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Okta",
@@ -800,6 +807,20 @@ const projects = [
         url: "https://medium.com/javarevisited/using-kong-to-secure-a-simple-spring-boot-rest-api-with-basic-authentication-plugin-90f3529043f3",
         description: "Configuring the Basic Authentication plugin in Kong to secure a sensitive endpoint in a Simple Spring Boot REST API",
         tags: ["kong", "java", "web", "spring-boot", "basic-authentication"],
+        source: "medium"
+    },
+    {
+        name: "Using Kong to secure a Simple Spring Boot REST API with LDAP Authentication plugin",
+        url: "https://medium.com/javarevisited/using-kong-to-secure-a-simple-spring-boot-rest-api-with-ldap-authentication-plugin-3a499e01382a",
+        description: "Configuring the LDAP Authentication plugin in Kong to secure a sensitive endpoint in a Simple Spring Boot REST API",
+        tags: ["kong", "java", "web", "spring-boot", "ldap", "openldap"],
+        source: "medium"
+    },
+    {
+        name: "Using Kong to secure a Simple Spring Boot REST API with Kong OIDC plugin and Keycloak",
+        url: "https://medium.com/@ivangfr/using-kong-to-secure-a-simple-spring-boot-rest-api-with-kong-oidc-plugin-and-keycloak-c8fa8de32e6e",
+        description: "Configuring Kong OIDC plugin in Kong and Keycloak to secure a sensitive endpoint in a Simple Spring Boot REST API",
+        tags: ["kong", "java", "web", "spring-boot", "kong-oidc", "keycloak"],
         source: "medium"
     },
     {
