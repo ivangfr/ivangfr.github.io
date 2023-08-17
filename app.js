@@ -824,6 +824,13 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Using Kong to configure Rate Limiting to a Simple Spring Boot REST API",
+        url: "https://medium.com/javarevisited/using-kong-to-configure-rate-limiting-to-a-simple-spring-boot-rest-api-33b1899077d",
+        description: "Utilizing Kong’s Rate Limiting plugin to manage the frequency of requests sent to or received by the endpoints",
+        tags: ["kong", "java", "web", "spring-boot", "rate-limiting"],
+        source: "medium"
+    },
+    {
         name: "How to run a Simple Spring Boot REST API secured by a Keycloak Cluster in Minikube",
         url: "https://medium.com/@ivangfr/how-to-run-a-simple-spring-boot-rest-api-secured-by-a-keycloak-cluster-in-minikube-ed626453335f",
         description: "Use Minikube to simulate a production-like solution compose of three Simple API instances secured by a cluster of three Keycloak instances",
