@@ -302,7 +302,7 @@ const projects = [
         name: "springboot-aws-localstack-dynamodb-lambda-sns-sqs",
         url: "https://github.com/ivangfr/springboot-aws-localstack-dynamodb-lambda-sns-sqs",
         description: "In this project, we are going to use LocalStack to simulate locally, some services provided by AWS Cloud such as: DynamoDB, Lambda, SNS and SQS.",
-        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "jib"],
+        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "jib", "semantic-ui"],
         source: "github"
     },
     {
@@ -337,7 +337,7 @@ const projects = [
         name: "springboot-aws-localstack-opensearch-s3-secretsmanager",
         url: "https://github.com/ivangfr/springboot-aws-localstack-opensearch-s3-secretsmanager",
         description: "In this project, we are going to use LocalStack to simulate locally, some services provided by AWS Cloud such as OpenSearch, S3, and Secrets Manager.",
-        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "jib", "springdoc-openapi", "aws-opensearch"],
+        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "jib", "springdoc-openapi", "aws-opensearch", "semantic-ui"],
         source: "github"
     },
     {
