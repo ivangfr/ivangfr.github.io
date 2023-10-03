@@ -705,6 +705,13 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Testing a Simple Spring Boot REST API secured with Okta",
+        url: "https://medium.com/javarevisited/testing-a-simple-spring-boot-rest-api-secured-with-okta-ecc7fecabd68",
+        description: "Implementing test cases to validate whether Simple API is working properly",
+        tags: ["java", "web", "spring-boot", "spring-security", "okta", "testing", "unit-testing"],
+        source: "medium"
+    },
+    {
         name: "Implementing and Securing a Simple Spring Boot UI (Thymeleaf + RBAC) with Okta",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-ui-thymeleaf-rbac-with-okta-9489cbbcec25",
         description: "A complete guide on implementing a Simple Spring Boot UI with Thymeleaf and that uses RBAC and securing it with Okta",
@@ -835,6 +842,34 @@ const projects = [
         url: "https://medium.com/@ivangfr/how-to-run-a-simple-spring-boot-rest-api-secured-by-a-keycloak-cluster-in-minikube-ed626453335f",
         description: "Use Minikube to simulate a production-like solution compose of three Simple API instances secured by a cluster of three Keycloak instances",
         tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "web", "spring-security", "oauth2-resource-server", "postgres", "udp"],
+        source: "medium"
+    },
+    {
+        name: "Implementing and Securing a Simple Spring Boot REST API with LDAP",
+        url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-rest-api-with-ldap-7279528ef746",
+        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with LDAP",
+        tags: ["java", "web", "spring-boot", "spring-security", "ldap", "openldap", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Testing a Simple Spring Boot REST API secured with LDAP using Testcontainers",
+        url: "https://medium.com/javarevisited/testing-a-simple-spring-boot-rest-api-secured-with-ldap-using-testcontainers-698f407dfd0",
+        description: "Using Testcontainers to spin up an OpenLDAP Docker container while testing a Spring Boot REST API",
+        tags: ["java", "web", "spring-boot", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
+        source: "medium"
+    },
+    {
+        name: "Implementing and Securing a Spring Boot GraphQL API with LDAP",
+        url: "https://medium.com/javarevisited/implementing-and-securing-a-spring-boot-graphql-api-with-ldap-14fe574225e1",
+        description: "A complete guide on implementing a Spring Boot GraphQL API and securing it with LDAP",
+        tags: ["java", "web", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Testing a Spring Boot GraphQL API secured with LDAP using Testcontainers",
+        url: "https://medium.com/javarevisited/testing-a-spring-boot-graphql-api-secured-with-ldap-using-testcontainers-433c95fea81f",
+        description: "Using Testcontainers to spin up a OpenLDAP Docker container while testing a Spring Boot GraphQL API",
+        tags: ["java", "web", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
         source: "medium"
     },
 ]
