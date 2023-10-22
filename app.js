@@ -881,7 +881,7 @@ const projects = [
     },
     {
         name: "Enhancing a MySQL-KafkaConnect-Elasticsearch Setup with Spring Boot Applications",
-        url: "Implementing MovieAPI and MovieSearch to interact with the streaming of changes from MySQL to Elasticsearch using Kafka Connect",
+        url: "https://medium.com/javarevisited/enhancing-a-mysql-kafkaconnect-elasticsearch-setup-with-spring-boot-applications-257c65ff0965",
         description: "Implementing MovieAPI and MovieSearch to interact with the streaming of changes from MySQL to Elasticsearch using Kafka Connect",
         tags: ["java", "web", "spring-boot", "spring-data-jpa", "thymeleaf", "semantic-ui", "mysql", "elasticsearch", "kafka-connect", "schema-registry", "docker-compose", "docker", "kafdrop", "debezium", "confluent"],
         source: "medium"
