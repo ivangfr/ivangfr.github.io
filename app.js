@@ -872,4 +872,18 @@ const projects = [
         tags: ["java", "web", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
         source: "medium"
     },
+    {
+        name: "Streaming MySQL changes to Elasticsearch using Kafka Connect",
+        url: "https://medium.com/javarevisited/streaming-mysql-changes-to-elasticsearch-using-kafka-connect-fe22a5d0aa27",
+        description: "How can we use Kafka Connect to stream changes in a MySQL database to an index in Elasticsearch",
+        tags: ["mysql", "elasticsearch", "kafka-connect", "schema-registry", "docker-compose", "docker", "kafdrop", "debezium", "confluent"],
+        source: "medium"
+    },
+    {
+        name: "Enhancing a MySQL-KafkaConnect-Elasticsearch Setup with Spring Boot Applications",
+        url: "Implementing MovieAPI and MovieSearch to interact with the streaming of changes from MySQL to Elasticsearch using Kafka Connect",
+        description: "Implementing MovieAPI and MovieSearch to interact with the streaming of changes from MySQL to Elasticsearch using Kafka Connect",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "thymeleaf", "semantic-ui", "mysql", "elasticsearch", "kafka-connect", "schema-registry", "docker-compose", "docker", "kafdrop", "debezium", "confluent"],
+        source: "medium"
+    },
 ]
