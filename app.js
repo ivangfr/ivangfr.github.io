@@ -197,7 +197,7 @@ const projects = [
         name: "axon-springboot-websocket",
         url: "https://github.com/ivangfr/axon-springboot-websocket",
         description: "The goal is to explore Axon. We will develop a food-ordering app comprising 3 Spring Boot applications: customer-service, restaurant-service, and food-ordering-service. These services are implemented with CQRS and Event Sourcing, utilizing the Axon Framework. They connect to axon-server, which serves as the Event Store and Message Routing solution.",
-        tags: ["mysql", "java", "docker", "web", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "mapstruct", "postresql", "jib", "axon-server", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "web", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "mapstruct", "postgresql", "jib", "axon-server", "springdoc-openapi"],
         source: "github"
     },
     {
