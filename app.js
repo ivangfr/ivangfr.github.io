@@ -886,4 +886,67 @@ const projects = [
         tags: ["java", "web", "spring-boot", "spring-data-jpa", "thymeleaf", "semantic-ui", "mysql", "elasticsearch", "kafka-connect", "schema-registry", "docker-compose", "docker", "kafdrop", "debezium", "confluent"],
         source: "medium"
     },
+    {
+        name: "Implementing a Spring Boot API using Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/implementing-a-spring-boot-api-using-spring-data-jpa-and-postgresql-8820726fe44f",
+        description: "Step-by-step guide on how to implement Movie API Spring Boot App",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Unit Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-6e2e0880e5db",
+        description: "Step-by-step guide on how to implement Unit tests for Movie API using Spring Testing Library",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit", "unit-testing"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Integration Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/implementing-integration-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-ac5f2de44ac6",
+        description: "Step-by-step guide on how to implement Integration tests for Movie API using Testcontainers",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit", "integration-testing", "testcontainers"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Cache using Redis in a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/implementing-cache-using-redis-in-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-1abc4493bfa2",
+        description: "Step-by-step guide on how to implement cache in Movie API using Redis",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "caching", "redis"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Cache using Caffeine in a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/implementing-cache-using-caffeine-in-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-3220cabacdc7",
+        description: "Step-by-step guide on how to implement cache in Movie API using Caffeine",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "caching", "caffeine"],
+        source: "medium"
+    },
+    {
+        name: "Configuring OpenAPI in a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/configuring-openapi-in-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-3a7dcf36db40",
+        description: "Step-by-step guide on how to configure OpenAPI in Movie API",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "springdoc-openapi"],
+        source: "medium"
+    },
+    {
+        name: "Exposing Metrics of a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/exposing-metrics-of-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-5ff188097b0f",
+        description: "Step-by-step guide on how to configure Actuator and Prometheus metrics in Movie API",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "prometheus"],
+        source: "medium"
+    },
+    {
+        name: "Running Prometheus and Grafana to monitor a Spring Boot API application",
+        url: "https://medium.com/@ivangfr/running-prometheus-and-grafana-to-monitor-a-spring-boot-api-application-e6a3313563f2",
+        description: "Step-by-step guide on how to run Prometheus and Grafana locally, using Docker Compose, to monitor Movie API metrics",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "prometheus", "grafana"],
+        source: "medium"
+    },
+    {
+        name: "Running in Minikube (Kubernetes) a Spring Boot API that uses Spring Data JPA and PostgreSQL",
+        url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-7d18a8ee202e",
+        description: "Step-by-step guide on how to run Movie API in Minikube (Kubernetes)",
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    },
 ]
