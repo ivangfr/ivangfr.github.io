@@ -218,7 +218,7 @@ const projects = [
         name: "kubernetes-minikube-environment",
         url: "https://github.com/ivangfr/kubernetes-minikube-environment",
         description: "The goal of this project is have some examples using Kubernetes (Minikube)",
-        tags: ["java", "docker", "kubernetes", "virtualbox", "helm", "kong", "minikube", "k8s", "helm-charts", "elastic", "kubectl", "bitnami", "confluentinc", "codecentric"],
+        tags: ["java", "docker", "kubernetes", "virtualbox", "helm", "kong", "minikube", "helm-charts", "elastic", "kubectl", "bitnami", "confluentinc", "codecentric"],
         source: "github"
     },
     {
@@ -365,7 +365,7 @@ const projects = [
         name: "springboot-caching-neo4j",
         url: "https://github.com/ivangfr/springboot-caching-neo4j",
         description: "The goal of this project is to explore how caching works. To achieve this, we will implement a simple Spring Boot application called \"restaurant-api\". We will use Neo4j for storage and select one of the following solutions (Simple, Caffeine, or Redis) for caching.",
-        tags: ["java", "redis", "caching", "web", "spring-boot", "neo4j", "graalvm", "caffeine", "mapstruct", "testcontainers", "spring-data-neo4j", "spring-cache", "jib", "springdoc-openapi", "spring-native"],
+        tags: ["java", "redis", "caching", "web", "spring-boot", "neo4j", "graalvm", "caffeine", "mapstruct", "testcontainers", "spring-data-neo4j", "jib", "springdoc-openapi", "spring-native"],
         source: "github"
     },
     {
