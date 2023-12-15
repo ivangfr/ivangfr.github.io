@@ -792,7 +792,7 @@ const projects = [
         name: "Keycloak Cluster Setup with UDP for Distributed Caching in Minikube (Kubernetes)",
         url: "https://medium.com/javarevisited/keycloak-cluster-setup-with-udp-for-distributed-caching-in-minikube-kubernetes-8fd0860d3b95",
         description: "Step-by-step guide on how to start a cluster of three Keycloak instances using UDP for distributed caching in Minikube",
-        tags: ["keycloak", "postgres", "udp", "minikube"],
+        tags: ["keycloak", "postgresql", "udp", "minikube"],
         source: "medium"
     },
     {
@@ -841,7 +841,7 @@ const projects = [
         name: "How to run a Simple Spring Boot REST API secured by a Keycloak Cluster in Minikube",
         url: "https://medium.com/@ivangfr/how-to-run-a-simple-spring-boot-rest-api-secured-by-a-keycloak-cluster-in-minikube-ed626453335f",
         description: "Use Minikube to simulate a production-like solution compose of three Simple API instances secured by a cluster of three Keycloak instances",
-        tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "web", "spring-security", "oauth2-resource-server", "postgres", "udp"],
+        tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "web", "spring-security", "oauth2-resource-server", "postgresql", "udp"],
         source: "medium"
     },
     {
