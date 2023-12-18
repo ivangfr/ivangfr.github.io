@@ -658,7 +658,7 @@ const projects = [
     {
         name: "Mastering JPA Relationships: Practical Examples of Bidirectional Associations",
         url: "https://medium.com/spring-boot/spring-data-jpa-6bb5cd745b46",
-        description: "Implementing JPA Relationships: From One-To-One to Many-To-Many, With Practical Examples of Bidirectional Associations",
+        description: "From One-To-One to Many-To-Many, With Practical Examples of Bidirectional Associations",
         tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-many", "many-to-many", "one-to-one", "many-to-one", "jpa-relationships"],
         source: "medium"
     },
@@ -897,14 +897,14 @@ const projects = [
         name: "Implementing Unit Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
         url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-6e2e0880e5db",
         description: "Step-by-step guide on how to implement Unit tests for Movie API using Spring Testing Library",
-        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit", "unit-testing"],
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit-testing"],
         source: "medium"
     },
     {
         name: "Implementing Integration Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
         url: "https://medium.com/@ivangfr/implementing-integration-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-ac5f2de44ac6",
         description: "Step-by-step guide on how to implement Integration tests for Movie API using Testcontainers",
-        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit", "integration-testing", "testcontainers"],
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "integration-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -947,6 +947,48 @@ const projects = [
         url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-7d18a8ee202e",
         description: "Step-by-step guide on how to run Movie API in Minikube (Kubernetes)",
         tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Kafka Producer and Consumer using Spring Cloud Stream",
+        url: "https://medium.com/@ivangfr/implementing-a-kafka-producer-and-consumer-using-spring-cloud-stream-d4b9a6a9eab1",
+        description: "Step-by-step guide on how to implement the News Producer and Consumer apps",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Unit Tests for a Kafka Producer and Consumer that uses Spring Cloud Stream",
+        url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-f7a98a89fcf2",
+        description: "Step-by-step guide on how to implement Unit tests for News Producer and Consumer apps using Spring Testing Library",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "testing", "unit-testing"],
+        source: "medium"
+    },
+    {
+        name: "Implementing End-to-End testing for a Kafka Producer and Consumer that uses Spring Cloud Stream",
+        url: "https://medium.com/@ivangfr/implementing-end-to-end-testing-for-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-fbf5e666899e",
+        description: "Step-by-step guide on how to implement End-to-End testing for News Producer and Consumer apps using Testcontainers",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "testing", "e2e-testing", "testcontainers"],
+        source: "medium"
+    },
+    {
+        name: "Configuring Distributed Tracing with Zipkin in a Kafka Producer and Consumer that uses Spring Cloud Stream",
+        url: "https://medium.com/@ivangfr/configuring-distributed-tracing-with-zipkin-in-a-kafka-producer-and-consumer-that-uses-spring-cloud-9f1e55468b9e",
+        description: "Step-by-step guide on how to configure Distributed Tracing with Zipkin in News Producer and Consumer apps",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "tracing", "distributed-tracing", "zipkin"],
+        source: "medium"
+    },
+    {
+        name: "Using Cloudevents in a Kafka Producer and Consumer that uses Spring Cloud Stream",
+        url: "https://medium.com/@ivangfr/using-cloudevents-in-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-9c51670b5566",
+        description: "Step-by-step guide on how to configure Cloudevents in News Producer and Consumer apps",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "cloudevents"],
+        source: "medium"
+    },
+    {
+        name: "Running in Minikube (Kubernetes) a Kafka Producer and Consumer that uses Spring Cloud Stream",
+        url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-d50b2dbfc5ea",
+        description: "Step-by-step guide on how to run News Producer and Consumer in Minikube (Kubernetes)",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
         source: "medium"
     },
 ]
