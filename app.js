@@ -991,4 +991,32 @@ const projects = [
         tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
         source: "medium"
     },
+    {
+        name: "Implementing a Spring Cloud Producer and Consumer that uses Avro and Schema Registry",
+        url: "https://medium.com/@ivangfr/implementing-a-spring-cloud-producer-and-consumer-that-use-avro-and-schema-registry-ed2e890eda5a",
+        description: "Step-by-step guide on how to implement the Alert Producer and Consumer that uses Apache Avro serialization format and Schema Registry",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "docker-compose", "confluent"],
+        source: "medium"
+    },
+    {
+        name: "Setup Unit Tests for a Spring Cloud Producer and Consumer that use Avro and Schema Registry",
+        url: "https://medium.com/@ivangfr/setup-unit-tests-for-a-spring-cloud-producer-and-consumer-that-use-avro-and-schema-registry-bb0b2085e7e4",
+        description: "Step-by-step guide on how to implement Unit tests for Alert Producer and Consumer using Spring Testing Library",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "testing", "unit-testing"],
+        source: "medium"
+    },
+    {
+        name: "Setup End-to-End testing for a Spring Cloud Producer and Consumer that use Avro and Schema Registry",
+        url: "https://medium.com/@ivangfr/setup-end-to-end-testing-for-a-spring-cloud-producer-and-consumer-that-use-avro-and-schema-registry-2f005179d52f",
+        description: "Step-by-step guide on how to implement End-to-End testing for Alert Producer and Consumer using Testcontainers",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "docker-compose", "confluent", "testing", "e2e-testing", "testcontainers"],
+        source: "medium"
+    },
+    {
+        name: "Running in Minikube (Kubernetes) a Spring Cloud Producer & Consumer that use Avro & Schema Registry",
+        url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-spring-cloud-producer-consumer-that-use-avro-schema-registry-2dd67f9e7911",
+        description: "Step-by-step guide on how to run Alert Producer and Consumer in Minikube (Kubernetes)",
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "confluent", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    },
 ]
