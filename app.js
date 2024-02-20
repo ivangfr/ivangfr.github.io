@@ -98,7 +98,7 @@ const projects = [
     {
         name: "graalvm-quarkus-micronaut-springboot",
         url: "https://github.com/ivangfr/graalvm-quarkus-micronaut-springboot",
-        description: "The goal of this project is to compare some Java frameworks like: Quarkus, Micronaut and Spring Boot. For it, we will implement applications using those frameworks, build their JVM and Native Docker images and measure start-up times, memory footprint, etc.",
+        description: "The goal of this project is to compare some Java Microservice Frameworks like: Quarkus, Micronaut and Spring Boot. For it, we will implement applications using those frameworks, build their JVM and Native Docker images and measure start-up times, memory footprint, etc.",
         tags: ["mysql", "java", "docker", "elasticsearch", "kafka", "spring-boot", "native", "graalvm", "cadvisor", "webflux", "micronaut", "jib", "quarkus"],
         source: "github"
     },
@@ -309,7 +309,7 @@ const projects = [
         name: "springboot-proxysql-mysql",
         url: "https://github.com/ivangfr/springboot-proxysql-mysql",
         description: "The goal of this project is to use ProxySQL to load balance requests from a Spring-Boot application to MySQL Replication Master-Slave Cluster.",
-        tags: ["mysql", "java", "web", "spring-boot", "spring-data-jpa", "proxysql", "mysql-master-slave"],
+        tags: ["mysql", "java", "web", "spring-boot", "spring-data-jpa", "proxysql", "mysql-cluster"],
         source: "github"
     },
     {
@@ -1017,6 +1017,55 @@ const projects = [
         url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-spring-cloud-producer-consumer-that-use-avro-schema-registry-2dd67f9e7911",
         description: "Step-by-step guide on how to run Alert Producer and Consumer in Minikube (Kubernetes)",
         tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "confluent", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    },
+    {
+        name: "Real-time Crypto Price Simulator: Spring Boot Producer and Consumer that uses WebSocket",
+        url: "https://medium.com/spring-boot/real-time-crypto-price-simulator-running-in-minikube-kubernetes-553a6ba63a02",
+        description: "Creating a Spring Boot Producer to simulate real-time changes in crypto prices, exposed via WebSocket, and a Consumer to consume them",
+        tags: ["java", "web", "spring-boot", "thymeleaf", "websocket"],
+        source: "medium"
+    },
+    {
+        name: "Real-time Crypto Price Simulator: Implementing a React Consumer App",
+        url: "https://medium.com/spring-boot/real-time-crypto-price-simulator-implementing-a-react-consumer-app-ece6ff9eacbe",
+        description: "Step-by-step guide to building a React App that uses the WebSocket of the Spring Boot Producer to consume real-time crypto price updates",
+        tags: ["java", "web", "spring-boot", "react", "websocket", "ant-design"],
+        source: "medium"
+    },
+    {
+        name: "Real-time Crypto Price Simulator: Running in Minikube (Kubernetes)",
+        url: "https://medium.com/spring-boot/real-time-crypto-price-simulator-spring-boot-producer-and-consumer-that-uses-websocket-4930f7169d89",
+        description: "Exploring the functionality of the Crypto Price Spring Boot Producer, Consumer, and WebSocket in Minikube (Kubernetes)",
+        tags: ["java", "web", "spring-boot", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    },
+    {
+        name: "Using HashiCorp Vault & Spring Cloud Vault to handle Spring Boot App Key/Value Secrets",
+        url: "https://medium.com/spring-boot/using-hashicorp-vault-spring-cloud-vault-to-handle-spring-boot-app-key-value-secrets-926b81d0173b",
+        description: "A step-by-step guide to managing Spring Boot App Key/Value Secrets with HashiCorp Vault and Spring Cloud Vault",
+        tags: ["java", "web", "spring-boot", "consul", "vault", "spring-cloud-vault"],
+        source: "medium"
+    },
+    {
+        name: "Using HashiCorp Vault & Spring Cloud Vault to obtain Dynamic MySQL Credentials",
+        url: "https://itnext.io/how-to-rotate-expired-spring-cloud-vault-relational-db-credentials-without-restarting-the-app-66976fbb4bbe",
+        description: "A step-by-step guide to retrieve Dynamic MySQL Username and Password with HashiCorp Vault and Spring Cloud Vault",
+        tags: ["java", "web", "spring-boot", "consul", "vault", "spring-cloud-vault", "mysql", "spring-data-jpa"],
+        source: "medium"
+    },
+    {
+        name: "How to Rotate Expired Spring Cloud Vault Relational DB Credentials Without Restarting the App",
+        url: "https://itnext.io/using-hashicorp-vault-spring-cloud-vault-to-obtain-dynamic-mysql-credentials-5726f4fa53c2",
+        description: "Presenting a solution for rotating MySQL dynamic credentials when the Maximum Lease TTL is reached",
+        tags: ["java", "web", "spring-boot", "consul", "vault", "spring-cloud-vault", "mysql", "spring-data-jpa"],
+        source: "medium"
+    },
+    {
+        name: "Optimizing Spring Boot’s Connection to MySQL Source-Replica Clusters with ProxySQL",
+        url: "https://itnext.io/optimizing-spring-boots-connection-to-mysql-master-slave-clusters-with-proxysql-af275a0a4cea",
+        description: "Efficiently Distributing Workloads for Enhanced Scalability and Reliability",
+        tags: ["java", "web", "spring-boot", "mysql", "proxysql", "mysql-cluster"],
         source: "medium"
     },
 ]
