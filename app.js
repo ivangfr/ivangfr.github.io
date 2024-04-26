@@ -453,44 +453,44 @@ const projects = [
         source: "github"
     },
     {
-        name: "How to Publish Your Website for Free on GitHub Pages",
+        name: "How to publish your website for free on GitHub Pages",
         url: "https://medium.com/@ivangfr/no-more-excuses-how-to-publish-your-website-for-free-on-github-pages-today-8ae0fb8c9c16",
-        description: "A Step-by-Step Guide to Publishing Your Website for Free on GitHub Pages",
+        description: "Step-by-step guide to publishing your website for free on GitHub Pages",
         tags: ["github", "github-pages"],
         source: "medium"
     },
     {
         name: "How to add Google Analytics on GitHub Pages",
         url: "https://medium.com/@ivangfr/a-step-by-step-guide-to-add-google-analytics-on-github-pages-7466a514805f",
-        description: "A Step-by-Step Guide to Adding Google Analytics on GitHub Pages and tracking your website’s performance",
+        description: "Step-by-step guide to adding Google Analytics on GitHub Pages and tracking your website’s performance",
         tags: ["github", "github-pages", "google", "google-analytics"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Unleashing the Potential of Box2D and CreateJS in a Unified Librar",
+        name: "Box2DCreateJS: Unleashing the potential of Box2D and CreateJS in a unified library",
         url: "https://medium.com/illumination-gaming/box2dcreatejs-unleashing-the-potential-of-box2d-and-createjs-in-a-unified-library-93e258ade217",
         description: "A user-friendly JavaScript library that brings together the power of Box2D 2D Physics Engine with the CreateJS suite of tools and libraries.",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Creating the Project Initial Setup",
+        name: "Box2DCreateJS: Creating the project initial setup",
         url: "https://medium.com/@ivangfr/box2dcreatejs-creating-the-project-initial-setup-f9896d7ab622",
-        description: "A Guide to Setting Up the Initial Project Configuration",
+        description: "A guide to setting up the initial project configuration",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Creating a Ball and Interacting with it using the Cursor",
+        name: "Box2DCreateJS: Creating a ball and interacting with it using the cursor",
         url: "https://medium.com/@ivangfr/box2dcreatejs-creating-a-ball-and-interacting-with-it-using-the-cursor-a7072bbe2d7e",
-        description: "Interactive Ball Creation and Cursor Interaction Tutorial",
+        description: "Interactive ball creation and cursor interaction tutorial",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Creating a Monster Truck Game",
+        name: "Box2DCreateJS: Creating a monster truck game",
         url: "https://medium.com/@ivangfr/box2dcreatejs-creating-a-monster-truck-game-225193431735",
-        description: "Building an Exciting Monster Truck Game from Scratch",
+        description: "Building an exciting monster truck game from scratch",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
@@ -502,44 +502,44 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Setting Up OpenLDAP With Keycloak For User Federation",
+        name: "Setting Up OpenLDAP with Keycloak for User Federation",
         url: "https://medium.com/@ivangfr/setting-up-openldap-with-keycloak-for-user-federation-82c643b3a0e6",
-        description: "Unified User Management: Setting Up OpenLDAP with Keycloak for Seamless User Federation",
+        description: "Step-by-step guide on how to set up locally OpenLDAP with Keycloak for User Federation using Docker containers",
         tags: ["java", "ldap", "web", "spring-boot", "keycloak", "openldap", "spring-security", "phpldapadmin", "oauth2-resource-server"],
         source: "medium"
     },
     {
         name: "How to Route CloudEvents messages with Spring Cloud Stream",
         url: "https://medium.com/@ivangfr/how-to-route-cloudevents-messages-with-spring-cloud-stream-3cf7a5ab4e17",
-        description: "Efficient Message Routing: A Guide to Routing CloudEvents Messages with Spring Cloud Stream",
+        description: "Efficient CloudEvents message routing with Spring Cloud Stream",
         tags: ["java", "kafka", "spring-boot", "spring-cloud-stream", "webflux", "cloudevents", "event-routing"],
         source: "medium"
     },
     {
         name: "Integrating GitHub as a Social Identity Provider in Keycloak",
         url: "https://medium.com/@ivangfr/integrating-github-as-a-social-identity-provider-in-keycloak-982f521a622f",
-        description: "Streamline Authentication: Integrating GitHub as a Social Identity Provider in Keycloak for Enhanced User Experience",
+        description: "Step-by-step guide on how to integrate GitHub as a Social Identity Provider in Keycloak",
         tags: ["github", "keycloak", "identity-provider"],
         source: "medium"
     },
     {
         name: "Integrating Google as a Social Identity Provider in Keycloak",
         url: "https://medium.com/@ivangfr/integrating-google-as-a-social-identity-provider-in-keycloak-c905577ec499",
-        description: "Streamline Authentication: Integrating Google as a Social Identity Provider in Keycloak for Enhanced User Experience",
+        description: "Step-by-step guide on how to integrate Google as a Social Identity Provider in Keycloak",
         tags: ["google", "keycloak", "identity-provider"],
         source: "medium"
     },
     {
         name: "How to Create an OAuth2 App in GitHub",
         url: "https://medium.com/@ivangfr/how-to-create-an-oauth2-app-in-github-8e273e376408",
-        description: "A Step-by-Step Guide to Creating an App in GitHub for Seamless Authentication",
+        description: "Step-by-step guide to creating an app in GitHub for seamless authentication",
         tags: ["github", "oauth2"],
         source: "medium"
     },
     {
         name: "How to Create an OAuth2 App in Google",
         url: "https://medium.com/@ivangfr/how-to-create-an-oauth2-app-in-google-10e846d23adb",
-        description: "A Step-by-Step Guide to Creating an App in Google for Seamless Authentication",
+        description: "Step-by-step guide to creating an app in Google for seamless authentication",
         tags: ["google", "oauth2"],
         source: "medium"
     },
@@ -602,14 +602,14 @@ const projects = [
     {
         name: "Implementing Social Login in a Spring Boot and React App",
         url: "https://medium.com/@ivangfr/implementing-social-login-in-a-spring-boot-and-react-app-6ce073c9983c",
-        description: "Implementing Social Login in a Spring Boot and React App for Seamless Access and Enhanced User Experience",
+        description: "Step-by-step guide on implementing Social Login in a Spring Boot and React App",
         tags: ["java", "spring-boot", "react", "spring-security", "social-login", "oauth2-client", "github-oauth2"],
         source: "medium"
     },
     {
         name: "Building a Web Chat with Social Login using Spring Boot: Introduction",
         url: "https://medium.com/@ivangfr/building-a-web-chat-with-social-login-using-spring-boot-introduction-644702e6be8e",
-        description: "Step-by-Step Guide to Build a Web Chat Application with Social Login using Spring Boot",
+        description: "Step-by-step guide to build a Web Chat application with Social Login using Spring Boot",
         tags: ["javascript", "java", "spring-boot", "thymeleaf", "semantic-ui", "spring-security", "social-login", "oauth2-client", "google-oauth2", "web-chat", "dicebear", "google-oauth-login", "github-oauth2", "github-oauth-login"],
         source: "medium"
     },
@@ -623,84 +623,84 @@ const projects = [
     {
         name: "Building a Web Chat with Social Login using Spring Boot: Backend Implementation",
         url: "https://medium.com/@ivangfr/building-a-web-chat-with-social-login-using-spring-boot-backend-implementation-cac74fd166dd",
-        description: "Step-by-Step Guide to implement the Backend of the Web Chat application",
+        description: "Step-by-step guide to implement the Backend of the Web Chat application",
         tags: ["javascript", "java", "spring-boot", "thymeleaf", "semantic-ui", "spring-security", "social-login", "oauth2-client", "google-oauth2", "web-chat", "dicebear", "google-oauth-login", "github-oauth2", "github-oauth-login"],
         source: "medium"
     },
     {
         name: "Building a Web Chat with Social Login using Spring Boot: Frontend Implementation",
         url: "https://medium.com/@ivangfr/building-a-web-chat-with-social-login-using-spring-boot-frontend-implementation-951e3c6cbf6e",
-        description: "Step-by-Step Guide to implement the Frontend of the Web Chat application",
+        description: "Step-by-step guide to implement the Frontend of the Web Chat application",
         tags: ["javascript", "java", "spring-boot", "thymeleaf", "semantic-ui", "spring-security", "social-login", "oauth2-client", "google-oauth2", "web-chat", "dicebear", "google-oauth-login", "github-oauth2", "github-oauth-login"],
         source: "medium"
     },
     {
         name: "Building a Web Chat with Social Login using Spring Boot: Adding Security",
         url: "https://medium.com/@ivangfr/building-a-web-chat-with-social-login-using-spring-boot-adding-security-716f868cde4f",
-        description: "Step-by-Step Guide to implement security to the Web Chat application",
+        description: "Step-by-step guide to implement security to the Web Chat application",
         tags: ["javascript", "java", "spring-boot", "thymeleaf", "semantic-ui", "spring-security", "social-login", "oauth2-client", "google-oauth2", "web-chat", "dicebear", "google-oauth-login", "github-oauth2", "github-oauth-login"],
         source: "medium"
     },
     {
         name: "Building a Web Chat with Social Login using Spring Boot: Enabling GitHub as Identity Provider",
         url: "https://medium.com/@ivangfr/building-a-web-chat-with-social-login-using-spring-boot-enabling-github-as-identity-provider-2f36d96d5fd8",
-        description: "Step-by-Step Guide to enable GitHub as Identity Provider to the Web Chat application",
+        description: "Step-by-step guide to enable GitHub as Identity Provider to the Web Chat application",
         tags: ["javascript", "java", "spring-boot", "thymeleaf", "semantic-ui", "spring-security", "social-login", "oauth2-client", "google-oauth2", "web-chat", "dicebear", "google-oauth-login", "github-oauth2", "github-oauth-login"],
         source: "medium"
     },
     {
         name: "Building a Web Chat with Social Login using Spring Boot: Enabling Google as Identity Provider",
         url: "https://medium.com/@ivangfr/building-a-web-chat-with-social-login-using-spring-boot-enabling-google-as-identity-provider-743bcbf5f5e4",
-        description: "Step-by-Step Guide to enable Google as Identity Provider to the Web Chat application",
+        description: "Step-by-step guide to enable Google as Identity Provider to the Web Chat application",
         tags: ["javascript", "java", "spring-boot", "thymeleaf", "semantic-ui", "spring-security", "social-login", "oauth2-client", "google-oauth2", "web-chat", "dicebear", "google-oauth-login", "github-oauth2", "github-oauth-login"],
         source: "medium"
     },
     {
-        name: "Mastering JPA Relationships: Practical Examples of Bidirectional Associations",
+        name: "Mastering JPA relationships: practical examples of bidirectional associations",
         url: "https://medium.com/spring-boot/spring-data-jpa-6bb5cd745b46",
-        description: "From One-To-One to Many-To-Many, With Practical Examples of Bidirectional Associations",
+        description: "From One-To-One to Many-To-Many, with practical examples of bidirectional associations",
         tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-many", "many-to-many", "one-to-one", "many-to-one", "jpa-relationships"],
         source: "medium"
     },
     {
-        name: "Implementing and Securing a Simple Spring Boot REST API with Keycloak",
+        name: "Implementing and Securing a Simple Spring Boot REST API using Keycloak for IAM",
         url: "https://medium.com/spring-boot/how-to-secure-a-spring-boot-app-with-keycloak-5a931ee12c5a",
-        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Keycloak",
+        description: "Step-by-step guide on implementing and securing Simple API application using Keycloak as Identity and Access Management",
         tags: ["java", "web", "spring-boot", "keycloak", "spring-security", "oauth2-resource-server"],
         source: "medium"
     },
     {
-        name: "Testing a Simple Spring Boot REST API secured with Keycloak using Testcontainers",
+        name: "Testing a secured Simple Spring Boot REST API that uses Keycloak for IAM using Testcontainers",
         url: "https://medium.com/javarevisited/testing-a-simple-spring-boot-rest-api-secured-with-keycloak-using-testcontainers-a514ef997a74",
-        description: "Using Testcontainers to spin up a Keycloak Docker container while testing a Spring Boot REST API",
+        description: "Using Testcontainers to spin up a Keycloak Docker container while testing a Simple API",
         tags: ["spring-boot", "keycloak", "testcontainers", "java", "web", "spring-security", "oauth2-resource-server", "integration-testing", "docker"],
         source: "medium"
     },
     {
-        name: "Implementing and Securing a Simple Spring Boot UI (Thymeleaf + RBAC) with Keycloak",
+        name: "Implementing and Securing a simple Spring Boot UI using Keycloak for IAM",
         url: "https://medium.com/spring-boot/how-to-secure-a-simple-spring-boot-ui-thymeleaf-rbac-with-keycloak-ba9f30b9cb2b",
-        description: "A complete guide on implementing a Simple Spring Boot UI with Thymeleaf and that uses RBAC and securing it with Keycloak",
+        description: "Step-by-step guide on implementing Simple UI with Thymeleaf, securing it using RBAC and Keycloak as Identity and Access Management",
         tags: ["java", "web", "spring-boot", "thymeleaf", "spring-security", "oauth2-client", "oauth2-resource-server", "keycloak", "semantic-ui"],
         source: "medium"
     },
     {
-        name: "Implementing and Securing a Spring Boot GraphQL API with Keycloak",
+        name: "Implementing and Securing a Spring Boot GraphQL API using Keycloak for IAM",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-spring-boot-graphql-api-with-keycloak-c461c86e3972",
-        description: "A complete guide on implementing a Spring Boot GraphQL API and securing it with Keycloak",
+        description: "Step-by-step guide on implementing and securing Book API application using Keycloak as Identity and Access Management",
         tags: ["java", "graphql", "web", "spring-boot", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-resource-server", "spring-graphql"],
         source: "medium"
     },
     {
-        name: "Testing a Spring Boot GraphQL API secured with Keycloak using Testcontainers",
+        name: "Testing a secured Spring Boot GraphQL API that uses Keycloak for IAM using Testcontainers",
         url: "https://medium.com/javarevisited/testing-a-spring-boot-graphql-api-secured-with-keycloak-using-testcontainers-93f91f4bee72",
-        description: "Using Testcontainers to spin up a Keycloak Docker container while testing a Spring Boot GraphQL API",
+        description: "Using Testcontainers to spin up a Keycloak Docker container while testing Book API application",
         tags: ["java", "graphql", "web", "spring-boot", "keycloak", "spring-security", "spring-data-jpa", "h2", "oauth2-resource-server", "spring-graphql", "testcontainers", "integration-testing", "docker"],
         source: "medium"
     },
     {
-        name: "Implementing and Securing a Simple Spring Boot REST API with Okta",
+        name: "Implementing and Securing a Simple Spring Boot REST API using Okta as IdP",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-rest-api-with-okta-a5143696cd60",
-        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with Okta",
+        description: "Step-by-step guide on implementing the Simple API, securing it and configuring Okta as Identity Provider",
         tags: ["java", "web", "spring-boot", "spring-security", "okta"],
         source: "medium"
     },
@@ -712,9 +712,9 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Implementing and Securing a Simple Spring Boot UI (Thymeleaf + RBAC) with Okta",
+        name: "Implementing and Securing a Simple Spring Boot UI using Okta as IdP",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-ui-thymeleaf-rbac-with-okta-9489cbbcec25",
-        description: "A complete guide on implementing a Simple Spring Boot UI with Thymeleaf and that uses RBAC and securing it with Okta",
+        description: "Step-by-step guide on implementing Simple UI with Thymeleaf, securing it using RBAC and Okta as Identity Provider",
         tags: ["java", "web", "spring-boot", "thymeleaf", "spring-security", "rbac", "okta"],
         source: "medium"
     },
@@ -796,49 +796,49 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Implementing A Full Stack Web App Using Spring-Boot and React",
+        name: "Implementing A Full Stack Web App Using Spring Boot and React",
         url: "https://medium.com/javarevisited/implementing-a-full-stack-web-app-using-spring-boot-and-react-7db598df4452",
-        description: "A complete guide on how to implement the MyToDoList application",
+        description: "Step-by-step guide on how to implement the MyToDoList application",
         tags: ["java", "javascript", "spring-boot", "react", "ant-design", "h2", "web", "spring-data-jpa"],
         source: "medium"
     },
     {
-        name: "Using Keycloak to secure a Full Stack Web App implemented with Spring-Boot and React",
+        name: "Securing a Full Stack Web App implemented with Spring-Boot and React using Keycloak for IAM",
         url: "https://medium.com/javarevisited/using-keycloak-to-secure-a-full-stack-web-app-implemented-with-spring-boot-and-react-6b2d80fc5c12",
-        description: "A complete guide on how to secure the MyToDoList application using Keycloak",
+        description: "Step-by-step guide on securing the MyToDoList application using Keycloak as Identity and Access Management",
         tags: ["java", "javascript", "spring-boot", "react", "ant-design", "h2", "web", "spring-data-jpa", "keycloak", "spring-security", "oauth2-resource-server"],
         source: "medium"
     },
     {
         name: "Using Kong to secure a Simple Spring Boot REST API with Basic Authentication plugin",
         url: "https://medium.com/javarevisited/using-kong-to-secure-a-simple-spring-boot-rest-api-with-basic-authentication-plugin-90f3529043f3",
-        description: "Configuring the Basic Authentication plugin in Kong to secure a sensitive endpoint in a Simple Spring Boot REST API",
+        description: "Configuring the Basic Authentication plugin in Kong to secure a sensitive endpoint in Simple API application",
         tags: ["kong", "java", "web", "spring-boot", "basic-authentication"],
         source: "medium"
     },
     {
         name: "Using Kong to secure a Simple Spring Boot REST API with LDAP Authentication plugin",
         url: "https://medium.com/javarevisited/using-kong-to-secure-a-simple-spring-boot-rest-api-with-ldap-authentication-plugin-3a499e01382a",
-        description: "Configuring the LDAP Authentication plugin in Kong to secure a sensitive endpoint in a Simple Spring Boot REST API",
+        description: "Configuring the LDAP Authentication plugin in Kong to secure a sensitive endpoint in Simple API application",
         tags: ["kong", "java", "web", "spring-boot", "ldap", "openldap"],
         source: "medium"
     },
     {
         name: "Using Kong to secure a Simple Spring Boot REST API with Kong OIDC plugin and Keycloak",
         url: "https://medium.com/@ivangfr/using-kong-to-secure-a-simple-spring-boot-rest-api-with-kong-oidc-plugin-and-keycloak-c8fa8de32e6e",
-        description: "Configuring Kong OIDC plugin in Kong and Keycloak to secure a sensitive endpoint in a Simple Spring Boot REST API",
+        description: "Configuring Kong OIDC plugin in Kong and Keycloak to secure a sensitive endpoint in Simple API application",
         tags: ["kong", "java", "web", "spring-boot", "kong-oidc", "keycloak"],
         source: "medium"
     },
     {
         name: "Using Kong to configure Rate Limiting to a Simple Spring Boot REST API",
         url: "https://medium.com/javarevisited/using-kong-to-configure-rate-limiting-to-a-simple-spring-boot-rest-api-33b1899077d",
-        description: "Utilizing Kong’s Rate Limiting plugin to manage the frequency of requests sent to or received by the endpoints",
+        description: "Configuring Rate Limiting plugin in Kong to manage the frequency of requests sent to Simple API endpoints",
         tags: ["kong", "java", "web", "spring-boot", "rate-limiting"],
         source: "medium"
     },
     {
-        name: "How to run a Simple Spring Boot REST API secured by a Keycloak Cluster in Minikube",
+        name: "How to run a Simple Spring Boot REST API secured by a Keycloak Cluster in Minikube (Kubernetes)",
         url: "https://medium.com/@ivangfr/how-to-run-a-simple-spring-boot-rest-api-secured-by-a-keycloak-cluster-in-minikube-ed626453335f",
         description: "Use Minikube to simulate a production-like solution compose of three Simple API instances secured by a cluster of three Keycloak instances",
         tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "web", "spring-security", "oauth2-resource-server", "postgresql", "udp"],
@@ -847,28 +847,28 @@ const projects = [
     {
         name: "Implementing and Securing a Simple Spring Boot REST API with LDAP",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-simple-spring-boot-rest-api-with-ldap-7279528ef746",
-        description: "A complete guide on implementing a Simple Spring Boot REST API and securing it with LDAP",
+        description: "Step-by-step guide on implementing Simple API application and securing it with LDAP",
         tags: ["java", "web", "spring-boot", "spring-security", "ldap", "openldap", "docker"],
         source: "medium"
     },
     {
         name: "Testing a Simple Spring Boot REST API secured with LDAP using Testcontainers",
         url: "https://medium.com/javarevisited/testing-a-simple-spring-boot-rest-api-secured-with-ldap-using-testcontainers-698f407dfd0",
-        description: "Using Testcontainers to spin up an OpenLDAP Docker container while testing a Spring Boot REST API",
+        description: "Using Testcontainers to spin up an OpenLDAP Docker container while testing the Simple API application",
         tags: ["java", "web", "spring-boot", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
         source: "medium"
     },
     {
         name: "Implementing and Securing a Spring Boot GraphQL API with LDAP",
         url: "https://medium.com/javarevisited/implementing-and-securing-a-spring-boot-graphql-api-with-ldap-14fe574225e1",
-        description: "A complete guide on implementing a Spring Boot GraphQL API and securing it with LDAP",
+        description: "Step-by-step guide on implementing a Spring Boot GraphQL API and securing it with LDAP",
         tags: ["java", "web", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker"],
         source: "medium"
     },
     {
         name: "Testing a Spring Boot GraphQL API secured with LDAP using Testcontainers",
         url: "https://medium.com/javarevisited/testing-a-spring-boot-graphql-api-secured-with-ldap-using-testcontainers-433c95fea81f",
-        description: "Using Testcontainers to spin up a OpenLDAP Docker container while testing a Spring Boot GraphQL API",
+        description: "Using Testcontainers to spin up a OpenLDAP Docker container while testing a Book API",
         tags: ["java", "web", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
         source: "medium"
     },
@@ -896,7 +896,7 @@ const projects = [
     {
         name: "Implementing Unit Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
         url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-6e2e0880e5db",
-        description: "Step-by-step guide on how to implement Unit tests for Movie API using Spring Testing Library",
+        description: "Step-by-step guide on how to implement Unit Tests for Movie API using Spring Testing library",
         tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit-testing"],
         source: "medium"
     },
@@ -1001,7 +1001,7 @@ const projects = [
     {
         name: "Setup Unit Tests for a Spring Cloud Producer and Consumer that use Avro and Schema Registry",
         url: "https://medium.com/@ivangfr/setup-unit-tests-for-a-spring-cloud-producer-and-consumer-that-use-avro-and-schema-registry-bb0b2085e7e4",
-        description: "Step-by-step guide on how to implement Unit tests for Alert Producer and Consumer using Spring Testing Library",
+        description: "Step-by-step guide on how to implement Unit tests for Alert Producer and Consumer using Spring Testing library",
         tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "testing", "unit-testing"],
         source: "medium"
     },
@@ -1062,9 +1062,9 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Optimizing Spring Boot’s Connection to MySQL Source-Replica Clusters with ProxySQL",
+        name: "Optimizing Spring Boot's connection to MySQL source-replica clusters with ProxySQL",
         url: "https://itnext.io/optimizing-spring-boots-connection-to-mysql-master-slave-clusters-with-proxysql-af275a0a4cea",
-        description: "Efficiently Distributing Workloads for Enhanced Scalability and Reliability",
+        description: "Effectively distributing workloads for improved scalability and reliability",
         tags: ["java", "web", "spring-boot", "mysql", "proxysql", "mysql-cluster"],
         source: "medium"
     },
