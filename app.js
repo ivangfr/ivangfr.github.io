@@ -271,10 +271,10 @@ const projects = [
         source: "github"
     },
     {
-        name: "spring-cloud-stream-kafka-multi-topics-cloudkarafka",
-        url: "https://github.com/ivangfr/spring-cloud-stream-kafka-multi-topics-cloudkarafka",
-        description: "The goal of this project is to implement a Spring Boot application that produces messages to a Kafka topic, and another Spring Boot application that consumes those messages. These applications can connect to a cloud-based messaging service called CloudKarafka for Kafka or to a locally running Kafka in a Docker container.",
-        tags: ["java", "docker", "kafka", "spring-boot", "graalvm", "spring-cloud-stream", "webflux", "spring-kafka", "cloudkarafka", "jib", "kafdrop", "spring-native"],
+        name: "spring-cloud-stream-kafka-multi-topics",
+        url: "https://github.com/ivangfr/spring-cloud-stream-kafka-multi-topics",
+        description: "The goal of this project is to create two applications: one as a Spring Boot producer and the other as a Spring Boot consumer. We'll be using Spring for Apache Kafka and Spring Cloud Stream.",
+        tags: ["java", "docker", "kafka", "spring-boot", "graalvm", "spring-cloud-stream", "webflux", "spring-kafka", "jib", "kafdrop", "spring-native"],
         source: "github"
     },
     {
