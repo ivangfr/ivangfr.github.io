@@ -453,6 +453,13 @@ const projects = [
         source: "github"
     },
     {
+        name: "spring-boot-nginx-keycloak-cluster",
+        url: "https://github.com/ivangfr/spring-boot-nginx-keycloak-cluster",
+        description: "The goal of this project is to use Nginx as a reverse proxy and load balancer for a Keycloak cluster with two instances and a Spring Boot application, called simple-service, also with two instances. The simple-service app will use Keycloak for IAM.",
+        tags: ["java", "docker", "nginx", "web", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib"],
+        source: "github"
+    },
+    {
         name: "How to publish your website for free on GitHub Pages",
         url: "https://medium.com/@ivangfr/no-more-excuses-how-to-publish-your-website-for-free-on-github-pages-today-8ae0fb8c9c16",
         description: "Step-by-step guide to publishing your website for free on GitHub Pages",
