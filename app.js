@@ -323,7 +323,7 @@ const projects = [
         name: "spring-data-jpa-relationships",
         url: "https://github.com/ivangfr/spring-data-jpa-relationships",
         description: "The goal of this project is to study the JPA relationships: one-to-one, one-to-many / many-to-one, and many-to-many.",
-        tags: ["java", "web", "spring-boot", "postgresql", "one-to-many", "spring-data-jpa", "mapstruct", "many-to-many", "one-to-one", "many-to-one", "springdoc-openapi", "jpa-relationships"],
+        tags: ["java", "web", "spring-boot", "postgresql", "one-to-many", "spring-data-jpa", "mapstruct", "many-to-many", "one-to-one", "many-to-one", "springdoc-openapi", "jpa-relationships", "testcontainers"],
         source: "github"
     },
     {
@@ -1075,4 +1075,60 @@ const projects = [
         tags: ["java", "web", "spring-boot", "mysql", "proxysql", "mysql-cluster"],
         source: "medium"
     },
+    {
+        name: "Implementing a Reactive App using Spring WebFlux and MongoDB",
+        url: "https://itnext.io/implementing-a-reactive-app-using-spring-webflux-and-mongodb-f1394fffee64",
+        description: "Step-by-step guide on how to implement Book API Reactive Spring Boot App",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Unit Tests for a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/implementing-unit-tests-for-a-reactive-app-that-uses-spring-webflux-and-mongodb-1b64d8a416db",
+        description: "Step-by-step guide on how to implement Unit tests for Book API using Spring Testing library",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "testing", "unit-testing"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Integration Tests for a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/implementing-integration-tests-for-a-reactive-app-that-uses-spring-webflux-and-mongodb-bb971ae3fa7b",
+        description: "Step-by-step guide on how to implement Integration tests for Book API using Testcontainers",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "testing", "integration-testing", "testcontainers"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Cache using Redis in a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/implementing-cache-using-redis-in-a-reactive-app-that-uses-spring-webflux-and-mongodb-3c478923fb81",
+        description: "Step-by-step guide on how to implement cache in Book API using Redis",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "caching", "redis"],
+        source: "medium"
+    },
+    {
+        name: "Implementing Cache using Caffeine in a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/implementing-cache-using-caffeine-in-a-reactive-app-that-uses-spring-webflux-and-mongodb-3e9402f69123",
+        description: "Step-by-step guide on how to implement cache in Book API using Caffeine",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "caching", "caffeine"],
+        source: "medium"
+    },
+    {
+        name: "Configuring OpenAPI in a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/configuring-openapi-in-a-reactive-app-that-uses-spring-webflux-and-mongodb-e903af7383ca",
+        description: "Step-by-step guide on how to configure OpenAPI in Book API",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "springdoc-openapi"],
+        source: "medium"
+    },
+    {
+        name: "Exposing Metrics of a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/exposing-metrics-of-a-reactive-app-that-uses-spring-webflux-and-mongodb-77240f49a0f8",
+        description: "Step-by-step guide on how to configure Actuator and Prometheus metrics in a Book API",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "prometheus"],
+        source: "medium"
+    },
+    {
+        name: "Running in Minikube (Kubernetes) a Reactive App that uses Spring WebFlux and MongoDB",
+        url: "https://itnext.io/running-in-minikube-kubernetes-a-reactive-app-that-uses-spring-webflux-and-mongodb-233d831932b0",
+        description: "Step-by-step guide on how to run Book API in Minikube (Kubernetes)",
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    }
 ]
