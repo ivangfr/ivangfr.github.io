@@ -1130,5 +1130,40 @@ const projects = [
         description: "Step-by-step guide on how to run Book API in Minikube (Kubernetes)",
         tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
         source: "medium"
+    },
+    {
+        name: "Implementing and Securing a Spring Boot RSocket App using Keycloak for IAM",
+        url: "https://itnext.io/implementing-and-securing-a-spring-boot-rsocket-app-with-keycloak-5a6c74bf453d",
+        description: "Step-by-step guide on building and securing Clock Server app with Spring Boot, RSocket and Keycloak for Identity and Access Management",
+        tags: ["java", "docker", "keycloak", "reactive", "spring-boot", "websocket", "rsocket", "rsc", "spring-security", "oauth2-resource-server"],
+        source: "medium"
+    },
+    {
+        name: "Solace PubSub+ and Spring Boot: Implementing News Producer and Consumer Apps",
+        url: "https://itnext.io/solace-pubsub-and-spring-boot-implementing-news-producer-and-consumer-apps-1f80cb3fed43",
+        description: "Step-by-step guide on building News Producer and Consumer Apps using Solace PubSub+ and Spring Boot",
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub"],
+        source: "medium"
+    },
+    {
+        name: "Solace PubSub+ and Spring Boot: Implementing Unit Tests for News Producer and Consumer Apps",
+        url: "https://itnext.io/solace-pubsub-and-spring-boot-implementing-unit-tests-for-news-producer-and-consumer-apps-6c1b8257f7a0",
+        description: "Writing Unit Tests for News Producer and Consumer apps using Spring Testing library",
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub", "testing", "unit-testing"],
+        source: "medium"
+    },
+    {
+        name: "Solace PubSub+ and Spring Boot: Implementing End-to-End Tests for News Producer and Consumer Apps",
+        url: "https://itnext.io/solace-pubsub-and-spring-boot-implementing-end-to-end-tests-for-news-producer-and-consumer-apps-353e5b3843f4",
+        description: "Writing End-to-End tests for News Producer and Consumer using Testcontainers",
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub", "testing", "e2e-testing", "testcontainers"],
+        source: "medium"
+    },
+    {
+        name: "Solace PubSub+ and Spring Boot: Running News Producer and Consumer Apps in Minikube (Kubernetes)",
+        url: "https://itnext.io/solace-pubsub-and-spring-boot-running-news-producer-and-consumer-apps-in-minikube-kubernetes-b9fb167a5bbc",
+        description: "Step-by-step guide on deploying News Producer and Consumer Apps in Minikube (Kubernetes)",
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
     }
 ]
