@@ -1165,5 +1165,54 @@ const projects = [
         description: "Step-by-step guide on deploying News Producer and Consumer Apps in Minikube (Kubernetes)",
         tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub", "kubernetes", "minikube", "virtualbox", "kubectl"],
         source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Implementing the Crypto Server App",
+        url: "https://itnext.io/rsocket-spring-boot-implementing-the-crypto-server-app-9fe40ce19374",
+        description: "Step-by-step guide on how to build a Crypto Server App with RSocket and Spring Boot for reactive communication",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Implementing Integration Tests for Crypto Server App",
+        url: "https://itnext.io/rsocket-spring-boot-implementing-integration-tests-for-crypto-server-app-8059ce1895c0",
+        description: "Step-by-step guide on how to implement Integration Tests for Crypto Server App using Testcontainers",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "integration-testing"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Securing Crypto Server App with Simple Authentication",
+        url: "https://itnext.io/rsocket-spring-boot-securing-crypto-server-app-with-simple-authentication-3c2fd50e4c3e",
+        description: "Step-by-step guide on how to secure Crypto Server App using Simple Authentication",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "simple-authentication"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Integration Tests for Crypto Server App secured with Simple Authentication",
+        url: "https://itnext.io/rsocket-spring-boot-integration-tests-for-crypto-server-app-secured-with-simple-authentication-2c362a05a5b0",
+        description: "Step-by-step guide on how to implement Integration Tests for Crypto Server App secured with Simple Authentication",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "simple-authentication", "integration-testing"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Securing Crypto Server App using Keycloak for IAM",
+        url: "https://itnext.io/rsocket-spring-boot-securing-crypto-server-app-with-keycloak-c3d5fe39dc74",
+        description: "Step-by-step guide on securing Crypto Server App using Keycloak for Identity and Access Management",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "keycloak"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Integration Tests for Crypto Server App Secured using Keycloak for IAM",
+        url: "https://itnext.io/rsocket-spring-boot-integration-tests-for-crypto-server-app-secured-with-keycloak-2aa2fb0153b2",
+        description: "Step-by-step guide on how to implement Integration Tests for Crypto Server App secured using Keycloak for Identity and Access Management",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "keycloak", "integration-testing"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Running the Crypto Server App in Minikube (Kubernetes)",
+        url: "https://itnext.io/rsocket-spring-boot-running-the-crypto-server-app-in-minikube-kubernetes-e44b42c5fdb8",
+        description: "Step-by-step guide on how to deploy Crypto Server App in Minikube (Kubernetes)",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
     }
 ]
