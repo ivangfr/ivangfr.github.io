@@ -460,6 +460,27 @@ const projects = [
         source: "github"
     },
     {
+        name: "api-oha-benchmarker",
+        url: "https://github.com/ivangfr/api-oha-benchmarker",
+        description: "api-oha-benchmarker is a tool to easily benchmark APIs. It uses Testcontainers to manage Docker containers. The load testing is done with OHA. To collect information like CPU and memory usage, it uses the docker stats command. It also uses cAdvisor to visually monitor CPU and memory usage.",
+        tags: ["java", "docker", "spring-boot", "load-testing", "cadvisor", "testcontainers", "oha"],
+        source: "github"
+    },
+    {
+        name: "web-reactive-jvm-native-cds-aot-virtual-threads",
+        url: "https://github.com/ivangfr/web-reactive-jvm-native-cds-aot-virtual-threads",
+        description: "In this project, we’ll create six apps using Spring Boot, Quarkus, and Micronaut. For each framework, one app will use blocking Web with Tomcat, and the other will use non-blocking Reactive with Netty. We’ll build both JVM and Native Docker images. For Spring Boot, additional images will test configurations with Virtual Threads, CDS, and AOT",
+        tags: ["java", "docker", "reactive", "web", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "webflux", "micronaut", "quarkus", "virtual-threads"],
+        source: "github"
+    },
+    {
+        name: "spring-boot-grpc-client-server",
+        url: "https://github.com/ivangfr/spring-boot-grpc-client-server",
+        description: "This project aims to create two Spring Boot applications using gRPC: movie-grpc-server and movie-grpc-client. The movie-grpc-lib project defines the gRPC interface that both applications use.",
+        tags: ["java", "web", "spring-boot", "protocol-buffers", "postgresql", "grpc", "client-server"],
+        source: "github"
+    },
+    {
         name: "How to publish your website for free on GitHub Pages",
         url: "https://medium.com/@ivangfr/no-more-excuses-how-to-publish-your-website-for-free-on-github-pages-today-8ae0fb8c9c16",
         description: "Step-by-step guide to publishing your website for free on GitHub Pages",
@@ -1213,6 +1234,69 @@ const projects = [
         url: "https://itnext.io/rsocket-spring-boot-running-the-crypto-server-app-in-minikube-kubernetes-e44b42c5fdb8",
         description: "Step-by-step guide on how to deploy Crypto Server App in Minikube (Kubernetes)",
         tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        source: "medium"
+    },
+    {
+        name: "Java Microservice Framework’s Battles: Quarkus vs. Micronaut vs. Spring Boot",
+        url: "https://itnext.io/java-microservice-frameworks-battles-quarkus-vs-micronaut-vs-spring-boot-2321dc5712ae",
+        description: "Benchmarking the most well-known Java Microservice Frameworks",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        source: "medium"
+    },
+    {
+        name: "Battle: Quarkus 3.7.2 vs. Micronaut 4.3.1 vs. Spring Boot 3.2.2",
+        url: "https://itnext.io/battle-quarkus-3-7-2-vs-micronaut-4-3-1-vs-spring-boot-3-2-2-8d6765e15e45",
+        description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        source: "medium"
+    },
+    {
+        name: "Mastering Java Concurrency: From Threads Objects to High-Level Concurrency Features",
+        url: "https://itnext.io/mastering-java-concurrency-from-threads-objects-to-high-level-concurrency-features-1f098f7c0d54",
+        description: "A Comprehensive Guide to Concurrent Programming in Java",
+        tags: ["java", "threads", "concurrency"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot apps to trigger and consume DynamoDB News table updates using AWS Lambda, SNS and SQS",
+        url: "https://itnext.io/spring-boot-apps-to-trigger-and-consume-dynamodb-news-table-updates-using-aws-lambda-sns-and-sqs-957570cf9a3a",
+        description: "Spring Boot + AWS + DynamoDB + Lambda + SNS + SQS + LocalStack",
+        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "jib", "semantic-ui", "spring-cloud-aws"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot Apps for Movie Indexing/Search with AWS OpenSearch, S3 and Secrets Manager",
+        url: "https://itnext.io/spring-boot-apps-for-movie-indexing-search-with-aws-opensearch-s3-and-secrets-manager-a95ad0697e51",
+        description: "Spring Boot + AWS + OpenSearch + S3 + Secrets Manager + LocalStack",
+        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "jib", "springdoc-openapi", "aws-opensearch", "semantic-ui", "spring-cloud-aws"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Spring Boot App using AWS DynamoDB as database",
+        url: "https://itnext.io/implementing-a-spring-boot-app-using-aws-dynamodb-as-database-5dbf8b7fc924",
+        description: "Step-by-step guide for implementing the Movie App with AWS DynamoDB, running locally with LocalStack",
+        tags: ["java", "docker", "aws", "web", "spring-boot", "aws-dynamodb", "localstack", "spring-cloud-aws"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Spring Boot App that uses AWS Secrets Manager to store its MongoDB credentials",
+        url: "https://itnext.io/implementing-a-spring-boot-app-that-uses-aws-secrets-manager-to-store-its-mongodb-credentials-f805a4c74d9a",
+        description: "Step-by-step guide to develop the Book App using MongoDB, with credentials stored in AWS Secrets Manager running locally with LocalStack",
+        tags: ["java", "docker", "aws", "web", "spring-boot", "mongodb", "aws-secrets-manager", "localstack", "spring-cloud-aws"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Serverless AWS Lambda with Spring Cloud Function & AWS Adapter",
+        url: "https://itnext.io/implementing-a-serverless-aws-lambda-with-spring-cloud-function-aws-adapter-05fd6d48ba45",
+        description: "Guide to implementing the Greetings Lambda Function with Spring Cloud Function & AWS Adapter, everything running locally with LocalStack",
+        tags: ["java", "docker", "aws", "web", "spring-boot", "aws-lambda", "localstack", "spring-cloud-function-adapter-aws"],
+        source: "medium"
+    },
+    {
+        name: "Using AWS SNS and SQS to stream Alerts from a Spring Boot producer to consumers",
+        url: "https://itnext.io/using-aws-sns-and-sqs-to-stream-alerts-from-a-spring-boot-producer-to-consumers-0b0a974e40fc",
+        description: "Implementing a Spring Boot Alert producer and two consumers that uses AWS SNS and SQS running locally using LocalStack",
+        tags: ["java", "docker", "aws", "web", "spring-boot", "aws-sqs", "aws-sns", "localstack", "spring-cloud-aws"],
         source: "medium"
     }
 ]
