@@ -1298,5 +1298,33 @@ const projects = [
         description: "Implementing a Spring Boot Alert producer and two consumers that uses AWS SNS and SQS running locally using LocalStack",
         tags: ["java", "docker", "aws", "web", "spring-boot", "aws-sqs", "aws-sns", "localstack", "spring-cloud-aws"],
         source: "medium"
+    },
+    {
+        name: "Implementing a Spring Shell to interact with a Spring Boot API",
+        url: "https://itnext.io/implementing-a-spring-shell-to-interact-with-a-spring-boot-api-7e1cd1315172",
+        description: "Step-by-step guide to developing the Movie Shell for easy interaction with the Movie API using HTTP Interface",
+        tags: ["java", "docker", "web", "spring-boot", "postgresql", "spring-data-jpa", "spring-shell", "http-interface"],
+        source: "medium"
+    },
+    {
+        name: "Synchronizing Spring Boot schedulers with ShedLock",
+        url: "https://itnext.io/synchronizing-spring-boot-schedulers-with-shedlock-6c13aa4912d3",
+        description: "How to use Optimistic Locking and ShedLock to synchronize Crypto Service schedulers when publishing to Apache Kafka",
+        tags: ["java", "docker", "web", "spring-boot", "mongodb", "spring-data-mongodb", "shedlock", "kafdrop", "kafka", "spring-cloud-stream"],
+        source: "medium"
+    },
+    {
+        name: "RSocket & Spring Boot: Implementing the Crypto Shell",
+        url: "https://itnext.io/rsocket-spring-boot-implementing-the-crypto-shell-941567ca1412",
+        description: "Step-by-step guide on building the Crypto Shell with RSocket and Spring Shell",
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "spring-shell", "webflux", "rsocket", "spring-data-mongodb-reactive"],
+        source: "medium"
+    },
+    {
+        name: "Creating a Multiplayer Game with Socket.IO, Express.js and Phaser 3",
+        url: "https://itnext.io/creating-a-multiplayer-game-with-socket-io-express-js-and-phaser-3-51e022d49326",
+        description: "Step-by-step guide to implement a simple multiplayer car game",
+        tags: ["javascript", "game", "socket-io", "expressjs", "multiplayer-game", "phaser3"],
+        source: "medium"
     }
 ]
