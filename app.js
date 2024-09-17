@@ -456,7 +456,7 @@ const projects = [
         name: "spring-boot-nginx-keycloak-cluster",
         url: "https://github.com/ivangfr/spring-boot-nginx-keycloak-cluster",
         description: "The goal of this project is to use Nginx as a reverse proxy and load balancer for a Keycloak cluster with two instances and a Spring Boot application, called simple-service, also with two instances. The simple-service app will use Keycloak for IAM.",
-        tags: ["java", "docker", "nginx", "web", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib"],
+        tags: ["java", "docker", "nginx", "web", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib", "load-balancer"],
         source: "github"
     },
     {
@@ -1325,6 +1325,34 @@ const projects = [
         url: "https://itnext.io/creating-a-multiplayer-game-with-socket-io-express-js-and-phaser-3-51e022d49326",
         description: "Step-by-step guide to implement a simple multiplayer car game",
         tags: ["javascript", "game", "socket-io", "expressjs", "multiplayer-game", "phaser3"],
+        source: "medium"
+    },
+    {
+        name: "Using Nginx to Load Balance Requests to a Keycloak Cluster",
+        url: "https://itnext.io/using-nginx-to-load-balance-requests-to-a-keycloak-cluster-52174c89a0e4",
+        description: "Running a Keycloak cluster with two instances and adding Nginx in front of the cluster as a reverse proxy and load balancer",
+        tags: ["nginx", "keycloak", "postgresql", "docker", "docker-compose", "load-balancer"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Spring Shell to interact with a Reactive Spring Boot API",
+        url: "https://itnext.io/implementing-a-spring-shell-to-interact-with-a-reactive-spring-boot-api-55292c0202ce",
+        description: "Step-by-step guide on developing the Book Shell for easy interaction with the Reactive Book API using HTTP Interface",
+        tags: ["java", "docker", "webflux", "reactive", "spring-boot", "spring-shell", "http-interface"],
+        source: "medium"
+    },
+    {
+        name: "Using Nginx to Load Balance Requests to a Spring Boot Web application",
+        url: "https://itnext.io/using-nginx-to-load-balance-requests-to-a-spring-boot-web-application-83a497a2f8ab",
+        description: "Running Greetings app with two instances and adding Nginx in front of them as a reverse proxy and load balancer",
+        tags: ["java", "nginx", "web", "spring-boot", "docker", "docker-compose", "load-balancer"],
+        source: "medium"
+    },
+    {
+        name: "Nginx Load Balancing Requests to a Keycloak Cluster and a Spring Boot App that uses Keycloak as IAM",
+        url: "https://itnext.io/nginx-load-balancing-requests-to-a-keycloak-cluster-and-a-spring-boot-app-that-uses-keycloak-as-iam-8e9e8280587d",
+        description: "Configuring Keycloak and Simple Service app with two instances each and adding Nginx in front of them as a reverse proxy and load balancer",
+        tags: ["java", "docker", "nginx", "web", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib", "load-balancer"],
         source: "medium"
     }
 ]
