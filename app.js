@@ -799,7 +799,7 @@ const projects = [
         name: "Keycloak Cluster Setup with Vagrant, Virtual Machines, and JDBC-PING for Distributed Caching",
         url: "https://medium.com/javarevisited/keycloak-cluster-setup-with-vagrant-virtual-machines-and-jdbc-ping-for-distributed-caching-bd09708219d1",
         description: "Step-by-step guide on how to use Vagrant to deploy and manage a cluster of three Keycloak instances, each one in a Virtual Machine, using JDBC-PING for distributed caching",
-        tags: ["vagrant", "keycloak", "virtualbox", "postgresql", "jdbc-ping", "keycloak-cluster"],
+        tags: ["vagrant", "keycloak", "postgresql", "jdbc-ping", "keycloak-cluster"],
         source: "medium"
     },
     {
@@ -974,7 +974,7 @@ const projects = [
         name: "Running in Minikube (Kubernetes) a Spring Boot API that uses Spring Data JPA and PostgreSQL",
         url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-7d18a8ee202e",
         description: "Step-by-step guide on how to run Movie API in Minikube (Kubernetes)",
-        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "web", "spring-boot", "spring-data-jpa", "postgresql", "docker", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1016,7 +1016,7 @@ const projects = [
         name: "Running in Minikube (Kubernetes) a Kafka Producer and Consumer that uses Spring Cloud Stream",
         url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-d50b2dbfc5ea",
         description: "Step-by-step guide on how to run News Producer and Consumer in Minikube (Kubernetes)",
-        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "docker", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1044,7 +1044,7 @@ const projects = [
         name: "Running in Minikube (Kubernetes) a Spring Cloud Producer & Consumer that use Avro & Schema Registry",
         url: "https://medium.com/@ivangfr/running-in-minikube-kubernetes-a-spring-cloud-producer-consumer-that-use-avro-schema-registry-2dd67f9e7911",
         description: "Step-by-step guide on how to run Alert Producer and Consumer in Minikube (Kubernetes)",
-        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "confluent", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "web", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "confluent", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1065,7 +1065,7 @@ const projects = [
         name: "Real-time Crypto Price Simulator: Running in Minikube (Kubernetes)",
         url: "https://medium.com/spring-boot/real-time-crypto-price-simulator-spring-boot-producer-and-consumer-that-uses-websocket-4930f7169d89",
         description: "Exploring the functionality of the Crypto Price Spring Boot Producer, Consumer, and WebSocket in Minikube (Kubernetes)",
-        tags: ["java", "web", "spring-boot", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "web", "spring-boot", "docker", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1149,7 +1149,7 @@ const projects = [
         name: "Running in Minikube (Kubernetes) a Reactive App that uses Spring WebFlux and MongoDB",
         url: "https://itnext.io/running-in-minikube-kubernetes-a-reactive-app-that-uses-spring-webflux-and-mongodb-233d831932b0",
         description: "Step-by-step guide on how to run Book API in Minikube (Kubernetes)",
-        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1184,7 +1184,7 @@ const projects = [
         name: "Solace PubSub+ and Spring Boot: Running News Producer and Consumer Apps in Minikube (Kubernetes)",
         url: "https://itnext.io/solace-pubsub-and-spring-boot-running-news-producer-and-consumer-apps-in-minikube-kubernetes-b9fb167a5bbc",
         description: "Step-by-step guide on deploying News Producer and Consumer Apps in Minikube (Kubernetes)",
-        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "webflux", "solace-pubsub", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1233,7 +1233,7 @@ const projects = [
         name: "RSocket & Spring Boot: Running the Crypto Server App in Minikube (Kubernetes)",
         url: "https://itnext.io/rsocket-spring-boot-running-the-crypto-server-app-in-minikube-kubernetes-e44b42c5fdb8",
         description: "Step-by-step guide on how to deploy Crypto Server App in Minikube (Kubernetes)",
-        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "kubernetes", "minikube", "virtualbox", "kubectl"],
+        tags: ["java", "docker", "reactive", "spring-boot", "mongodb", "webflux", "rsocket", "spring-data-mongodb-reactive", "kubernetes", "minikube", "kubectl"],
         source: "medium"
     },
     {
@@ -1353,6 +1353,34 @@ const projects = [
         url: "https://itnext.io/nginx-load-balancing-requests-to-a-keycloak-cluster-and-a-spring-boot-app-that-uses-keycloak-as-iam-8e9e8280587d",
         description: "Configuring Keycloak and Simple Service app with two instances each and adding Nginx in front of them as a reverse proxy and load balancer",
         tags: ["java", "docker", "nginx", "web", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib", "load-balancer"],
+        source: "medium"
+    },
+    {
+        name: "How to Access a Service Located in another Kubernetes Namespace",
+        url: "https://itnext.io/how-to-access-a-service-located-in-another-kubernetes-namespace-0d579baf82c6",
+        description: "Using Minikube (Kubernetes) to demonstrate how to reach a service from another namespace",
+        tags: ["kubernetes", "minikube", "kubectl"],
+        source: "medium"
+    },
+    {
+        name: "Using MongoDB Change Streams for Change Data Capture (CDC) in a Spring Boot Reactive app",
+        url: "https://itnext.io/using-mongodb-change-streams-for-change-data-capture-cdc-in-a-spring-boot-reactive-app-db10749a07bb",
+        description: "Step-by-step guide on implementing real-time data updates in a Spring Boot Reactive app using MongoDB Change Streams",
+        tags: ["java", "docker", "webflux", "reactive", "spring-boot", "mongodb", "spring-data-mongodb-reactive", "cdc", "change-data-capture"],
+        source: "medium"
+    },
+    {
+        name: "Resuming Change Data Capture (CDC) using MongoDB Change Streams in a Spring Boot Reactive app",
+        url: "https://itnext.io/resuming-change-data-capture-cdc-using-mongodb-change-streams-in-a-spring-boot-reactive-app-1f27deb4346f",
+        description: "Step-by-step guide on resuming real-time data updates in a Spring Boot Reactive app using MongoDB Change Streams",
+        tags: ["java", "docker", "webflux", "reactive", "spring-boot", "mongodb", "spring-data-mongodb-reactive", "cdc", "change-data-capture"],
+        source: "medium"
+    },
+    {
+        name: "Reduce the Startup Time and Memory Footprint of your Java App by 20% and 50% respectively",
+        url: "https://itnext.io/reduce-the-startup-time-and-memory-footprint-of-your-java-app-by-20-49fc530f9c9d",
+        description: "Using the Class Data Sharing (CDS) JVM Feature to Reduce Startup Time and Memory Footprint of Java Applications",
+        tags: ["java", "web", "spring-boot", "cds", "class-data-sharing"],
         source: "medium"
     }
 ]
