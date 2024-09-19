@@ -1382,5 +1382,33 @@ const projects = [
         description: "Using the Class Data Sharing (CDS) JVM Feature to Reduce Startup Time and Memory Footprint of Java Applications",
         tags: ["java", "web", "spring-boot", "cds", "class-data-sharing"],
         source: "medium"
+    },
+    {
+        name: "Exploring Keycloak Admin REST API",
+        url: "https://itnext.io/exploring-keycloak-admin-rest-api-88c9a8f29604",
+        description: "Manage realms, clients, users, and more using Keycloak Admin REST API",
+        tags: ["keycloak", "docker", "rest-api"],
+        source: "medium"
+    },
+    {
+        name: "Setting Up Knative in Minikube (Kubernetes) for Serverless Applications",
+        url: "https://itnext.io/setting-up-knative-in-minikube-kubernetes-for-serverless-applications-181fb20f3d19",
+        description: "Step-by-step guide on configuring Knative Serving and Eventing in Minikube (Kubernetes) to build Serverless and Event Driven Applications",
+        tags: ["kubernetes", "serverless", "helm", "minikube", "helm-charts", "kubectl", "knative", "knative-serving", "knative-eventing", "kourier", "strimzi"],
+        source: "medium"
+    },
+    {
+        name: "Deploying Serverless Quarkus JPA App in Knative Minikube (Kubernetes)",
+        url: "https://itnext.io/deploying-serverless-quarkus-jpa-app-in-knative-minikube-kubernetes-fc29f98ffc7c",
+        description: "Step-by-step guide on deploying the Serverless Quarkus Book app in Knative Minikube (Kubernetes)",
+        tags: ["kubernetes", "serverless", "helm", "minikube", "helm-charts", "kubectl", "knative", "knative-serving", "kourier", "quarkus", "mysql"],
+        source: "medium"
+    },
+    {
+        name: "Deploying Serverless Producer & Consumer Spring Boot Apps in Knative Minikube (Kubernetes)",
+        url: "https://itnext.io/deploying-serverless-producer-consumer-spring-boot-apps-in-knative-minikube-kubernetes-c58bb26b1f08",
+        description: "Step-by-step guide on deploying the Serverless News Producer and Consumer apps in Knative Minikube (Kubernetes)",
+        tags: ["kubernetes", "serverless", "helm", "minikube", "helm-charts", "kubectl", "knative","knative-eventing", "strimzi", "quarkus", "kafka"],
+        source: "medium"
     }
 ]
