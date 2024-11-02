@@ -141,7 +141,7 @@ const projects = [
         name: "springboot-keycloak-mongodb-testcontainers",
         url: "https://github.com/ivangfr/springboot-keycloak-mongodb-testcontainers",
         description: "The goals of this project are: 1) Create a Spring Boot application that manages books, called book-service; 2) Use Keycloak as OpenID Connect Provider; 3) Test using Testcontainers; 4) Explore the utilities and annotations that Spring Boot provides when testing applications.",
-        tags: ["java", "docker", "unit-testing", "web", "spring-boot", "mongodb", "keycloak", "integration-testing", "spring-security", "mapstruct", "testcontainers", "spring-data-mongodb", "jib", "springdoc-openapi", "oauth2-resourceserver"],
+        tags: ["java", "docker", "unit-testing", "web", "spring-boot", "mongodb", "keycloak", "integration-testing", "spring-security", "mapstruct", "testcontainers", "spring-data-mongodb", "springdoc-openapi", "oauth2-resourceserver"],
         source: "github"
     },
     {
@@ -183,7 +183,7 @@ const projects = [
         name: "springboot-kong-keycloak",
         url: "https://github.com/ivangfr/springboot-kong-keycloak",
         description: "Goal: create a Spring Boot app called book-service accessible only through the Kong API gateway. In Kong, the kong-oidc plugin will be installed, enabling communication between Kong and Keycloak. This setup ensures that when Kong receives a request for book-service, it validates the request in conjunction with Keycloak to ensure its authenticity.",
-        tags: ["mysql", "java", "docker", "web", "spring-boot", "mongodb", "keycloak", "postgresql", "kong", "graalvm", "spring-data-mongodb", "jib", "kong-oidc", "spring-native"],
+        tags: ["mysql", "java", "docker", "web", "spring-boot", "mongodb", "keycloak", "postgresql", "kong", "graalvm", "spring-data-mongodb", "kong-oidc", "native"],
         source: "github"
     },
     {
@@ -281,7 +281,7 @@ const projects = [
         name: "spring-cloud-stream-event-routing-cloudevents",
         url: "https://github.com/ivangfr/spring-cloud-stream-event-routing-cloudevents",
         description: "The goal of this project is to play with Spring Cloud Stream Event Routing and CloudEvents. For it, we will implement a producer and consumer of news & alert events.",
-        tags: ["java", "kafka", "spring-boot", "spring-cloud-stream", "webflux", "cloudevents", "kafdrop", "event-routing"],
+        tags: ["java", "kafka", "spring-boot", "spring-cloud-stream", "webflux", "cloudevents", "kafdrop", "event-routing", "graalvm", "native"],
         source: "github"
     },
     {
@@ -302,7 +302,7 @@ const projects = [
         name: "springboot-aws-localstack-dynamodb-lambda-sns-sqs",
         url: "https://github.com/ivangfr/springboot-aws-localstack-dynamodb-lambda-sns-sqs",
         description: "In this project, we are going to use LocalStack to simulate locally, some services provided by AWS Cloud such as: DynamoDB, Lambda, SNS and SQS. Also, in order to simplify the use of AWS managed services, we are going to use Spring Cloud AWS.",
-        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "jib", "semantic-ui", "spring-cloud-aws"],
+        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "semantic-ui", "spring-cloud-aws"],
         source: "github"
     },
     {
@@ -337,7 +337,7 @@ const projects = [
         name: "springboot-aws-localstack-opensearch-s3-secretsmanager",
         url: "https://github.com/ivangfr/springboot-aws-localstack-opensearch-s3-secretsmanager",
         description: "In this project, we are going to use LocalStack to simulate locally, some services provided by AWS Cloud such as OpenSearch, S3, and Secrets Manager. Also, in order to simplify the use of AWS managed services, we are going to use Spring Cloud AWS.",
-        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "jib", "springdoc-openapi", "aws-opensearch", "semantic-ui", "spring-cloud-aws"],
+        tags: ["java", "docker", "aws", "web", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "springdoc-openapi", "aws-opensearch", "semantic-ui", "spring-cloud-aws"],
         source: "github"
     },
     {
@@ -481,44 +481,44 @@ const projects = [
         source: "github"
     },
     {
-        name: "How to publish your website for free on GitHub Pages",
+        name: "How to Publish your Website for Free on GitHub Pages",
         url: "https://medium.com/@ivangfr/no-more-excuses-how-to-publish-your-website-for-free-on-github-pages-today-8ae0fb8c9c16",
-        description: "Step-by-step guide to publishing your website for free on GitHub Pages",
+        description: "Step-by-step guide on how to publish your Website for Free on GitHub Pages",
         tags: ["github", "github-pages"],
         source: "medium"
     },
     {
         name: "How to add Google Analytics on GitHub Pages",
         url: "https://medium.com/@ivangfr/a-step-by-step-guide-to-add-google-analytics-on-github-pages-7466a514805f",
-        description: "Step-by-step guide to adding Google Analytics on GitHub Pages and tracking your website’s performance",
+        description: "Step-by-step guide on how to add Google Analytics on GitHub Pages and tracking your Website’s performance",
         tags: ["github", "github-pages", "google", "google-analytics"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Unleashing the potential of Box2D and CreateJS in a unified library",
+        name: "Box2DCreateJS: Unleashing the potential of Box2D and CreateJS in a Unified Library",
         url: "https://medium.com/illumination-gaming/box2dcreatejs-unleashing-the-potential-of-box2d-and-createjs-in-a-unified-library-93e258ade217",
-        description: "A user-friendly JavaScript library that brings together the power of Box2D 2D Physics Engine with the CreateJS suite of tools and libraries.",
+        description: "A user-friendly JavaScript library that brings together the power of Box2D 2D Physics Engine with the CreateJS suite of tools and libraries",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Creating the project initial setup",
+        name: "Box2DCreateJS: Creating the Project Initial Setup",
         url: "https://medium.com/@ivangfr/box2dcreatejs-creating-the-project-initial-setup-f9896d7ab622",
-        description: "A guide to setting up the initial project configuration",
+        description: "A guide on how to set up the initial project configuration",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Creating a ball and interacting with it using the cursor",
+        name: "Box2DCreateJS: Creating a Ball and Interacting with it using the Cursor",
         url: "https://medium.com/@ivangfr/box2dcreatejs-creating-a-ball-and-interacting-with-it-using-the-cursor-a7072bbe2d7e",
         description: "Interactive ball creation and cursor interaction tutorial",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
     {
-        name: "Box2DCreateJS: Creating a monster truck game",
+        name: "Box2DCreateJS: Creating a Monster Truck Game",
         url: "https://medium.com/@ivangfr/box2dcreatejs-creating-a-monster-truck-game-225193431735",
-        description: "Building an exciting monster truck game from scratch",
+        description: "Building an exciting Monster Truck Game from scratch",
         tags: ["javascript", "semantic-ui", "box2d", "createjs", "games", "game-development", "online-game"],
         source: "medium"
     },
