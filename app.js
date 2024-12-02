@@ -85,7 +85,7 @@ const projects = [
         name: "springboot-keycloak-openldap",
         url: "https://github.com/ivangfr/springboot-keycloak-openldap",
         description: "The goal of this project is to create a simple Spring Boot REST API, called simple-service, and secure it with Keycloak. Furthermore, the API users will be loaded into Keycloak from OpenLDAP server.",
-        tags: ["java", "docker", "ldap", "spring-web-mvc", "spring-boot", "keycloak", "native", "openldap", "spring-security", "graalvm", "phpldapadmin", "oauth2-resource-server", "jib", "springdoc-openapi"],
+        tags: ["java", "docker", "ldap", "spring-web-mvc", "spring-boot", "keycloak", "native", "openldap", "spring-security", "graalvm", "phpldapadmin", "oauth2-resource-server", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -134,7 +134,7 @@ const projects = [
         name: "springboot-elk-prometheus-grafana",
         url: "https://github.com/ivangfr/springboot-elk-prometheus-grafana",
         description: "The goal of this project is to implement a Spring Boot application, called movies-api, and use Filebeat & ELK Stack (Elasticsearch, Logstash and Kibana) to collect and visualize application's logs and Prometheus & Grafana to monitor application's metrics.",
-        tags: ["mysql", "java", "docker", "elasticsearch", "kibana", "logstash", "spring-web-mvc", "spring-boot", "native", "filebeat", "grafana", "elk", "prometheus", "spring-data-jpa", "jib"],
+        tags: ["mysql", "java", "docker", "elasticsearch", "kibana", "logstash", "spring-web-mvc", "spring-boot", "native", "filebeat", "grafana", "elk", "prometheus", "spring-data-jpa"],
         source: "github"
     },
     {
@@ -148,7 +148,7 @@ const projects = [
         name: "springboot-ldap-testcontainers",
         url: "https://github.com/ivangfr/springboot-ldap-testcontainers",
         description: "The goal of this project is to create a simple Spring Boot REST API, named 'simple-service,' and secure it using the Spring Security LDAP module. Additionally, Testcontainers will be utilized for integration testing.",
-        tags: ["java", "docker", "ldap", "spring-web-mvc", "spring-boot", "native", "openldap", "spring-security", "graalvm", "testcontainers", "phpldapadmin", "spring-security-ldap", "jib", "springdoc-openapi"],
+        tags: ["java", "docker", "ldap", "spring-web-mvc", "spring-boot", "native", "openldap", "spring-security", "graalvm", "testcontainers", "phpldapadmin", "spring-security-ldap", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -162,7 +162,7 @@ const projects = [
         name: "springboot-kafka-websocket",
         url: "https://github.com/ivangfr/springboot-kafka-websocket",
         description: "The goal of this project is to implement two Spring Boot applications: bitcoin-api and bitcoin-client. The bitcoin-api application simulates BTC price changes, while the bitcoin-client application listens to these changes and updates a real-time UI. The bitcoin-client UI is secured using Basic Authentication.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "websocket", "spring-security", "basic-authentication", "spring-data-jpa", "spring-cloud-stream", "jib", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "websocket", "spring-security", "basic-authentication", "spring-data-jpa", "spring-cloud-stream", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -176,7 +176,7 @@ const projects = [
         name: "springboot-rsocket-webflux-aop",
         url: "https://github.com/ivangfr/springboot-rsocket-webflux-aop",
         description: "The goal of this project is to play with RSocket protocol. For it, we will implement three Spring Boot Java applications, movie-server, movie-client-shell and movie-client-ui. As storage, it's used the reactive NoSQL database MongoDB. All the streaming of movie events and the logging are handling by AOP (Aspect Oriented Programming).",
-        tags: ["java", "docker", "spring-boot", "mongodb", "thymeleaf", "native", "websocket", "semantic-ui", "spring-aop", "spring-shell", "spring-webflux", "rsocket", "spring-data-mongodb-reactive", "jib", "graalvm"],
+        tags: ["java", "docker", "spring-boot", "mongodb", "thymeleaf", "native", "websocket", "semantic-ui", "spring-aop", "spring-shell", "spring-webflux", "rsocket", "spring-data-mongodb-reactive", "graalvm"],
         source: "github"
     },
     {
@@ -239,7 +239,7 @@ const projects = [
         name: "springboot-graphql-databases",
         url: "https://github.com/ivangfr/springboot-graphql-databases",
         description: "The goal of this project is to explore GraphQL. For it, we will implement two microservices: author-book-api and book-review-api.",
-        tags: ["mysql", "java", "graphql", "docker", "spring-web-mvc", "spring-boot", "mongodb", "zipkin", "spring-data-jpa", "mapstruct", "spring-data-mongodb", "jib", "springdoc-openapi", "spring-cloud-openfeign", "spring-graphql"],
+        tags: ["mysql", "java", "graphql", "docker", "spring-web-mvc", "spring-boot", "mongodb", "zipkin", "spring-data-jpa", "mapstruct", "spring-data-mongodb", "springdoc-openapi", "spring-cloud-openfeign", "spring-graphql"],
         source: "github"
     },
     {
@@ -337,14 +337,14 @@ const projects = [
         name: "spring-integration-examples",
         url: "https://github.com/ivangfr/spring-integration-examples",
         description: "The goal of this project is to learn String Integration Framework For it, we will implement some Spring Boot applications and try to use the well known Enterprise Integration Patterns.",
-        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "spring-integration", "spring-data-mongodb", "spring-shell", "enterprise-integration-patterns", "spring-integration-file", "jib"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "spring-integration", "spring-data-mongodb", "spring-shell", "enterprise-integration-patterns", "spring-integration-file"],
         source: "github"
     },
     {
         name: "springboot-activemq-rabbitmq-delayed-messages",
         url: "https://github.com/ivangfr/springboot-activemq-rabbitmq-delayed-messages",
         description: "The goal of this project is to create an application that produces and consumes delayed messages randomly. Those messages are sent to ActiveMQ or RabbitMQ. The delayed broker to which the message is sent depends on a feature toggle defined in Unleash.",
-        tags: ["java", "spring-web-mvc", "docker", "spring-boot", "rabbitmq", "activemq", "spring-amqp", "spring-cloud-stream", "unleash", "spring-activemq", "jib"],
+        tags: ["java", "spring-web-mvc", "docker", "spring-boot", "rabbitmq", "activemq", "spring-amqp", "spring-cloud-stream", "unleash", "spring-activemq"],
         source: "github"
     },
     {
@@ -358,7 +358,7 @@ const projects = [
         name: "springboot-caching-neo4j",
         url: "https://github.com/ivangfr/springboot-caching-neo4j",
         description: "The goal of this project is to explore how caching works. To achieve this, we will implement a simple Spring Boot application called \"restaurant-api\". We will use Neo4j for storage and select one of the following solutions (Simple, Caffeine, or Redis) for caching.",
-        tags: ["java", "redis", "caching", "spring-web-mvc", "spring-boot", "neo4j", "graalvm", "caffeine", "mapstruct", "testcontainers", "spring-data-neo4j", "jib", "springdoc-openapi", "native"],
+        tags: ["java", "redis", "caching", "spring-web-mvc", "spring-boot", "neo4j", "graalvm", "caffeine", "mapstruct", "testcontainers", "spring-data-neo4j", "springdoc-openapi", "native"],
         source: "github"
     },
     {
@@ -428,7 +428,7 @@ const projects = [
         name: "spring-boot-nginx-keycloak-cluster",
         url: "https://github.com/ivangfr/spring-boot-nginx-keycloak-cluster",
         description: "The goal of this project is to use Nginx as a reverse proxy and load balancer for a Keycloak cluster with two instances and a Spring Boot application, called simple-service, also with two instances. The simple-service app will use Keycloak for IAM.",
-        tags: ["java", "docker", "nginx", "spring-web-mvc", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib", "load-balancer"],
+        tags: ["java", "docker", "nginx", "spring-web-mvc", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "load-balancer"],
         source: "github"
     },
     {
