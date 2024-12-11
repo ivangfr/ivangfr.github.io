@@ -99,7 +99,7 @@ const projects = [
         name: "graalvm-quarkus-micronaut-springboot",
         url: "https://github.com/ivangfr/graalvm-quarkus-micronaut-springboot",
         description: "The goal of this project is to compare some Java Microservice Frameworks like: Quarkus, Micronaut and Spring Boot. For it, we will implement applications using those frameworks, build their JVM and Native Docker images and measure start-up times, memory footprint, etc.",
-        tags: ["mysql", "java", "docker", "elasticsearch", "kafka", "spring-boot", "native", "graalvm", "cadvisor", "webflux", "micronaut", "jib", "quarkus"],
+        tags: ["mysql", "java", "docker", "elasticsearch", "kafka", "spring-boot", "native", "graalvm", "cadvisor", "webflux", "micronaut", "jib", "quarkus", "jvm"],
         source: "github"
     },
     {
@@ -274,7 +274,7 @@ const projects = [
         name: "spring-cloud-stream-kafka-multi-topics",
         url: "https://github.com/ivangfr/spring-cloud-stream-kafka-multi-topics",
         description: "The goal of this project is to create two applications: one as a Spring Boot producer and the other as a Spring Boot consumer. We'll be using Spring for Apache Kafka and Spring Cloud Stream.",
-        tags: ["java", "docker", "kafka", "spring-boot", "graalvm", "spring-cloud-stream", "spring-webflux", "spring-kafka", "jib", "kafdrop", "native"],
+        tags: ["java", "docker", "kafka", "spring-boot", "spring-cloud-stream", "spring-webflux", "spring-kafka", "jib", "kafdrop"],
         source: "github"
     },
     {
@@ -442,7 +442,7 @@ const projects = [
         name: "web-reactive-jvm-native-cds-aot-virtual-threads",
         url: "https://github.com/ivangfr/web-reactive-jvm-native-cds-aot-virtual-threads",
         description: "In this project, we’ll create six apps using Spring Boot, Quarkus, and Micronaut. For each framework, one app will use blocking Web with Tomcat, and the other will use non-blocking Reactive with Netty. We’ll build both JVM and Native Docker images. For Spring Boot, additional images will test configurations with Virtual Threads, CDS, and AOT",
-        tags: ["java", "docker", "web", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "webflux", "micronaut", "quarkus", "virtual-threads"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "micronaut", "quarkus", "virtual-threads"],
         source: "github"
     },
     {
@@ -450,6 +450,13 @@ const projects = [
         url: "https://github.com/ivangfr/spring-boot-grpc-client-server",
         description: "This project aims to create two Spring Boot applications using gRPC: movie-grpc-server and movie-grpc-client. The movie-grpc-lib project defines the gRPC interface that both applications use.",
         tags: ["java", "spring-web-mvc", "spring-boot", "protocol-buffers", "postgresql", "grpc", "client-server"],
+        source: "github"
+    },
+    {
+        name: "spring-boot-user-pass-auth-one-time-token-login",
+        url: "https://github.com/ivangfr/spring-boot-user-pass-auth-one-time-token-login",
+        description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using Username/Password Authentication and One-Time Token Login",
+        tags: ["java", "docker", "spring-boot", "thymeleaf", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
         source: "github"
     },
     {
@@ -1352,7 +1359,7 @@ const projects = [
         name: "Reduce the Startup Time and Memory Footprint of your Java App by 20% and 50% respectively",
         url: "https://itnext.io/reduce-the-startup-time-and-memory-footprint-of-your-java-app-by-20-49fc530f9c9d",
         description: "Using the Class Data Sharing (CDS) JVM Feature to Reduce Startup Time and Memory Footprint of Java Applications",
-        tags: ["java", "spring-web-mvc", "spring-boot", "cds", "class-data-sharing"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "cds"],
         source: "medium"
     },
     {
@@ -1381,6 +1388,62 @@ const projects = [
         url: "https://itnext.io/deploying-serverless-producer-consumer-spring-boot-apps-in-knative-minikube-kubernetes-c58bb26b1f08",
         description: "Step-by-step guide on deploying the Serverless News Producer and Consumer apps in Knative Minikube (Kubernetes)",
         tags: ["kubernetes", "serverless", "helm", "minikube", "helm-charts", "kubectl", "knative","knative-eventing", "strimzi", "quarkus", "kafka"],
+        source: "medium"
+    },
+    {
+        name: "Dockerizing and Comparing CDS JAR vs. Uber JAR: Achieving 20% Faster Startup Times",
+        url: "https://itnext.io/dockerizing-and-comparing-cds-jar-vs-uber-jar-achieving-20-faster-startup-times-31756adef99b",
+        description: "Analyzing Startup Performance of Dockerized Greetings App with CDS JAR vs. Uber JAR",
+        tags: ["java", "spring-web-mvc", "spring-boot", "cds", "docker"],
+        source: "medium"
+    },
+    {
+        name: "CDS + AOT: Over 50% Reduction in Startup Time for Dockerized Spring Boot Apps",
+        url: "https://itnext.io/cds-aot-over-50-reduction-in-startup-time-for-dockerized-spring-boot-apps-e417aa68d936",
+        description: "Using Class Data Sharing (CDS) and Ahead of Time (AOT) Optimizations to Reduce Startup Time and Memory Footprint",
+        tags: ["java", "spring-web-mvc", "spring-boot", "cds", "aot", "docker"],
+        source: "medium"
+    },
+    {
+        name: "GraalVM Native: Reduce the Startup Time and Memory Footprint by 100% and 50% respectively",
+        url: "https://itnext.io/graalvm-native-reduce-the-startup-time-and-memory-footprint-by-100-and-50-respectively-18217d6b0c80",
+        description: "Using GraalVM Native to Reduce Startup Time and Memory Footprint of Dockerized Greetings App",
+        tags: ["java", "spring-web-mvc", "spring-boot", "graalvm", "native", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Battle: Quarkus 3.12.0 vs. Micronaut 4.5.0 vs. Spring Boot 3.3.1",
+        url: "https://itnext.io/battle-quarkus-3-12-0-vs-micronaut-4-5-0-vs-spring-boot-3-3-1-b9a4424fc52f",
+        description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"]
+        source: "medium"
+    },
+    {
+        name: "Spring Boot Performance Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://itnext.io/spring-boot-performance-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-29295c8099b0",
+        description: "An In-depth Analysis of Performance and Efficiency Using Various Dockerized Spring Boot Configurations",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot 3.3.2 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://itnext.io/spring-boot-3-3-2-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-42d3b704e88e",
+        description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.3.2 Dockerized with Various Configurations",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Choosing the Best Docker Image Tool for your Spring Boot App: Buildpacks vs. Jib vs. Dockerfile",
+        url: "https://itnext.io/choosing-the-best-docker-image-tool-for-your-spring-boot-app-buildpacks-vs-jib-vs-dockerfile-f76f241bc0ff",
+        description: "A Comparative Analysis of Buildpacks, Jib, and Dockerfile for Spring Boot",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "dockerfile", "jib", "paketo-buildpacks"],
+        source: "medium"
+    },
+    {
+        name: "Choosing the Best Embedded Web Server for your Spring Boot App: Tomcat vs. Jetty vs. Undertow",
+        url: "https://itnext.io/choosing-the-best-embedded-web-server-for-your-spring-boot-app-tomcat-vs-jetty-vs-undertow-0086427d124e",
+        description: "A Comparative Analysis of Tomcat, Jetty, and Undertow for Spring Boot apps using Spring Web",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "tomcat", "jetty", "undertow"],
         source: "medium"
     }
 ]
