@@ -71,7 +71,7 @@ const projects = [
         name: "springboot-react-keycloak",
         url: "https://github.com/ivangfr/springboot-react-keycloak",
         description: "The goal of this project is to secure movies-app using Keycloak (with PKCE). movies-app consists of two applications: one is a Spring Boot Rest API called movies-api and another is a React application called movies-ui.",
-        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "keycloak", "react", "postgresql", "spring-security", "omdb-api", "mapstruct", "spring-data-mongodb", "semantic-ui-react", "pkce", "oauth2-resource-server", "dicebear", "springdoc-openapi"],
+        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "keycloak", "react", "postgresql", "spring-security", "omdb-api", "spring-data-mongodb", "semantic-ui-react", "pkce", "oauth2-resource-server", "dicebear", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -127,7 +127,7 @@ const projects = [
         name: "spring-cloud-stream-kafka-elasticsearch",
         url: "https://github.com/ivangfr/spring-cloud-stream-kafka-elasticsearch",
         description: "The goal of this project is to implement a \"News\" processing pipeline composed of five Spring Boot applications: producer-api, categorizer-service, collector-service, publisher-api and news-client.",
-        tags: ["java", "docker", "elasticsearch", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "eureka", "zipkin", "mapstruct", "spring-cloud-stream", "spring-cloud-sleuth", "spring-data-elasticsearch", "jib", "springdoc-openapi", "spring-cloud-openfeign"],
+        tags: ["java", "docker", "elasticsearch", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "eureka", "zipkin", "spring-cloud-stream", "spring-data-elasticsearch", "jib", "springdoc-openapi", "spring-cloud-openfeign"],
         source: "github"
     },
     {
@@ -155,7 +155,7 @@ const projects = [
         name: "spring-cloud-stream-event-sourcing-testcontainers",
         url: "https://github.com/ivangfr/spring-cloud-stream-event-sourcing-testcontainers",
         description: "Goal: create a Spring Boot application that handles users using Event Sourcing. So, whenever a user is created, updated, or deleted, an event informing this change is sent to Kafka. Also, we will implement another application that listens to those events and saves them in Cassandra. Finally, we will use Testcontainers for end-to-end testing.",
-        tags: ["mysql", "java", "docker", "json", "spring-web-mvc", "kafka", "cassandra", "spring-boot", "avro", "native", "schema-registry", "graalvm", "spring-data-jpa", "mapstruct", "testcontainers", "spring-cloud-stream", "spring-data-cassandra", "jib", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "json", "spring-web-mvc", "kafka", "cassandra", "spring-boot", "avro", "schema-registry", "spring-data-jpa", "testcontainers", "spring-cloud-stream", "spring-data-cassandra", "jib", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -239,7 +239,7 @@ const projects = [
         name: "springboot-graphql-databases",
         url: "https://github.com/ivangfr/springboot-graphql-databases",
         description: "The goal of this project is to explore GraphQL. For it, we will implement two microservices: author-book-api and book-review-api.",
-        tags: ["mysql", "java", "graphql", "docker", "spring-web-mvc", "spring-boot", "mongodb", "zipkin", "spring-data-jpa", "mapstruct", "spring-data-mongodb", "springdoc-openapi", "spring-cloud-openfeign", "spring-graphql"],
+        tags: ["mysql", "java", "graphql", "docker", "spring-web-mvc", "spring-boot", "mongodb", "zipkin", "spring-data-jpa", "spring-data-mongodb", "springdoc-openapi", "spring-cloud-openfeign", "spring-graphql"],
         source: "github"
     },
     {
@@ -266,8 +266,8 @@ const projects = [
     {
         name: "springboot-jpa-studies",
         url: "https://github.com/ivangfr/springboot-jpa-studies",
-        description: "The goal of this project is to study JPA Batch Processing (i.e, insert / update / delete a set of records in a single command), JPA Locking and Datetime in JPA.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "spring-boot", "postgresql", "spring-data-jpa", "mapstruct", "testcontainers", "springdoc-openapi", "database-batch", "database-locking"],
+        description: "The goal of this project is to study JPA Batch Processing (i.e, insert / update / delete a set of records in a single command) and JPA Locking.",
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "spring-boot", "postgresql", "spring-data-jpa", "testcontainers", "springdoc-openapi", "database-batch", "database-locking"],
         source: "github"
     },
     {
@@ -288,7 +288,7 @@ const projects = [
         name: "springboot-elasticsearch-thymeleaf",
         url: "https://github.com/ivangfr/springboot-elasticsearch-thymeleaf",
         description: "The goal of this project is to implement an application called product-app. It consists of two Spring Boot services: product-api (backend) and product-ui (frontend). Data will be stored in Elasticsearch",
-        tags: ["java", "elasticsearch", "spring-web-mvc", "spring-boot", "thymeleaf", "mapstruct", "spring-data-elasticsearch", "http-interface", "jib", "springdoc-openapi"],
+        tags: ["java", "elasticsearch", "spring-web-mvc", "spring-boot", "thymeleaf", "spring-data-elasticsearch", "http-interface", "jib", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -379,7 +379,7 @@ const projects = [
         name: "springboot-testing-mysql",
         url: "https://github.com/ivangfr/springboot-testing-mysql",
         description: "Goals: 1) Create a simple Spring Boot application to manage users; 2) Explore the utilities and annotations that Spring Boot provides for testing; 3) Test using Testcontainers.",
-        tags: ["mysql", "java", "unit-testing", "spring-web-mvc", "spring-boot", "integration-testing", "spring-data-jpa", "mapstruct", "testcontainers", "springdoc-openapi"],
+        tags: ["mysql", "java", "unit-testing", "spring-web-mvc", "spring-boot", "integration-testing", "spring-data-jpa", "testcontainers", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -448,8 +448,8 @@ const projects = [
     {
         name: "spring-boot-grpc-client-server",
         url: "https://github.com/ivangfr/spring-boot-grpc-client-server",
-        description: "This project aims to create two Spring Boot applications using gRPC: movie-grpc-server and movie-grpc-client. The movie-grpc-lib project defines the gRPC interface that both applications use.",
-        tags: ["java", "spring-web-mvc", "spring-boot", "protocol-buffers", "postgresql", "grpc", "client-server"],
+        description: "The goal of this project is to implement two Spring Boot applications using gRPC: the server, called movie-grpc-server, and the shell client, named movie-grpc-client. The library movie-grpc-lib defines the gRPC interface that both the server and client applications use.",
+        tags: ["java", "spring-web-mvc", "spring-boot", "protocol-buffers", "postgresql", "spring-data-jpa", "grpc", "client-server"],
         source: "github"
     },
     {
@@ -1415,7 +1415,7 @@ const projects = [
         name: "Battle: Quarkus 3.12.0 vs. Micronaut 4.5.0 vs. Spring Boot 3.3.1",
         url: "https://itnext.io/battle-quarkus-3-12-0-vs-micronaut-4-5-0-vs-spring-boot-3-3-1-b9a4424fc52f",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"]
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"],
         source: "medium"
     },
     {
