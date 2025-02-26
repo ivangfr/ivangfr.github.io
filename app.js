@@ -140,8 +140,8 @@ const projects = [
     {
         name: "springboot-keycloak-mongodb-testcontainers",
         url: "https://github.com/ivangfr/springboot-keycloak-mongodb-testcontainers",
-        description: "The goals of this project are: 1) Create a Spring Boot application that manages books, called book-service; 2) Use Keycloak as OpenID Connect Provider; 3) Test using Testcontainers; 4) Explore the utilities and annotations that Spring Boot provides when testing applications.",
-        tags: ["java", "docker", "unit-testing", "spring-web-mvc", "spring-boot", "mongodb", "keycloak", "integration-testing", "spring-security", "mapstruct", "testcontainers", "spring-data-mongodb", "springdoc-openapi", "oauth2-resourceserver"],
+        description: "The goals of this project are to: 1) Create a Spring Boot application that manages books, called book-service; 2) Use Keycloak as OpenID Connect provider; 3) Test using Testcontainers; 4) Explore the utilities and annotations that Spring Boot provides for testing applications.",
+        tags: ["java", "docker", "unit-testing", "spring-web-mvc", "spring-boot", "mongodb", "keycloak", "integration-testing", "spring-security", "testcontainers", "spring-data-mongodb", "springdoc-openapi", "oauth2-resourceserver"],
         source: "github"
     },
     {
@@ -197,7 +197,7 @@ const projects = [
         name: "axon-springboot-websocket",
         url: "https://github.com/ivangfr/axon-springboot-websocket",
         description: "The goal is to explore Axon. We will develop a food-ordering app comprising 3 Spring Boot applications: customer-service, restaurant-service, and food-ordering-service. These services are implemented with CQRS and Event Sourcing, utilizing the Axon Framework. They connect to axon-server, which serves as the Event Store and Message Routing solution.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "mapstruct", "postgresql", "jib", "axon-server", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "postgresql", "jib", "axon-server", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -393,7 +393,7 @@ const projects = [
         name: "okta-springboot",
         url: "https://github.com/ivangfr/okta-springboot",
         description: "The goal of this project is to develop a straightforward Spring Boot REST API application, named simple-service, which utilizes Okta for authentication handling.",
-        tags: ["java", "spring-web-mvc", "spring-boot", "native", "spring-security", "graalvm", "oauth2-client", "okta", "oauth2-resource-server", "jib", "thyemleaf"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "oauth2-client", "okta", "oauth2-resource-server", "jib", "thymeleaf"],
         source: "github"
     },
     {
@@ -457,6 +457,20 @@ const projects = [
         url: "https://github.com/ivangfr/spring-boot-user-pass-auth-one-time-token-login",
         description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using Username/Password Authentication and One-Time Token Login",
         tags: ["java", "docker", "spring-boot", "thymeleaf", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
+        source: "github"
+    },
+    {
+        name: "spring-boot-ldap-auth-one-time-token-login",
+        url: "https://github.com/ivangfr/spring-boot-ldap-auth-one-time-token-login",
+        description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using their LDAP pre-defined account LDAP Authentication and One-Time Token Login",
+        tags: ["java", "docker", "ldap", "spring-boot", "thymeleaf", "openldap", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
+        source: "github"
+    },
+    {
+        name: "h3-hexagon-mapper",
+        url: "https://github.com/ivangfr/h3-hexagon-mapper",
+        description: "This project is a web-based tool for visualizing and interacting with H3 hexagons on a map. It allows users to add and remove hexagons, adjust their resolution, change their color, and add markers.",
+        tags: ["javascript", "h3", "openstreetmap", "leaflet", "geospatial", "hexagon", "h3-js"],
         source: "github"
     },
     {
