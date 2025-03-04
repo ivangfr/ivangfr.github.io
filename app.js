@@ -92,7 +92,7 @@ const projects = [
         name: "springboot-kafka-connect-jdbc-streams",
         url: "https://github.com/ivangfr/springboot-kafka-connect-jdbc-streams",
         description: "Project goal: Explore Kafka, Kafka Connect, and Kafka Streams. Components: store-api: Inserts/updates MySQL records. Source Connectors: Monitor MySQL changes, push messages to Kafka. Sink Connectors: Listen to Kafka, insert/update Elasticsearch docs. store-streams: Listens to Kafka, processes with Kafka Streams, pushes new messages to Kafka.",
-        tags: ["mysql", "java", "docker", "elasticsearch", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "kafka-connect", "spring-data-jpa", "kafka-streams", "mapstruct", "spring-cloud-stream", "jib", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "elasticsearch", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "kafka-connect", "spring-data-jpa", "kafka-streams", "spring-cloud-stream", "jib", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -469,7 +469,7 @@ const projects = [
     {
         name: "h3-hexagon-mapper",
         url: "https://github.com/ivangfr/h3-hexagon-mapper",
-        description: "This project is a web-based tool for visualizing and interacting with H3 hexagons on a map. It allows users to add and remove hexagons, adjust their resolution, change their color, and add markers.",
+        description: "This project is a web tool that helps you see and interact with H3 hexagons on a map. You can add or remove hexagons, change their size, color, and transparency, add or remove markers, and save or load everything as a GeoJSON file.",
         tags: ["javascript", "h3", "openstreetmap", "leaflet", "geospatial", "hexagon", "h3-js"],
         source: "github"
     },
@@ -1233,14 +1233,14 @@ const projects = [
         name: "Java Microservice Framework’s Battles: Quarkus vs. Micronaut vs. Spring Boot",
         url: "https://itnext.io/java-microservice-frameworks-battles-quarkus-vs-micronaut-vs-spring-boot-2321dc5712ae",
         description: "Benchmarking the most well-known Java Microservice Frameworks",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
         source: "medium"
     },
     {
         name: "Battle: Quarkus 3.7.2 vs. Micronaut 4.3.1 vs. Spring Boot 3.2.2",
         url: "https://itnext.io/battle-quarkus-3-7-2-vs-micronaut-4-3-1-vs-spring-boot-3-2-2-8d6765e15e45",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
         source: "medium"
     },
     {
@@ -1429,7 +1429,7 @@ const projects = [
         name: "Battle: Quarkus 3.12.0 vs. Micronaut 4.5.0 vs. Spring Boot 3.3.1",
         url: "https://itnext.io/battle-quarkus-3-12-0-vs-micronaut-4-5-0-vs-spring-boot-3-3-1-b9a4424fc52f",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
         source: "medium"
     },
     {
@@ -1459,5 +1459,40 @@ const projects = [
         description: "A Comparative Analysis of Tomcat, Jetty, and Undertow for Spring Boot apps using Spring Web",
         tags: ["java", "docker", "spring-web-mvc", "spring-boot", "tomcat", "jetty", "undertow"],
         source: "medium"
-    }
+    },
+    {
+        name: "Implementing a Quarkus REST API using PostgreSQL as Database",
+        url: "https://itnext.io/implementing-a-quarkus-rest-api-using-postgresql-as-database-c7a4fa70a734",
+        description: "Step-by-step guide on how to implement the Movie API, a Quarkus application that uses PostgreSQL as database",
+        tags: ["java", "quarkus", "postgresql", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Micronaut REST API using PostgreSQL as Database",
+        url: "https://itnext.io/implementing-a-micronaut-rest-api-using-postgresql-as-database-6b6671743440",
+        description: "Step-by-step guide on how to implement the Movie API, a Micronaut application that uses PostgreSQL as database",
+        tags: ["java", "micronaut", "postgresql", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Java Frameworks Performance Benchmark: Spring Boot vs. Quarkus vs. Micronaut",
+        url: "https://itnext.io/java-frameworks-performance-benchmark-spring-boot-vs-quarkus-vs-micronaut-028b6dbfef2e",
+        description: "Evaluating Performance and Efficiency Across JVM and Native Modes with Web and Reactive Configurations",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        source: "medium"
+    },
+    {
+        name: "Performance Benchmark: Spring Boot 3.3.2 vs. Quarkus 3.13.2 vs. Micronaut 4.5.1",
+        url: "https://itnext.io/performance-benchmark-spring-boot-3-3-2-vs-quarkus-3-13-2-vs-micronaut-4-5-1-515bae82d04f",
+        description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        source: "medium"
+    },
+    {
+        name: "Implementing gRPC Server and Client using Spring Boot",
+        url: "https://itnext.io/implementing-grpc-server-and-client-using-spring-boot-4411b26138be",
+        description: "Guide on how to implement two Spring Boot apps, Movie Server and Movie Client, that communicate over gRPC",
+        tags: ["java", "spring-web-mvc", "spring-boot", "protocol-buffers", "postgresql", "spring-data-jpa", "grpc", "client-server"],
+        source: "medium"
+    },
 ]
