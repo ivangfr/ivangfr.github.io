@@ -105,7 +105,7 @@ const projects = [
     {
         name: "springboot-react-social-login",
         url: "https://github.com/ivangfr/springboot-react-social-login",
-        description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a font-end React application called movie-ui. Besides, we will use OAuth2 (Social Login) to secure both applications.",
+        description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a font-end React application called movie-ui. Additionally, we will use OAuth2 (Social Login) to secure both applications.",
         tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "social-login", "oauth2-client", "semantic-ui-react", "google-oauth2", "springdoc-openapi", "github-oauth2", "github-oauth-login", "google-oauth-login"],
         source: "github"
     },
@@ -204,7 +204,7 @@ const projects = [
         name: "spring-webflux-reactive-databases",
         url: "https://github.com/ivangfr/spring-webflux-reactive-databases",
         description: "The goal of this project is to play with Spring WebFlux on client and server side. For it, we will implement some Spring Boot Java Web applications, product-api, customer-api, order-api and client-shell, and use reactive NoSQL database like Cassandra, MongoDB, Postgres and MySQL.",
-        tags: ["mysql", "java", "docker", "cassandra", "spring-boot", "mongodb", "postgresql", "spring-aop", "mapstruct", "spring-shell", "spring-webflux", "spring-data-mongodb-reactive", "spring-data-cassandra-reactive", "spring-data-r2dbc", "springdoc-openapi", "http-interface"],
+        tags: ["mysql", "java", "docker", "cassandra", "spring-boot", "mongodb", "postgresql", "spring-aop", "spring-shell", "spring-webflux", "spring-data-mongodb-reactive", "spring-data-cassandra-reactive", "spring-data-r2dbc", "springdoc-openapi", "http-interface"],
         source: "github"
     },
     {
@@ -301,7 +301,7 @@ const projects = [
     {
         name: "springboot-aws-localstack-dynamodb-lambda-sns-sqs",
         url: "https://github.com/ivangfr/springboot-aws-localstack-dynamodb-lambda-sns-sqs",
-        description: "In this project, we are going to use LocalStack to simulate locally, some services provided by AWS Cloud such as: DynamoDB, Lambda, SNS and SQS. Also, in order to simplify the use of AWS managed services, we are going to use Spring Cloud AWS.",
+        description: "In this project, we will use LocalStack to locally simulate some services provided by AWS Cloud such as: DynamoDB, Lambda, SNS and SQS. Additionally, to simplify the use of AWS managed services, we will use Spring Cloud AWS.",
         tags: ["java", "docker", "aws", "spring-web-mvc", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "semantic-ui", "spring-cloud-aws"],
         source: "github"
     },
@@ -329,7 +329,7 @@ const projects = [
     {
         name: "springboot-aws-localstack-opensearch-s3-secretsmanager",
         url: "https://github.com/ivangfr/springboot-aws-localstack-opensearch-s3-secretsmanager",
-        description: "In this project, we are going to use LocalStack to simulate locally, some services provided by AWS Cloud such as OpenSearch, S3, and Secrets Manager. Also, in order to simplify the use of AWS managed services, we are going to use Spring Cloud AWS.",
+        description: "In this project, we will use LocalStack to locally simulate some services provided by AWS Cloud such as OpenSearch, S3, and Secrets Manager. Additionally, to simplify the use of AWS managed services, we will use Spring Cloud AWS.",
         tags: ["java", "docker", "aws", "spring-web-mvc", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "springdoc-openapi", "aws-opensearch", "semantic-ui", "spring-cloud-aws"],
         source: "github"
     },
@@ -434,7 +434,7 @@ const projects = [
     {
         name: "api-oha-benchmarker",
         url: "https://github.com/ivangfr/api-oha-benchmarker",
-        description: "api-oha-benchmarker is a tool to easily benchmark APIs. It uses Testcontainers to manage Docker containers. The load testing is done with OHA. To collect information like CPU and memory usage, it uses the docker stats command. It also uses cAdvisor to visually monitor CPU and memory usage.",
+        description: "api-oha-benchmarker is a tool to easily benchmark APIs. It uses Testcontainers to manage Docker containers. Load testing is done with OHA. To collect information such as CPU and memory usage, it uses the docker stats command. It also uses cAdvisor to visually monitor CPU and memory usage.",
         tags: ["java", "docker", "spring-boot", "load-testing", "cadvisor", "testcontainers", "oha"],
         source: "github"
     },
@@ -1495,4 +1495,39 @@ const projects = [
         tags: ["java", "spring-web-mvc", "spring-boot", "protocol-buffers", "postgresql", "spring-data-jpa", "grpc", "client-server"],
         source: "medium"
     },
+    {
+        name: "Battle: Quarkus 3.14.2 vs. Micronaut 4.6.1 vs. Spring Boot 3.3.3",
+        url: "https://itnext.io/battle-quarkus-3-14-2-vs-micronaut-4-6-1-vs-spring-boot-3-3-3-41947196fb31",
+        description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        source: "medium"
+    },
+    {
+        name: "Securing a Quarkus REST API using Keycloak for IAM",
+        url: "https://itnext.io/securing-a-quarkus-rest-api-using-keycloak-for-iam-76e875a65282",
+        description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
+        tags: ["java", "quarkus", "keycloak", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Securing a Micronaut REST API using Keycloak for IAM",
+        url: "https://itnext.io/securing-a-micronaut-rest-api-using-keycloak-for-iam-5e812eb46594",
+        description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
+        tags: ["java", "micronaut", "keycloak", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Configuring Network Policies in Kubernetes Namespaces",
+        url: "https://itnext.io/configuring-network-policies-in-kubernetes-namespaces-136438194698",
+        description: "Deploying a Quarkus API and Managing Cross-Namespace Access in Kubernetes",
+        tags: ["kubernetes", "minikube", "kubectl", "network-policies"],
+        source: "medium"
+    },
+    {
+        name: "Securing a Spring Boot REST API using Keycloak for IAM",
+        url: "https://itnext.io/securing-a-spring-boot-rest-api-using-keycloak-for-iam-213579e9f1b0",
+        description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
+        tags: ["java", "spring-boot", "keycloak", "docker"],
+        source: "medium"
+    }
 ]
