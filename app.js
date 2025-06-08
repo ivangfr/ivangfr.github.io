@@ -155,7 +155,7 @@ const projects = [
         name: "spring-cloud-stream-event-sourcing-testcontainers",
         url: "https://github.com/ivangfr/spring-cloud-stream-event-sourcing-testcontainers",
         description: "Goal: create a Spring Boot application that handles users using Event Sourcing. So, whenever a user is created, updated, or deleted, an event informing this change is sent to Kafka. Also, we will implement another application that listens to those events and saves them in Cassandra. Finally, we will use Testcontainers for end-to-end testing.",
-        tags: ["mysql", "java", "docker", "json", "spring-web-mvc", "kafka", "cassandra", "spring-boot", "avro", "schema-registry", "spring-data-jpa", "testcontainers", "spring-cloud-stream", "spring-data-cassandra", "jib", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "json", "spring-web-mvc", "kafka", "cassandra", "spring-boot", "avro", "schema-registry", "spring-data-jpa", "testcontainers", "spring-cloud-stream", "spring-data-cassandra", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -197,7 +197,7 @@ const projects = [
         name: "axon-springboot-websocket",
         url: "https://github.com/ivangfr/axon-springboot-websocket",
         description: "The goal is to explore Axon. We will develop a food-ordering app comprising 3 Spring Boot applications: customer-service, restaurant-service, and food-ordering-service. These services are implemented with CQRS and Event Sourcing, utilizing the Axon Framework. They connect to axon-server, which serves as the Event Store and Message Routing solution.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "postgresql", "jib", "axon-server", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "postgresql", "axon-server", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -266,7 +266,7 @@ const projects = [
     {
         name: "springboot-jpa-studies",
         url: "https://github.com/ivangfr/springboot-jpa-studies",
-        description: "The goal of this project is to study JPA Batch Processing (i.e, insert / update / delete a set of records in a single command) and JPA Locking.",
+        description: "The goal of this project is to study JPA Batch Processing (i.e., inserting, updating, or deleting a set of records in a single command) and JPA Locking.",
         tags: ["mysql", "java", "docker", "spring-web-mvc", "spring-boot", "postgresql", "spring-data-jpa", "testcontainers", "springdoc-openapi", "database-batch", "database-locking"],
         source: "github"
     },
@@ -288,7 +288,7 @@ const projects = [
         name: "springboot-elasticsearch-thymeleaf",
         url: "https://github.com/ivangfr/springboot-elasticsearch-thymeleaf",
         description: "The goal of this project is to implement an application called product-app. It consists of two Spring Boot services: product-api (backend) and product-ui (frontend). Data will be stored in Elasticsearch",
-        tags: ["java", "elasticsearch", "spring-web-mvc", "spring-boot", "thymeleaf", "spring-data-elasticsearch", "http-interface", "jib", "springdoc-openapi"],
+        tags: ["java", "elasticsearch", "spring-web-mvc", "spring-boot", "thymeleaf", "spring-data-elasticsearch", "http-interface", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -1254,14 +1254,14 @@ const projects = [
         name: "Spring Boot apps to trigger and consume DynamoDB News table updates using AWS Lambda, SNS and SQS",
         url: "https://itnext.io/spring-boot-apps-to-trigger-and-consume-dynamodb-news-table-updates-using-aws-lambda-sns-and-sqs-957570cf9a3a",
         description: "Spring Boot + AWS + DynamoDB + Lambda + SNS + SQS + LocalStack",
-        tags: ["java", "docker", "aws", "spring-web-mvc", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "jib", "semantic-ui", "spring-cloud-aws"],
+        tags: ["java", "docker", "aws", "spring-web-mvc", "spring-boot", "thymeleaf", "aws-lambda", "websocket", "aws-sqs", "aws-sns", "aws-dynamodb", "localstack", "springdoc-openapi", "spring-cloud-function-adapter-aws", "semantic-ui", "spring-cloud-aws"],
         source: "medium"
     },
     {
         name: "Spring Boot Apps for Movie Indexing/Search with AWS OpenSearch, S3 and Secrets Manager",
         url: "https://itnext.io/spring-boot-apps-for-movie-indexing-search-with-aws-opensearch-s3-and-secrets-manager-a95ad0697e51",
         description: "Spring Boot + AWS + OpenSearch + S3 + Secrets Manager + LocalStack",
-        tags: ["java", "docker", "aws", "spring-web-mvc", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "jib", "springdoc-openapi", "aws-opensearch", "semantic-ui", "spring-cloud-aws"],
+        tags: ["java", "docker", "aws", "spring-web-mvc", "spring-boot", "thymeleaf", "aws-s3", "omdb-api", "localstack", "aws-secrets-manager", "springdoc-openapi", "aws-opensearch", "semantic-ui", "spring-cloud-aws"],
         source: "medium"
     },
     {
@@ -1345,7 +1345,7 @@ const projects = [
         name: "Nginx Load Balancing Requests to a Keycloak Cluster and a Spring Boot App that uses Keycloak as IAM",
         url: "https://itnext.io/nginx-load-balancing-requests-to-a-keycloak-cluster-and-a-spring-boot-app-that-uses-keycloak-as-iam-8e9e8280587d",
         description: "Configuring Keycloak and Simple Service app with two instances each and adding Nginx in front of them as a reverse proxy and load balancer",
-        tags: ["java", "docker", "nginx", "spring-web-mvc", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "jib", "load-balancer"],
+        tags: ["java", "docker", "nginx", "spring-web-mvc", "spring-boot", "keycloak", "postgresql", "spring-security", "oauth2-resource-server", "load-balancer"],
         source: "medium"
     },
     {
@@ -1454,7 +1454,7 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Choosing the Best Embedded Web Server for your Spring Boot App: Tomcat vs. Jetty vs. Undertow",
+        name: "What is the Best Embedded Web Server for Spring Boot version 3.3.2: Tomcat vs. Jetty vs. Undertow",
         url: "https://itnext.io/choosing-the-best-embedded-web-server-for-your-spring-boot-app-tomcat-vs-jetty-vs-undertow-0086427d124e",
         description: "A Comparative Analysis of Tomcat, Jetty, and Undertow for Spring Boot apps using Spring Web",
         tags: ["java", "docker", "spring-web-mvc", "spring-boot", "tomcat", "jetty", "undertow"],
@@ -1528,6 +1528,69 @@ const projects = [
         url: "https://itnext.io/securing-a-spring-boot-rest-api-using-keycloak-for-iam-213579e9f1b0",
         description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
         tags: ["java", "spring-boot", "keycloak", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Quarkus Reactive REST API using MongoDB as Database",
+        url: "https://itnext.io/implementing-a-quarkus-reactive-rest-api-using-mongodb-as-database-ca76d8ef5f07",
+        description: "Step-by-step guide on how to implement the Book Reactive API, a Quarkus application that uses MongoDB as database",
+        tags: ["java", "quarkus", "mongodb", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing a Micronaut Reactive REST API using MongoDB as Database",
+        url: "https://itnext.io/implementing-a-micronaut-reactive-rest-api-using-mongodb-as-database-c819e5d196f1",
+        description: "Step-by-step guide on how to implement the Book Reactive API, a Micronaut application that uses MongoDB as database",
+        tags: ["java", "micronaut", "mongodb", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Battle: Quarkus 3.15.1 vs. Micronaut 4.6.3 vs. Spring Boot 3.3.4",
+        url: "https://itnext.io/battle-quarkus-3-15-1-vs-micronaut-4-6-3-vs-spring-boot-3-3-4-9ae4a7cefac6",
+        description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        source: "medium"
+    },
+    {
+        name: "Configuring Istio Authorization Policy in Kubernetes Namespaces",
+        url: "https://itnext.io/configuring-istio-authorization-policy-in-kubernetes-namespaces-aec9a630b063",
+        description: "Deploying a Quarkus API and Managing Cross-Namespace Access in Kubernetes",
+        tags: ["kubernetes", "minikube", "kubectl", "istio"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot 3.3.4 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://itnext.io/spring-boot-3-3-4-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-5a3ab117054c",
+        description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.3.4 Dockerized with Various Configurations",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Performance Benchmark: Spring Boot 3.3.4 vs. Quarkus 3.15.1 vs. Micronaut 4.6.3",
+        url: "https://itnext.io/performance-benchmark-spring-boot-3-3-4-vs-quarkus-3-15-1-vs-micronaut-4-6-3-9691c4cfcb2a",
+        description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot App with Username/Password Authentication and One-Time Token Login",
+        url: "https://itnext.io/spring-boot-app-with-username-password-authentication-and-one-time-token-login-fe3da92f0cb0",
+        description: "Introducing Movies App, which allows users to log in using their username/password and the new Spring Security feature, One-Time Token",
+        tags: ["java", "docker", "spring-boot", "thymeleaf", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
+        source: "medium"
+    },
+    {
+        name: "Setting Up Keycloak to Use HTTPS",
+        url: "https://itnext.io/setting-up-keycloak-to-use-https-f8c473a906c1",
+        description: "A Step-by-Step Guide to Configuring HTTPS (using PEM files) for a Keycloak Docker Container Running Locally",
+        tags: ["keycloak", "https", "tls", "certificate"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot App with LDAP Authentication and One-Time Token Login",
+        url: "https://itnext.io/spring-boot-app-with-ldap-authentication-and-one-time-token-login-085bb547d877",
+        description: "Introducing Movies App, which allows users to log in using their LDAP credentials and the new Spring Security feature, One-Time Token",
+        tags: ["java", "docker", "ldap", "spring-boot", "thymeleaf", "openldap", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
         source: "medium"
     }
 ]
