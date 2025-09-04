@@ -189,7 +189,7 @@ const projects = [
     {
         name: "springboot-vault-examples",
         url: "https://github.com/ivangfr/springboot-vault-examples",
-        description: "The goal of this project is to explore the capabilities of Vault. To achieve this, we will develop applications that utilize Vault for storing and retrieving secrets. Vault dynamically generates credentials for accessing databases and relies on Consul as the backend. The authentication method employed in Vault is AppRole.",
+        description: "The goal of this project is to explore the capabilities of Vault. To achieve this, we will develop applications that utilize Vault to store and retrieve secrets. Vault dynamically generates credentials for accessing databases and relies on Consul as the backend. The authentication method employed in Vault is AppRole.",
         tags: ["mysql", "java", "docker", "spring-web-mvc", "cassandra", "spring-boot", "consul", "vault", "spring-data-jpa", "spring-cloud-vault", "spring-vault", "jib", "springdoc-openapi"],
         source: "github"
     },
@@ -210,8 +210,8 @@ const projects = [
     {
         name: "spring-data-jpa-r2dbc-mysql-stream-million-records",
         url: "https://github.com/ivangfr/spring-data-jpa-r2dbc-mysql-stream-million-records",
-        description: "In this project, we will implement two Spring Boot Java Web application called, streamer-data-jpa and streamer-data-r2dbc. They both will fetch 1 million of customer's data from MySQL and stream them to Kafka. The main goal is to compare the application's performance and resource utilization.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "kafka", "spring-boot", "spring-data-jpa", "jconsole", "cadvisor", "spring-cloud-stream", "spring-webflux", "jib", "spring-data-r2dbc", "kafdrop"],
+        description: "In this project, we will implement two Spring Boot Java Web application called streamer-data-jpa and streamer-data-r2dbc. They both will fetch 1 million of customer records from MySQL and stream them to Kafka. The main goal is to compare the application's performance and resource utilization.",
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "kafka", "spring-boot", "spring-data-jpa", "jconsole", "cadvisor", "spring-cloud-stream", "spring-webflux", "spring-data-r2dbc", "kafdrop"],
         source: "github"
     },
     {
@@ -259,7 +259,7 @@ const projects = [
     {
         name: "spring-kafka-de-serialization-types",
         url: "https://github.com/ivangfr/spring-kafka-de-serialization-types",
-        description: "The goal is to play with Spring Kafka. We've implemented 5 examples of producer and consumer services that exchanges messages through Kafka using different types of serialization and approaches.",
+        description: "The goal is to play with Spring Kafka. We've implemented 5 examples of producer and consumer services that exchange messages through Kafka using different types of serialization and approaches.",
         tags: ["docker", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "spring-kafka", "jib", "java"],
         source: "github"
     },
@@ -1591,6 +1591,41 @@ const projects = [
         url: "https://itnext.io/spring-boot-app-with-ldap-authentication-and-one-time-token-login-085bb547d877",
         description: "Introducing Movies App, which allows users to log in using their LDAP credentials and the new Spring Security feature, One-Time Token",
         tags: ["java", "docker", "ldap", "spring-boot", "thymeleaf", "openldap", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
+        source: "medium"
+    },
+    {
+        name: "Keycloak Clustering Made Easy For Production",
+        url: "https://itnext.io/keycloak-clustering-made-easy-for-production-d8e53396b234",
+        description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
+        tags: ["keycloak", "postgresql", "docker", "docker-compose", "clustering"],
+        source: "medium"
+    },
+    {
+        name: "Running Ollama, DeepSeek and Open WebUI Locally: A Step-by-Step Guide",
+        url: "https://itnext.io/running-ollama-deepseek-and-open-webui-locally-a-step-by-step-guide-cf43d27e1d14",
+        description: "Mitigating AI Security Risks: A Local Setup Solution",
+        tags: ["ollama", "deepseek", "open-webui", "docker", "ai", "security"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot 3.4.3 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://itnext.io/spring-boot-3-4-3-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-47bff836992e",
+        description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.4.3 Dockerized with Various Configurations",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Performance Benchmark: Spring Boot 3.4.3 vs. Quarkus 3.19.3 vs. Micronaut 4.7.6",
+        url: "https://itnext.io/performance-benchmark-spring-boot-3-4-3-vs-quarkus-3-19-3-vs-micronaut-4-7-6-aaadfb0382b4",
+        description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        source: "medium"
+    },
+    {
+        name: "Keycloak Clustering Made Easy For Development",
+        url: "https://itnext.io/keycloak-clustering-made-easy-for-development-b753bdb5dc5e",
+        description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
+        tags: ["keycloak", "postgresql", "docker", "docker-compose", "clustering"],
         source: "medium"
     }
 ]
