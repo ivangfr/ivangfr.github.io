@@ -1597,14 +1597,14 @@ const projects = [
         name: "Keycloak Clustering Made Easy For Production",
         url: "https://itnext.io/keycloak-clustering-made-easy-for-production-d8e53396b234",
         description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
-        tags: ["keycloak", "postgresql", "docker", "docker-compose", "clustering"],
+        tags: ["keycloak", "postgresql", "docker", "docker-compose", "keycloak-cluster"],
         source: "medium"
     },
     {
         name: "Running Ollama, DeepSeek and Open WebUI Locally: A Step-by-Step Guide",
         url: "https://itnext.io/running-ollama-deepseek-and-open-webui-locally-a-step-by-step-guide-cf43d27e1d14",
         description: "Mitigating AI Security Risks: A Local Setup Solution",
-        tags: ["ollama", "deepseek", "open-webui", "docker", "ai", "security"],
+        tags: ["ollama", "deepseek", "open-webui", "docker", "ai"],
         source: "medium"
     },
     {
@@ -1625,7 +1625,7 @@ const projects = [
         name: "Keycloak Clustering Made Easy For Development",
         url: "https://itnext.io/keycloak-clustering-made-easy-for-development-b753bdb5dc5e",
         description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
-        tags: ["keycloak", "postgresql", "docker", "docker-compose", "clustering"],
+        tags: ["keycloak", "postgresql", "docker", "docker-compose", "keycloak-cluster"],
         source: "medium"
     }
 ]
