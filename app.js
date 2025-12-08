@@ -407,7 +407,7 @@ const projects = [
         name: "spring-cloud-stream-solace-pubsub",
         url: "https://github.com/ivangfr/spring-cloud-stream-solace-pubsub",
         description: "The goal of this project is to play with Solace PubSub+. For it, we will implement a producer and consumer of different types of news about many countries and cities.",
-        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "jib", "solace-pubsub"],
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "solace-pubsub"],
         source: "github"
     },
     {
@@ -1626,6 +1626,48 @@ const projects = [
         url: "https://itnext.io/keycloak-clustering-made-easy-for-development-b753bdb5dc5e",
         description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
         tags: ["keycloak", "postgresql", "docker", "docker-compose", "keycloak-cluster"],
+        source: "medium"
+    },
+    {
+        name: "Battle: Quarkus 3.21.0 vs. Micronaut 4.7.6 vs. Spring Boot 3.4.4",
+        url: "https://itnext.io/battle-quarkus-3-21-0-vs-micronaut-4-7-6-vs-spring-boot-3-4-4-07991c9fda04",
+        description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        source: "medium"
+    },
+    {
+        name: "What is the Best Embedded Web Server for Spring Boot version 3.4.4: Tomcat vs. Jetty vs. Undertow",
+        url: "https://itnext.io/what-is-the-best-embedded-web-server-for-spring-boot-version-3-4-4-tomcat-vs-jetty-vs-undertow-c9186a510301",
+        description: "A Comparative Analysis of Tomcat, Jetty, and Undertow for Spring Boot apps using Spring Web and Virtual Threads",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "tomcat", "jetty", "undertow", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "How to Integrate Spring Boot with NumPy (Python) Using GraalPy",
+        url: "https://itnext.io/how-to-integrate-spring-boot-with-numpy-python-using-graalpy-abced925a6b8",
+        description: "Bring the power of Python’s NumPy to your Spring Boot apps",
+        tags: ["java", "spring-boot", "graalpy", "numpy", "python"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot 3.5.3 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://itnext.io/spring-boot-3-5-3-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-87baf806c5bc",
+        description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.5.3 Dockerized with Various Configurations",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Battle: Quarkus 3.24.3 vs. Micronaut 4.9.0 vs. Spring Boot 3.5.3",
+        url: "https://itnext.io/battle-quarkus-3-24-3-vs-micronaut-4-9-0-vs-spring-boot-3-5-3-49e496b3f365",
+        description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        source: "medium"
+    },
+    {
+        name: "Performance Benchmark: Spring Boot 3.5.3 vs. Quarkus 3.24.3 vs. Micronaut 4.9.1",
+        url: "https://itnext.io/performance-benchmark-spring-boot-3-5-3-vs-quarkus-3-24-3-vs-micronaut-4-9-1-8651b4982be3",
+        description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
         source: "medium"
     }
 ]
