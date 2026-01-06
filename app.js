@@ -127,7 +127,7 @@ const projects = [
         name: "spring-cloud-stream-kafka-elasticsearch",
         url: "https://github.com/ivangfr/spring-cloud-stream-kafka-elasticsearch",
         description: "The goal of this project is to implement a \"News\" processing pipeline composed of five Spring Boot applications: producer-api, categorizer-service, collector-service, publisher-api and news-client.",
-        tags: ["java", "docker", "elasticsearch", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "eureka", "zipkin", "spring-cloud-stream", "spring-data-elasticsearch", "jib", "springdoc-openapi", "spring-cloud-openfeign"],
+        tags: ["java", "docker", "elasticsearch", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "eureka", "zipkin", "spring-cloud-stream", "spring-data-elasticsearch", "springdoc-openapi", "spring-cloud-openfeign"],
         source: "github"
     },
     {
@@ -175,8 +175,8 @@ const projects = [
     {
         name: "springboot-rsocket-webflux-aop",
         url: "https://github.com/ivangfr/springboot-rsocket-webflux-aop",
-        description: "The goal of this project is to play with RSocket protocol. For it, we will implement three Spring Boot Java applications, movie-server, movie-client-shell and movie-client-ui. As storage, it's used the reactive NoSQL database MongoDB. All the streaming of movie events and the logging are handling by AOP (Aspect Oriented Programming).",
-        tags: ["java", "docker", "spring-boot", "mongodb", "thymeleaf", "native", "websocket", "semantic-ui", "spring-aop", "spring-shell", "spring-webflux", "rsocket", "spring-data-mongodb-reactive", "graalvm"],
+        description: "The goal of this project is to play with RSocket protocol. To do this, we will implement three Spring Boot Java applications: movie-server, movie-client-shell and movie-client-ui. For storage, the reactive NoSQL database MongoDB is used. All streaming of movie events and logging is handled by AOP (Aspect Oriented Programming).",
+        tags: ["java", "docker", "spring-boot", "mongodb", "thymeleaf", "websocket", "semantic-ui", "spring-aop", "spring-shell", "spring-webflux", "rsocket", "spring-data-mongodb-reactive"],
         source: "github"
     },
     {
@@ -190,7 +190,7 @@ const projects = [
         name: "springboot-vault-examples",
         url: "https://github.com/ivangfr/springboot-vault-examples",
         description: "The goal of this project is to explore the capabilities of Vault. To achieve this, we will develop applications that utilize Vault to store and retrieve secrets. Vault dynamically generates credentials for accessing databases and relies on Consul as the backend. The authentication method employed in Vault is AppRole.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "cassandra", "spring-boot", "consul", "vault", "spring-data-jpa", "spring-cloud-vault", "spring-vault", "jib", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "cassandra", "spring-boot", "consul", "vault", "spring-data-jpa", "spring-cloud-vault", "spring-vault", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -245,7 +245,7 @@ const projects = [
     {
         name: "springboot-kong-plugins",
         url: "https://github.com/ivangfr/springboot-kong-plugins",
-        description: "The goal of this project is to create a simple Spring Boot REST API and securing it with Kong using the LDAP Authentication and Basic Authentication plugins. Besides, we will explore more plugins that Kong offers like: Rate Limiting and Prometheus plugins.",
+        description: "The goal of this project is to create a simple Spring Boot REST API and secure it with Kong using the LDAP Authentication and Basic Authentication plugins. Besides, we will explore more plugins that Kong offers, such as the Rate Limiting and Prometheus plugins.",
         tags: ["java", "docker", "ldap", "spring-web-mvc", "spring-boot", "openldap", "postgresql", "rate-limiting", "prometheus", "kong", "ldap-authentication", "basic-authentication", "kong-plugin", "phpldapadmin"],
         source: "github"
     },
@@ -260,7 +260,7 @@ const projects = [
         name: "spring-kafka-de-serialization-types",
         url: "https://github.com/ivangfr/spring-kafka-de-serialization-types",
         description: "The goal is to play with Spring Kafka. We've implemented 5 examples of producer and consumer services that exchange messages through Kafka using different types of serialization and approaches.",
-        tags: ["docker", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "spring-kafka", "jib", "java"],
+        tags: ["docker", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "spring-kafka", "java"],
         source: "github"
     },
     {
@@ -378,7 +378,7 @@ const projects = [
     {
         name: "springboot-testing-mysql",
         url: "https://github.com/ivangfr/springboot-testing-mysql",
-        description: "Goals: 1) Create a simple Spring Boot application to manage users; 2) Explore the utilities and annotations that Spring Boot provides for testing; 3) Test using Testcontainers.",
+        description: "Goals: 1) Create a simple Spring Boot application to manage users. 2) Explore the utilities and annotations that Spring Boot provides for testing. 3) Test using Testcontainers.",
         tags: ["mysql", "java", "unit-testing", "spring-web-mvc", "spring-boot", "integration-testing", "spring-data-jpa", "testcontainers", "springdoc-openapi"],
         source: "github"
     },
@@ -471,6 +471,13 @@ const projects = [
         url: "https://github.com/ivangfr/h3-hexagon-mapper",
         description: "This project is a web tool that helps you see and interact with H3 hexagons on a map. You can add or remove hexagons, change their size, color, and transparency, add or remove markers, and save or load everything as a GeoJSON file.",
         tags: ["javascript", "h3", "openstreetmap", "leaflet", "geospatial", "hexagon", "h3-js"],
+        source: "github"
+    },
+    {
+        name: "spring-boot-nginx-websocket-rabbitmq-kafka",
+        url: "https://github.com/ivangfr/spring-boot-nginx-websocket-rabbitmq-kafka",
+        description: "This project shows how to implement an interactive news broadcasting app. A user can post news using a REST API, and it gets sent out to users instantly through a live WebSocket connection. Users can react by liking or disliking the news, and the app keeps track of all those reactions to show the total likes and dislikes.",
+        tags: ["java", "docker", "nginx", "kafka", "spring-boot", "rabbitmq", "websocket", "postgresql", "spring-data-jpa", "spring-cloud-stream", "spring-web-mvc"],
         source: "github"
     },
     {
@@ -1668,6 +1675,20 @@ const projects = [
         url: "https://itnext.io/performance-benchmark-spring-boot-3-5-3-vs-quarkus-3-24-3-vs-micronaut-4-9-1-8651b4982be3",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
         tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        source: "medium"
+    },
+    {
+        name: "Implementing an Interactive and Scalable News Broadcasting App",
+        url: "https://medium.com/@ivangfr/implementing-an-interactive-and-scalable-news-broadcasting-app-333aa06ee2cd",
+        description: "Combining Nginx, WebSockets, and message brokers for instant news updates",
+        tags: ["java", "docker", "nginx", "kafka", "spring-boot", "rabbitmq", "websocket", "postgresql", "spring-data-jpa", "spring-cloud-stream", "spring-web-mvc"],
+        source: "medium"
+    },
+    {
+        name: "What is the Best Embedded Web Server for Spring Boot version 4.0.0: Tomcat vs. Jetty",
+        url: "https://medium.com/@ivangfr/what-is-the-best-embedded-web-server-for-spring-boot-version-4-0-0-tomcat-vs-jetty-8a90432c0d27",
+        description: "A Comparative Analysis of Tomcat and Jetty for Spring Boot apps using Spring Web and Virtual Threads",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "tomcat", "jetty", "virtual-threads"],
         source: "medium"
     }
 ]
