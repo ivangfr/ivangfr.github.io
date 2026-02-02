@@ -92,7 +92,7 @@ const projects = [
         name: "springboot-kafka-connect-jdbc-streams",
         url: "https://github.com/ivangfr/springboot-kafka-connect-jdbc-streams",
         description: "Project goal: Explore Kafka, Kafka Connect, and Kafka Streams. Components: store-api: Inserts/updates MySQL records. Source Connectors: Monitor MySQL changes, push messages to Kafka. Sink Connectors: Listen to Kafka, insert/update Elasticsearch docs. store-streams: Listens to Kafka, processes with Kafka Streams, pushes new messages to Kafka.",
-        tags: ["mysql", "java", "docker", "elasticsearch", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "kafka-connect", "spring-data-jpa", "kafka-streams", "spring-cloud-stream", "jib", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "elasticsearch", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "kafka-connect", "spring-data-jpa", "kafka-streams", "spring-cloud-stream", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -1384,7 +1384,7 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Exploring Keycloak Admin REST API",
+        name: "How to Manage Keycloak using the Adom REST API: No UI Required (release 26.0.7)",
         url: "https://medium.com/@ivangfr/exploring-keycloak-admin-rest-api-88c9a8f29604",
         description: "Manage realms, clients, users, and more using Keycloak Admin REST API",
         tags: ["keycloak", "docker", "rest-api"],
@@ -1422,7 +1422,7 @@ const projects = [
         name: "CDS + AOT: Over 50% Reduction in Startup Time for Dockerized Spring Boot Apps",
         url: "https://medium.com/@ivangfr/cds-aot-over-50-reduction-in-startup-time-for-dockerized-spring-boot-apps-e417aa68d936",
         description: "Using Class Data Sharing (CDS) and Ahead of Time (AOT) Optimizations to Reduce Startup Time and Memory Footprint",
-        tags: ["java", "spring-web-mvc", "spring-boot", "cds", "aot", "docker"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "cds", "aot", "docker", "paketo-buildpacks"],
         source: "medium"
     },
     {
@@ -1443,14 +1443,14 @@ const projects = [
         name: "Spring Boot Performance Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
         url: "https://medium.com/@ivangfr/spring-boot-performance-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-29295c8099b0",
         description: "An In-depth Analysis of Performance and Efficiency Using Various Dockerized Spring Boot Configurations",
-        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads", "paketo-buildpacks"],
         source: "medium"
     },
     {
         name: "Spring Boot 3.3.2 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
         url: "https://medium.com/@ivangfr/spring-boot-3-3-2-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-42d3b704e88e",
         description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.3.2 Dockerized with Various Configurations",
-        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads", "paketo-buildpacks"],
         source: "medium"
     },
     {
@@ -1587,7 +1587,7 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Setting Up Keycloak to Use HTTPS",
+        name: "Setting Up Keycloak to Use HTTPS (release 26.0.7)",
         url: "https://medium.com/@ivangfr/setting-up-keycloak-to-use-https-f8c473a906c1",
         description: "A Step-by-Step Guide to Configuring HTTPS (using PEM files) for a Keycloak Docker Container Running Locally",
         tags: ["keycloak", "https", "tls", "certificate"],
@@ -1601,7 +1601,7 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Keycloak Clustering Made Easy For Production",
+        name: "Keycloak Clustering Made Easy For Production (release 26.2.0)",
         url: "https://medium.com/@ivangfr/keycloak-clustering-made-easy-for-production-d8e53396b234",
         description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
         tags: ["keycloak", "postgresql", "docker", "docker-compose", "keycloak-cluster"],
@@ -1618,7 +1618,7 @@ const projects = [
         name: "Spring Boot 3.4.3 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
         url: "https://medium.com/@ivangfr/spring-boot-3-4-3-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-47bff836992e",
         description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.4.3 Dockerized with Various Configurations",
-        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads", "paketo-buildpacks"],
         source: "medium"
     },
     {
@@ -1629,7 +1629,7 @@ const projects = [
         source: "medium"
     },
     {
-        name: "Keycloak Clustering Made Easy For Development",
+        name: "Keycloak Clustering Made Easy For Development (release 26.2.0)",
         url: "https://medium.com/@ivangfr/keycloak-clustering-made-easy-for-development-b753bdb5dc5e",
         description: "Exploring the new JDBC-PING default transport stack with Docker Compose for Local Clustering",
         tags: ["keycloak", "postgresql", "docker", "docker-compose", "keycloak-cluster"],
@@ -1660,7 +1660,7 @@ const projects = [
         name: "Spring Boot 3.5.3 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
         url: "https://medium.com/@ivangfr/spring-boot-3-5-3-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-87baf806c5bc",
         description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 3.5.3 Dockerized with Various Configurations",
-        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads", "paketo-buildpacks"],
         source: "medium"
     },
     {
@@ -1689,6 +1689,13 @@ const projects = [
         url: "https://medium.com/@ivangfr/what-is-the-best-embedded-web-server-for-spring-boot-version-4-0-0-tomcat-vs-jetty-8a90432c0d27",
         description: "A Comparative Analysis of Tomcat and Jetty for Spring Boot apps using Spring Web and Virtual Threads",
         tags: ["java", "docker", "spring-web-mvc", "spring-boot", "tomcat", "jetty", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Speed Up Your Spring Boot App Startup by 33% With No Code Change",
+        url: "https://medium.com/@ivangfr/speed-up-your-spring-boot-app-startup-by-33-with-no-code-change-93077292daee",
+        description: "Building optimized Docker-based Spring Boot apps with Paketo Buildpacks by simply enabling CDS or enabling both CDS and AOT",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "cds", "aot", "paketo-buildpacks"],
         source: "medium"
     }
 ]
