@@ -225,7 +225,7 @@ const projects = [
         name: "https-springboot-react",
         url: "https://github.com/ivangfr/https-springboot-react",
         description: "The goal of this project is to play with HTTPS and enable it in Spring Boot applications. For it, we will implement a Spring Boot Rest API that will have its endpoints ready to accept and server over HTTPS. Furthermore, a Spring Boot Shell Java application and a Frontend React application will be implemented to consume movies-api.",
-        tags: ["javascript", "java", "spring-web-mvc", "spring-boot", "react", "https", "spring-data-jpa", "h2", "spring-shell", "pkcs12", "semantic-ui-react", "keytool", "springdoc-openapi"],
+        tags: ["javascript", "java", "spring-web-mvc", "spring-boot", "react", "spring-data-jpa", "h2", "spring-shell", "semantic-ui-react", "springdoc-openapi", "https", "ssl", "tls", "certificate", "pkcs12", "keytool"],
         source: "github"
     },
     {
@@ -1384,7 +1384,7 @@ const projects = [
         source: "medium"
     },
     {
-        name: "How to Manage Keycloak using the Adom REST API: No UI Required (release 26.0.7)",
+        name: "How to Manage Keycloak using the Admin REST API: No UI Required (release 26.0.7)",
         url: "https://medium.com/@ivangfr/exploring-keycloak-admin-rest-api-88c9a8f29604",
         description: "Manage realms, clients, users, and more using Keycloak Admin REST API",
         tags: ["keycloak", "docker", "rest-api"],
@@ -1696,6 +1696,27 @@ const projects = [
         url: "https://medium.com/@ivangfr/speed-up-your-spring-boot-app-startup-by-33-with-no-code-change-93077292daee",
         description: "Building optimized Docker-based Spring Boot apps with Paketo Buildpacks by simply enabling CDS or enabling both CDS and AOT",
         tags: ["java", "docker", "spring-web-mvc", "spring-boot", "cds", "aot", "paketo-buildpacks"],
+        source: "medium"
+    },
+    {
+        name: "Secure Spring Boot 4 with Custom SSL: Server + Client",
+        url: "https://medium.com/@ivangfr/secure-spring-boot-4-with-custom-ssl-server-client-a60f687ca341",
+        description: "Configuring SSL Trust Material for Web Server and Client",
+        tags: ["java", "spring-boot", "spring-web-mvc", "https", "ssl", "tls", "certificate", "pkcs12", "keytool"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot 4.0.2 Benchmark: Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://medium.com/@ivangfr/spring-boot-4-0-2-benchmark-web-reactive-cds-aot-virtual-threads-jvm-and-native-19ed5a10c8cd",
+        description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 4.0.2 Dockerized with Various Configurations",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "Performance Benchmark: Spring Boot 4.0.2 vs. Quarkus 3.31.1 vs. Micronaut 4.10.7",
+        url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-4-0-2-vs-quarkus-3-31-1-vs-micronaut-4-10-7-b7d637646704",
+        description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
         source: "medium"
     }
 ]
