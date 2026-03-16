@@ -7,13 +7,14 @@ Guidelines for agentic coding agents working in this repository.
 This is a **vanilla JavaScript static website** hosted on GitHub Pages at `ivangfr.github.io`. It is a single-page portfolio listing Ivan Franchin's GitHub Proof-of-Concept repositories and Medium articles. There is no build system, package manager, bundler, or transpilation step.
 
 **Source files:**
-- `index.html` — the single HTML page (82 lines)
-- `app.js` — all application logic and data (~1722 lines)
+- `index.html` — the single HTML page (~248 lines)
+- `app.js` — all application logic and data (~1910 lines)
 
 **Runtime dependencies (CDN only — no local installs):**
-- jQuery 3.7.1
-- Semantic UI 2.5.0 (CSS + JS)
+- Tailwind CSS (via `https://cdn.tailwindcss.com` — Play CDN, configured inline in `index.html`)
 - Google Analytics 4 (`gtag.js`)
+
+There is **no jQuery** and **no Semantic UI** in this project.
 
 ## Build / Lint / Test Commands
 
@@ -36,13 +37,19 @@ npx serve .
 
 The entire application lives in two files:
 
-- **`index.html`** — declares the Semantic UI layout structure (grid, dropdown filter, list container). Contains no inline JavaScript logic beyond the Google Analytics snippet.
+- **`index.html`** — declares the Tailwind CSS layout structure (navbar, tag filter panel, search input, project grid, empty state). Contains no inline JavaScript logic beyond the Google Analytics snippet and the Tailwind config block.
 - **`app.js`** — contains:
-  1. A `projects` array (module-level constant) holding every entry.
-  2. A `githubUrl` constant (currently unused at runtime, kept for reference).
-  3. A jQuery `$(function() { ... })` document-ready block that renders entries and wires up the tag filter dropdown.
+  1. State variables (`activeTags` Set, `textQuery` string).
+  2. DOM reference constants (obtained with `document.getElementById`).
+  3. Theme toggle logic (dark/light mode via `localStorage`).
+  4. A `sourceConfig` object mapping `"github"` / `"medium"` to badge styles and SVG icons.
+  5. Rendering functions: `buildTagPill`, `renderCards`, `renderTagList`, `getAllTags`.
+  6. Event wiring for tag filter, tag search, text search, and clear button.
+  7. A `projects` array holding every entry (~236 items, lines 255–1904).
+  8. A `cachedTags` constant (computed once from `getAllTags()` after the `projects` array).
+  9. Direct calls to `renderTagList()` and `renderCards()` at the bottom of the file.
 
-There are no ES modules, no `import`/`export` statements, no `require()` calls, and no bundler. Everything runs in the browser global scope. `app.js` is loaded as a plain `<script src="app.js">` tag at the bottom of `<body>`, after jQuery and Semantic UI have loaded.
+There are no ES modules, no `import`/`export` statements, no `require()` calls, and no bundler. Everything runs in the browser global scope. `app.js` is loaded as a plain `<script src="app.js">` tag at the bottom of `<body>`.
 
 ## Adding a New Entry
 
@@ -62,7 +69,7 @@ Each entry is a plain object literal with exactly these five keys:
 
 **Rules for entries:**
 - New entries go at the **end** of the `projects` array (before the closing `]`).
-- `source` must be either `"github"` or `"medium"` — these values map directly to Semantic UI icon class names rendered in the list.
+- `source` must be either `"github"` or `"medium"` — these values are keys into `sourceConfig` and control the badge style and icon rendered on each card.
 - `tags` is an array of strings in **kebab-case** (e.g., `"spring-boot"`, `"oauth2-resource-server"`). Never use spaces inside a tag value.
 - `description` ends with a period. Keep it to one or two sentences.
 - For GitHub entries, `name` matches the repository slug (e.g., `"springboot-react-keycloak"`).
@@ -78,26 +85,26 @@ Each entry is a plain object literal with exactly these five keys:
 - **Indentation:** 4 spaces (no tabs).
 - **Quotes:** Double quotes for HTML string concatenation; single quotes are not used in the existing codebase.
 - **Variable declarations:** Use `const` by default; use `let` only when reassignment is required. Never use `var`.
-- **jQuery variables:** Prefix jQuery-wrapped DOM references with `$` (e.g., `$projectList`, `$tagOptions`, `$this`).
-- **Functions:** Use `function` declarations for named helper functions inside the document-ready block; use arrow functions for short callbacks (`forEach`, `map`, `sort`, etc.).
-- **String building:** HTML strings are built via concatenation (`+`). There are no template literals used for HTML generation in the existing code — maintain consistency.
+- **DOM references:** Plain `document.getElementById(...)` — no jQuery `$()` wrappers.
+- **Functions:** Use `function` declarations for named helper functions; use arrow functions for short callbacks (`forEach`, `map`, `sort`, etc.).
+- **String building:** HTML strings are built via concatenation (`+`). Template literals are not used for HTML generation in the existing code — maintain consistency.
 - **No modules:** Do not introduce `import`/`export`, `require`, or any module system. All code is globally scoped.
-- **No frameworks:** Do not add React, Vue, Angular, or any other JS framework.
+- **No frameworks:** Do not add React, Vue, Angular, jQuery, or any other JS framework or library.
 - **No linter config exists** — manually follow the patterns visible in the existing code.
 
 ### HTML
 
-- **Indentation:** 4 spaces inside `<head>` and `<body>`; nested Semantic UI `<div>` grid elements use 4-space increments.
-- **Attributes:** No quotes around attribute values in dynamically built HTML strings (matching existing `app.js` patterns, e.g., `id=` + i, `href=` + url).
-- **Class names:** Use Semantic UI utility class strings exactly as documented (e.g., `"ui small label"`, `"ui relaxed big celled selection list"`).
-- **No custom CSS** — all styling is handled by Semantic UI CDN classes. Do not add a local stylesheet.
+- **Indentation:** 4 spaces inside `<head>` and `<body>`; nested Tailwind `<div>` elements use 4-space increments.
+- **Styling:** All styling uses Tailwind CSS utility classes (configured via the Play CDN inline config in `index.html`). Do not add a separate local stylesheet.
+- **Dark mode:** Controlled via the `dark` class on `<html>`, toggled by JS. Use `dark:` variants in Tailwind classes.
+- **Custom brand colours:** Defined in the Tailwind config block in `index.html` under `theme.extend.colors.brand`.
 
 ### Naming Conventions
 
 | Thing | Convention | Example |
 |---|---|---|
-| JS variables | camelCase | `projectIds`, `tagItems`, `allTags` |
-| jQuery refs | camelCase with `$` prefix | `$projectList`, `$tagOptions` |
+| JS variables | camelCase | `activeTags`, `textQuery`, `cachedTags` |
+| DOM ref constants | camelCase | `grid`, `emptyState`, `tagSearch` |
 | Entry `name` (GitHub) | kebab-case slug | `"springboot-react-keycloak"` |
 | Entry `name` (Medium) | Title Case prose | `"Building a ... App"` |
 | Entry `tags` | kebab-case | `"spring-web-mvc"`, `"oauth2-resource-server"` |
@@ -111,9 +118,10 @@ There is no error handling in this codebase. The site is entirely static and rea
 ## What NOT to Do
 
 - Do not introduce a `package.json`, bundler (Webpack, Vite, Rollup, esbuild), or transpiler (Babel, TypeScript).
+- Do not add jQuery, Semantic UI, or any other JS library or CSS framework.
 - Do not add a CSS preprocessor (Sass, Less) or any custom stylesheet.
-- Do not upgrade or replace jQuery or Semantic UI versions without verifying full compatibility.
 - Do not split `app.js` into multiple files — there is no module loader to stitch them back together.
-- Do not add `console.log` statements (there is already one in `handleFilter` that could be cleaned up, but do not add more).
-- Do not remove or rename the `source` field values (`"github"` / `"medium"`) — they are used as Semantic UI icon class names directly.
-- Do not add spaces inside tag strings — tags double as CSS class selectors in the filter logic (`'.item.' + value`), so spaces would break selector construction.
+- Do not add `console.log` statements.
+- Do not remove or rename the `source` field values (`"github"` / `"medium"`) — they are keys into `sourceConfig` and control card rendering.
+- Do not add spaces inside tag strings — spaces would break tag pill click-filtering logic.
+- Do not move or reorder `cachedTags`, `renderTagList()`, or `renderCards()` above the closing `]` of the `projects` array — `getAllTags()` iterates `projects` and must run after it is fully defined.

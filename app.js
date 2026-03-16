@@ -43,7 +43,7 @@ function toggleTheme() {
     applyTheme(isDark)
 }
 
-// Initialise from localStorage (default: dark)
+// Initialise from localStorage (default: light)
 const savedTheme = localStorage.getItem("theme")
 applyTheme(savedTheme === "dark")
 
@@ -88,12 +88,13 @@ function renderCards() {
     filtered.forEach(function(project, i) {
         const cfg = sourceConfig[project.source] || sourceConfig.github
         const tagPills = project.tags.map(t => buildTagPill(t, true)).join("")
-        const delay = (i % 30) * 20
+        const delay = Math.min(i, 29) * 20
 
         const card = document.createElement("a")
         card.href = project.url
         card.target = "_blank"
         card.rel = "noopener noreferrer"
+        card.setAttribute("aria-label", project.name)
         card.className = "project-card flex flex-col gap-3 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-brand-400 dark:hover:border-brand-600 hover:shadow-lg dark:hover:shadow-slate-950/50 no-underline group"
         card.style.animationDelay = delay + "ms"
 
@@ -173,7 +174,7 @@ function removeTag(tag) {
 
 function renderTagList(filter) {
     const query = (filter !== undefined ? filter : tagSearch.value).toLowerCase()
-    const allTags = getAllTags()
+    const allTags = cachedTags
     const visible = allTags.filter(t => t.includes(query))
 
     tagList.innerHTML = ""
@@ -227,7 +228,7 @@ document.addEventListener("click", function(e) {
 })
 
 tagSearch.addEventListener("input", function() {
-    renderTagList(tagSearch.value)
+    renderTagList()
 })
 
 clearBtn.addEventListener("click", function() {
@@ -245,11 +246,7 @@ textSearchEl.addEventListener("input", function() {
 })
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
-document.addEventListener("DOMContentLoaded", function() {
-    renderTagList()
-    renderCards()
-})
-
+// projects is defined below; cachedTags is computed once after the data loads
 const githubUrl = "https://github.com/ivangfr/"
 
 const projects = [
@@ -285,13 +282,13 @@ const projects = [
         name: "graalvm-quarkus-micronaut-springboot",
         url: "https://github.com/ivangfr/graalvm-quarkus-micronaut-springboot",
         description: "The goal of this project is to compare some Java Microservice Frameworks like: Quarkus, Micronaut and Spring Boot. For it, we will implement applications using those frameworks, build their JVM and Native Docker images and measure start-up times, memory footprint, etc.",
-        tags: ["mysql", "java", "docker", "elasticsearch", "kafka", "spring-boot", "native", "graalvm", "cadvisor", "webflux", "micronaut", "jib", "quarkus", "jvm"],
+        tags: ["mysql", "java", "docker", "elasticsearch", "kafka", "spring-boot", "native", "graalvm", "cadvisor", "spring-webflux", "micronaut", "jib", "quarkus", "jvm"],
         source: "github"
     },
     {
         name: "springboot-react-social-login",
         url: "https://github.com/ivangfr/springboot-react-social-login",
-        description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a font-end React application called movie-ui. Additionally, we will use OAuth2 (Social Login) to secure both applications.",
+        description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a front-end React application called movie-ui. Additionally, we will use OAuth2 (Social Login) to secure both applications.",
         tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "social-login", "oauth2-client", "semantic-ui-react", "google-oauth2", "springdoc-openapi", "github-oauth2", "github-oauth-login", "google-oauth-login"],
         source: "github"
     },
@@ -299,14 +296,14 @@ const projects = [
         name: "springboot-kafka-connect-debezium-ksqldb",
         url: "https://github.com/ivangfr/springboot-kafka-connect-debezium-ksqldb",
         description: "Experiment with Kafka, Debezium, and ksqlDB. research-service: Performs MySQL record manipulation. Source Connectors: Monitor MySQL changes, push messages to Kafka. Sink Connectors and kafka-research-consumer: Listen to Kafka, insert/update Elasticsearch. ksqlDB-Server: Listens to Kafka, performs joins, and pushes new messages to new Kafka topics.",
-        tags: ["mysql", "java", "elasticsearch", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "confluent", "kafka-connect", "spring-data-jpa", "debezium", "spring-kafka", "ksqldb", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "elasticsearch", "json", "spring-web-mvc", "kafka", "spring-boot", "avro", "schema-registry", "confluent", "kafka-connect", "spring-data-jpa", "debezium", "spring-kafka", "ksqldb", "springdoc-openapi"],
         source: "github"
     },
     {
         name: "springboot-react-jwt-token",
         url: "https://github.com/ivangfr/springboot-react-jwt-token",
-        description: "The goal of this project is to implement an application called order-app to manage orders. For it, we will implement a back-end Spring Boot application called order-api and a font-end React application called order-ui. Besides, we will use JWT Authentication to secure both applications.",
-        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "jwt-authentication", "semantic-ui-react", "jtw", "springdoc-openapi"],
+        description: "The goal of this project is to implement an application called order-app to manage orders. For it, we will implement a back-end Spring Boot application called order-api and a front-end React application called order-ui. Besides, we will use JWT Authentication to secure both applications.",
+        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "jwt-authentication", "semantic-ui-react", "jwt", "springdoc-openapi"],
         source: "github"
     },
     {
@@ -327,7 +324,7 @@ const projects = [
         name: "springboot-keycloak-mongodb-testcontainers",
         url: "https://github.com/ivangfr/springboot-keycloak-mongodb-testcontainers",
         description: "The goals of this project are to: 1) Create a Spring Boot application that manages books, called book-service; 2) Use Keycloak as OpenID Connect provider; 3) Test using Testcontainers; 4) Explore the utilities and annotations that Spring Boot provides for testing applications.",
-        tags: ["java", "docker", "unit-testing", "spring-web-mvc", "spring-boot", "mongodb", "keycloak", "integration-testing", "spring-security", "testcontainers", "spring-data-mongodb", "springdoc-openapi", "oauth2-resourceserver"],
+        tags: ["java", "docker", "unit-testing", "spring-web-mvc", "spring-boot", "mongodb", "keycloak", "integration-testing", "spring-security", "testcontainers", "spring-data-mongodb", "springdoc-openapi", "oauth2-resource-server"],
         source: "github"
     },
     {
@@ -354,7 +351,7 @@ const projects = [
     {
         name: "springboot-react-basic-auth",
         url: "https://github.com/ivangfr/springboot-react-basic-auth",
-        description: "The goal of this project is to implement an application called book-app to manage books. For it, we will implement a back-end Spring Boot application called book-api and a font-end React application called book-ui. Besides, we will use Basic Authentication to secure both applications.",
+        description: "The goal of this project is to implement an application called book-app to manage books. For it, we will implement a back-end Spring Boot application called book-api and a front-end React application called book-ui. Besides, we will use Basic Authentication to secure both applications.",
         tags: ["javascript", "java", "docker", "npm", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "basic-authentication", "spring-data-jpa", "semantic-ui-react", "springdoc-openapi"],
         source: "github"
     },
@@ -403,7 +400,7 @@ const projects = [
     {
         name: "kubernetes-minikube-environment",
         url: "https://github.com/ivangfr/kubernetes-minikube-environment",
-        description: "The goal of this project is have some examples using Kubernetes (Minikube)",
+        description: "The goal of this project is to have some examples using Kubernetes (Minikube).",
         tags: ["java", "docker", "kubernetes", "virtualbox", "helm", "kong", "minikube", "helm-charts", "elastic", "kubectl", "bitnami", "confluentinc", "codecentric"],
         source: "github"
     },
@@ -473,7 +470,7 @@ const projects = [
     {
         name: "springboot-elasticsearch-thymeleaf",
         url: "https://github.com/ivangfr/springboot-elasticsearch-thymeleaf",
-        description: "The goal of this project is to implement an application called product-app. It consists of two Spring Boot services: product-api (backend) and product-ui (frontend). Data will be stored in Elasticsearch",
+        description: "The goal of this project is to implement an application called product-app. It consists of two Spring Boot services: product-api (backend) and product-ui (frontend). Data will be stored in Elasticsearch.",
         tags: ["java", "elasticsearch", "spring-web-mvc", "spring-boot", "thymeleaf", "spring-data-elasticsearch", "http-interface", "springdoc-openapi"],
         source: "github"
     },
@@ -522,7 +519,7 @@ const projects = [
     {
         name: "spring-integration-examples",
         url: "https://github.com/ivangfr/spring-integration-examples",
-        description: "The goal of this project is to learn String Integration Framework For it, we will implement some Spring Boot applications and try to use the well known Enterprise Integration Patterns.",
+        description: "The goal of this project is to learn Spring Integration Framework. For it, we will implement some Spring Boot applications and try to use the well known Enterprise Integration Patterns.",
         tags: ["java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "spring-integration", "spring-data-mongodb", "spring-shell", "enterprise-integration-patterns", "spring-integration-file"],
         source: "github"
     },
@@ -600,13 +597,13 @@ const projects = [
         name: "kubeless-dev-environment-archetype",
         url: "https://github.com/ivangfr/kubeless-dev-environment-archetype",
         description: "This is a Maven Archetype used for development of Kubeless Functions.",
-        tags: ["maven-archetypes", "kubeless", "maven-archetype-plugin"],
+        tags: ["maven-archetype", "kubeless", "maven-archetype-plugin"],
         source: "github"
     },
     {
         name: "kubeless-maven-plugin",
         url: "https://github.com/ivangfr/kubeless-maven-plugin",
-        description: "Maven plugin that reads a class in `/src/main/java/io/kubeless` directory and the `pom.xml` of the project and converts them into a ready to use inputs in `kubeless function deploy` command.",
+        description: "Maven plugin that reads a class in /src/main/java/io/kubeless directory and the pom.xml of the project and converts them into ready to use inputs in the kubeless function deploy command.",
         tags: ["maven-plugin", "kubeless", "java", "maven"],
         source: "github"
     },
@@ -627,7 +624,7 @@ const projects = [
     {
         name: "web-reactive-jvm-native-cds-aot-virtual-threads",
         url: "https://github.com/ivangfr/web-reactive-jvm-native-cds-aot-virtual-threads",
-        description: "In this project, we’ll create six apps using Spring Boot, Quarkus, and Micronaut. For each framework, one app will use blocking Web with Tomcat, and the other will use non-blocking Reactive with Netty. We’ll build both JVM and Native Docker images. For Spring Boot, additional images will test configurations with Virtual Threads, CDS, and AOT",
+        description: "In this project, we will create six apps using Spring Boot, Quarkus, and Micronaut. For each framework, one app will use blocking Web with Tomcat, and the other will use non-blocking Reactive with Netty. We will build both JVM and Native Docker images. For Spring Boot, additional images will test configurations with Virtual Threads, CDS, and AOT.",
         tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "micronaut", "quarkus", "virtual-threads"],
         source: "github"
     },
@@ -641,14 +638,14 @@ const projects = [
     {
         name: "spring-boot-user-pass-auth-one-time-token-login",
         url: "https://github.com/ivangfr/spring-boot-user-pass-auth-one-time-token-login",
-        description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using Username/Password Authentication and One-Time Token Login",
+        description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using Username/Password Authentication and One-Time Token Login.",
         tags: ["java", "docker", "spring-boot", "thymeleaf", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
         source: "github"
     },
     {
         name: "spring-boot-ldap-auth-one-time-token-login",
         url: "https://github.com/ivangfr/spring-boot-ldap-auth-one-time-token-login",
-        description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using their LDAP pre-defined account LDAP Authentication and One-Time Token Login",
+        description: "The goal of this project is to create a Spring Boot application called movies-app that allows users to log in using their LDAP pre-defined account LDAP Authentication and One-Time Token Login.",
         tags: ["java", "docker", "ldap", "spring-boot", "thymeleaf", "openldap", "postgresql", "spring-security", "spring-data-jpa", "spring-web-mvc", "java-mail-sender", "mailpit", "one-time-token"],
         source: "github"
     },
@@ -922,7 +919,7 @@ const projects = [
         name: "Testing a Simple Spring Boot REST API secured with Okta",
         url: "https://medium.com/@ivangfr/testing-a-simple-spring-boot-rest-api-secured-with-okta-ecc7fecabd68",
         description: "Implementing test cases to validate whether Simple API is working properly",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "okta", "testing", "unit-testing"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "okta", "unit-testing"],
         source: "medium"
     },
     {
@@ -1069,7 +1066,7 @@ const projects = [
         name: "Testing a Simple Spring Boot REST API secured with LDAP using Testcontainers",
         url: "https://medium.com/@ivangfr/testing-a-simple-spring-boot-rest-api-secured-with-ldap-using-testcontainers-698f407dfd0",
         description: "Using Testcontainers to spin up an OpenLDAP Docker container while testing the Simple API application",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "ldap", "openldap", "docker", "integration-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1083,7 +1080,7 @@ const projects = [
         name: "Testing a Spring Boot GraphQL API secured with LDAP using Testcontainers",
         url: "https://medium.com/@ivangfr/testing-a-spring-boot-graphql-api-secured-with-ldap-using-testcontainers-433c95fea81f",
         description: "Using Testcontainers to spin up a OpenLDAP Docker container while testing a Book API",
-        tags: ["java", "spring-web-mvc", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker", "testing", "integration-testing", "testcontainers"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "graphql", "spring-security", "ldap", "openldap", "docker", "integration-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1111,14 +1108,14 @@ const projects = [
         name: "Implementing Unit Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
         url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-6e2e0880e5db",
         description: "Step-by-step guide on how to implement Unit Tests for Movie API using Spring Testing library",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "unit-testing"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-data-jpa", "postgresql", "docker", "unit-testing"],
         source: "medium"
     },
     {
         name: "Implementing Integration Tests for a Spring Boot API that uses Spring Data JPA and PostgreSQL",
         url: "https://medium.com/@ivangfr/implementing-integration-tests-for-a-spring-boot-api-that-uses-spring-data-jpa-and-postgresql-ac5f2de44ac6",
         description: "Step-by-step guide on how to implement Integration tests for Movie API using Testcontainers",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-data-jpa", "postgresql", "docker", "testing", "integration-testing", "testcontainers"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-data-jpa", "postgresql", "docker", "integration-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1174,14 +1171,14 @@ const projects = [
         name: "Implementing Unit Tests for a Kafka Producer and Consumer that uses Spring Cloud Stream",
         url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-f7a98a89fcf2",
         description: "Step-by-step guide on how to implement Unit tests for News Producer and Consumer apps using Spring Testing Library",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "docker", "testing", "unit-testing"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "docker", "unit-testing"],
         source: "medium"
     },
     {
         name: "Implementing End-to-End testing for a Kafka Producer and Consumer that uses Spring Cloud Stream",
         url: "https://medium.com/@ivangfr/implementing-end-to-end-testing-for-a-kafka-producer-and-consumer-that-uses-spring-cloud-stream-fbf5e666899e",
         description: "Step-by-step guide on how to implement End-to-End testing for News Producer and Consumer apps using Testcontainers",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "docker", "testing", "e2e-testing", "testcontainers"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "docker", "e2e-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1216,14 +1213,14 @@ const projects = [
         name: "Setup Unit Tests for a Spring Cloud Producer and Consumer that use Avro and Schema Registry",
         url: "https://medium.com/@ivangfr/setup-unit-tests-for-a-spring-cloud-producer-and-consumer-that-use-avro-and-schema-registry-bb0b2085e7e4",
         description: "Step-by-step guide on how to implement Unit tests for Alert Producer and Consumer using Spring Testing library",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "testing", "unit-testing"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "unit-testing"],
         source: "medium"
     },
     {
         name: "Setup End-to-End testing for a Spring Cloud Producer and Consumer that use Avro and Schema Registry",
         url: "https://medium.com/@ivangfr/setup-end-to-end-testing-for-a-spring-cloud-producer-and-consumer-that-use-avro-and-schema-registry-2f005179d52f",
         description: "Step-by-step guide on how to implement End-to-End testing for Alert Producer and Consumer using Testcontainers",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "docker-compose", "confluent", "testing", "e2e-testing", "testcontainers"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-cloud-stream", "kafka", "schema-registry", "avro", "docker", "docker-compose", "confluent", "e2e-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1235,7 +1232,7 @@ const projects = [
     },
     {
         name: "Real-time Crypto Price Simulator: Spring Boot Producer and Consumer that uses WebSocket",
-        url: "https://medium.com/@ivangfr/real-time-crypto-price-simulator-running-in-minikube-kubernetes-553a6ba63a02",
+        url: "https://medium.com/@ivangfr/real-time-crypto-price-simulator-spring-boot-producer-and-consumer-that-uses-websocket-4930f7169d89",
         description: "Creating a Spring Boot Producer to simulate real-time changes in crypto prices, exposed via WebSocket, and a Consumer to consume them",
         tags: ["java", "spring-web-mvc", "spring-boot", "thymeleaf", "websocket"],
         source: "medium"
@@ -1249,7 +1246,7 @@ const projects = [
     },
     {
         name: "Real-time Crypto Price Simulator: Running in Minikube (Kubernetes)",
-        url: "https://medium.com/@ivangfr/real-time-crypto-price-simulator-spring-boot-producer-and-consumer-that-uses-websocket-4930f7169d89",
+        url: "https://medium.com/@ivangfr/real-time-crypto-price-simulator-running-in-minikube-kubernetes-553a6ba63a02",
         description: "Exploring the functionality of the Crypto Price Spring Boot Producer, Consumer, and WebSocket in Minikube (Kubernetes)",
         tags: ["java", "spring-web-mvc", "spring-boot", "docker", "kubernetes", "minikube", "kubectl"],
         source: "medium"
@@ -1293,14 +1290,14 @@ const projects = [
         name: "Implementing Unit Tests for a Reactive App that uses Spring WebFlux and MongoDB",
         url: "https://medium.com/@ivangfr/implementing-unit-tests-for-a-reactive-app-that-uses-spring-webflux-and-mongodb-1b64d8a416db",
         description: "Step-by-step guide on how to implement Unit tests for Book API using Spring Testing library",
-        tags: ["java", "spring-webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "testing", "unit-testing"],
+        tags: ["java", "spring-webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "unit-testing"],
         source: "medium"
     },
     {
         name: "Implementing Integration Tests for a Reactive App that uses Spring WebFlux and MongoDB",
         url: "https://medium.com/@ivangfr/implementing-integration-tests-for-a-reactive-app-that-uses-spring-webflux-and-mongodb-bb971ae3fa7b",
         description: "Step-by-step guide on how to implement Integration tests for Book API using Testcontainers",
-        tags: ["java", "spring-webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "testing", "integration-testing", "testcontainers"],
+        tags: ["java", "spring-webflux", "spring-boot", "reactive", "spring-data-mongodb-reactive", "mongodb", "docker", "integration-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1356,14 +1353,14 @@ const projects = [
         name: "Solace PubSub+ and Spring Boot: Implementing Unit Tests for News Producer and Consumer Apps",
         url: "https://medium.com/@ivangfr/solace-pubsub-and-spring-boot-implementing-unit-tests-for-news-producer-and-consumer-apps-6c1b8257f7a0",
         description: "Writing Unit Tests for News Producer and Consumer apps using Spring Testing library",
-        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "solace-pubsub", "testing", "unit-testing"],
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "solace-pubsub", "unit-testing"],
         source: "medium"
     },
     {
         name: "Solace PubSub+ and Spring Boot: Implementing End-to-End Tests for News Producer and Consumer Apps",
         url: "https://medium.com/@ivangfr/solace-pubsub-and-spring-boot-implementing-end-to-end-tests-for-news-producer-and-consumer-apps-353e5b3843f4",
         description: "Writing End-to-End tests for News Producer and Consumer using Testcontainers",
-        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "solace-pubsub", "testing", "e2e-testing", "testcontainers"],
+        tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "solace-pubsub", "e2e-testing", "testcontainers"],
         source: "medium"
     },
     {
@@ -1426,14 +1423,14 @@ const projects = [
         name: "Java Microservice Framework’s Battles: Quarkus vs. Micronaut vs. Spring Boot",
         url: "https://medium.com/@ivangfr/java-microservice-frameworks-battles-quarkus-vs-micronaut-vs-spring-boot-2321dc5712ae",
         description: "Benchmarking the most well-known Java Microservice Frameworks",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
         name: "Battle: Quarkus 3.7.2 vs. Micronaut 4.3.1 vs. Spring Boot 3.2.2",
         url: "https://medium.com/@ivangfr/battle-quarkus-3-7-2-vs-micronaut-4-3-1-vs-spring-boot-3-2-2-8d6765e15e45",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
@@ -1594,7 +1591,7 @@ const projects = [
         name: "Deploying Serverless Producer & Consumer Spring Boot Apps in Knative Minikube (Kubernetes)",
         url: "https://medium.com/@ivangfr/deploying-serverless-producer-consumer-spring-boot-apps-in-knative-minikube-kubernetes-c58bb26b1f08",
         description: "Step-by-step guide on deploying the Serverless News Producer and Consumer apps in Knative Minikube (Kubernetes)",
-        tags: ["kubernetes", "serverless", "helm", "minikube", "helm-charts", "kubectl", "knative","knative-eventing", "strimzi", "quarkus", "kafka"],
+        tags: ["kubernetes", "serverless", "helm", "minikube", "helm-charts", "kubectl", "knative", "knative-eventing", "strimzi", "quarkus", "kafka"],
         source: "medium"
     },
     {
@@ -1622,7 +1619,7 @@ const projects = [
         name: "Battle: Quarkus 3.12.0 vs. Micronaut 4.5.0 vs. Spring Boot 3.3.1",
         url: "https://medium.com/@ivangfr/battle-quarkus-3-12-0-vs-micronaut-4-5-0-vs-spring-boot-3-3-1-b9a4424fc52f",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
@@ -1671,14 +1668,14 @@ const projects = [
         name: "Java Frameworks Performance Benchmark: Spring Boot vs. Quarkus vs. Micronaut",
         url: "https://medium.com/@ivangfr/java-frameworks-performance-benchmark-spring-boot-vs-quarkus-vs-micronaut-028b6dbfef2e",
         description: "Evaluating Performance and Efficiency Across JVM and Native Modes with Web and Reactive Configurations",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     },
     {
         name: "Performance Benchmark: Spring Boot 3.3.2 vs. Quarkus 3.13.2 vs. Micronaut 4.5.1",
         url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-3-3-2-vs-quarkus-3-13-2-vs-micronaut-4-5-1-515bae82d04f",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     },
     {
@@ -1692,7 +1689,7 @@ const projects = [
         name: "Battle: Quarkus 3.14.2 vs. Micronaut 4.6.1 vs. Spring Boot 3.3.3",
         url: "https://medium.com/@ivangfr/battle-quarkus-3-14-2-vs-micronaut-4-6-1-vs-spring-boot-3-3-3-41947196fb31",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
@@ -1741,7 +1738,7 @@ const projects = [
         name: "Battle: Quarkus 3.15.1 vs. Micronaut 4.6.3 vs. Spring Boot 3.3.4",
         url: "https://medium.com/@ivangfr/battle-quarkus-3-15-1-vs-micronaut-4-6-3-vs-spring-boot-3-3-4-9ae4a7cefac6",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
@@ -1762,7 +1759,7 @@ const projects = [
         name: "Performance Benchmark: Spring Boot 3.3.4 vs. Quarkus 3.15.1 vs. Micronaut 4.6.3",
         url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-3-3-4-vs-quarkus-3-15-1-vs-micronaut-4-6-3-9691c4cfcb2a",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     },
     {
@@ -1811,7 +1808,7 @@ const projects = [
         name: "Performance Benchmark: Spring Boot 3.4.3 vs. Quarkus 3.19.3 vs. Micronaut 4.7.6",
         url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-3-4-3-vs-quarkus-3-19-3-vs-micronaut-4-7-6-aaadfb0382b4",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     },
     {
@@ -1825,7 +1822,7 @@ const projects = [
         name: "Battle: Quarkus 3.21.0 vs. Micronaut 4.7.6 vs. Spring Boot 3.4.4",
         url: "https://medium.com/@ivangfr/battle-quarkus-3-21-0-vs-micronaut-4-7-6-vs-spring-boot-3-4-4-07991c9fda04",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
@@ -1853,14 +1850,14 @@ const projects = [
         name: "Battle: Quarkus 3.24.3 vs. Micronaut 4.9.0 vs. Spring Boot 3.5.3",
         url: "https://medium.com/@ivangfr/battle-quarkus-3-24-3-vs-micronaut-4-9-0-vs-spring-boot-3-5-3-49e496b3f365",
         description: "Benchmarking Java Microservice Frameworks: Building JVM and Native Docker Images and Measuring the Performance of Docker Containers",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "webflux", "jib"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "mysql", "elasticsearch", "kafka", "jvm", "native", "graalvm", "cadvisor", "spring-webflux", "jib"],
         source: "medium"
     },
     {
         name: "Performance Benchmark: Spring Boot 3.5.3 vs. Quarkus 3.24.3 vs. Micronaut 4.9.1",
         url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-3-5-3-vs-quarkus-3-24-3-vs-micronaut-4-9-1-8651b4982be3",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     },
     {
@@ -1902,7 +1899,12 @@ const projects = [
         name: "Performance Benchmark: Spring Boot 4.0.2 vs. Quarkus 3.31.1 vs. Micronaut 4.10.7",
         url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-4-0-2-vs-quarkus-3-31-1-vs-micronaut-4-10-7-b7d637646704",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
-        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "webflux"],
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     }
 ]
+
+// Compute the sorted tag list once — data never changes at runtime
+const cachedTags = getAllTags()
+renderTagList()
+renderCards()
