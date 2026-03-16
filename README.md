@@ -2,7 +2,6 @@
 
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-0ea5e9)](https://ivangfr.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/ivangfr/ivangfr.github.io)](https://github.com/ivangfr/ivangfr.github.io/commits/main)
 
 A single-page portfolio listing Ivan Franchin's GitHub Proof-of-Concept repositories and Medium articles. Entries can be filtered by technology tag, searched by name or description, and the page supports dark/light mode.
 
