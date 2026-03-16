@@ -1,67 +1,253 @@
-$(function () {
-    const $projectList = $(".ui.list")
-    const $tagOptions = $(".scrolling.menu")
+// ─── State ───────────────────────────────────────────────────────────────────
+const activeTags = new Set()
+let textQuery = ""
 
-    createProjects()
+// ─── DOM refs ────────────────────────────────────────────────────────────────
+const grid          = document.getElementById("project-grid")
+const emptyState    = document.getElementById("empty-state")
+const resultCount   = document.getElementById("result-count")
+const activeTagsEl  = document.getElementById("active-tags")
+const tagList       = document.getElementById("tag-list")
+const tagSearch     = document.getElementById("tag-search")
+const tagDropdown   = document.getElementById("tag-dropdown")
+const filterBtn     = document.getElementById("filter-btn")
+const clearBtn      = document.getElementById("clear-filter-btn")
+const textSearchEl  = document.getElementById("text-search")
 
-    $('.ui.dropdown').dropdown({
-        onChange: handleFilter
+// ─── Theme ───────────────────────────────────────────────────────────────────
+function applyTheme(isDark) {
+    document.documentElement.classList.toggle("dark", isDark)
+    const sunDesktop    = document.getElementById("sun-icon")
+    const moonDesktop   = document.getElementById("moon-icon")
+    const sunMobile     = document.getElementById("sun-icon-mobile")
+    const moonMobile    = document.getElementById("moon-icon-mobile")
+    const themeLabel    = document.getElementById("theme-label")
+    if (isDark) {
+        sunDesktop.classList.remove("hidden")
+        moonDesktop.classList.add("hidden")
+        sunMobile.classList.remove("hidden")
+        moonMobile.classList.add("hidden")
+        themeLabel.textContent = "Light"
+    } else {
+        sunDesktop.classList.add("hidden")
+        moonDesktop.classList.remove("hidden")
+        sunMobile.classList.add("hidden")
+        moonMobile.classList.remove("hidden")
+        themeLabel.textContent = "Dark"
+    }
+}
+
+function toggleTheme() {
+    const isDark = !document.documentElement.classList.contains("dark")
+    localStorage.setItem("theme", isDark ? "dark" : "light")
+    applyTheme(isDark)
+}
+
+// Initialise from localStorage (default: dark)
+const savedTheme = localStorage.getItem("theme")
+applyTheme(savedTheme === "dark")
+
+document.getElementById("theme-toggle").addEventListener("click", toggleTheme)
+document.getElementById("theme-toggle-mobile").addEventListener("click", toggleTheme)
+
+// ─── Source icon SVGs ────────────────────────────────────────────────────────
+const sourceConfig = {
+    github: {
+        label: "GitHub",
+        badgeClass: "bg-slate-800 dark:bg-slate-700 text-white",
+        svg: '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>'
+    },
+    medium: {
+        label: "Medium",
+        badgeClass: "bg-emerald-700 dark:bg-emerald-800 text-white",
+        svg: '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>'
+    }
+}
+
+// ─── Render cards ─────────────────────────────────────────────────────────────
+function buildTagPill(tag, clickable) {
+    if (clickable) {
+        return '<button data-tag="' + tag + '" class="tag-pill inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-brand-100 dark:hover:bg-brand-700/30 hover:text-brand-700 dark:hover:text-brand-300 transition-colors cursor-pointer border border-transparent hover:border-brand-300 dark:hover:border-brand-700">' + tag + '</button>'
+    }
+    return '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">' + tag + '</span>'
+}
+
+function renderCards() {
+    const lowerQuery = textQuery.toLowerCase()
+
+    const filtered = projects.filter(function(project) {
+        const matchesTags = activeTags.size === 0 || Array.from(activeTags).every(t => project.tags.includes(t))
+        const matchesText = lowerQuery === "" ||
+            project.name.toLowerCase().includes(lowerQuery) ||
+            project.description.toLowerCase().includes(lowerQuery)
+        return matchesTags && matchesText
     })
 
-    function createProjects() {
-        projects.forEach(function(project, i) {
-            const url = project.url
-            const name = project.name
-            const description = project.description
-            const tags = project.tags.join(' ')
-            const source = project.source
-            const tagItems = project.tags.map(tag => '<div class="ui small label">' + tag + '</div>').join('')
-            const item = '<a id=' + i +' class="item ' + tags + '" href=' + url + '>' +
-                            '<i class="large ' + source + ' middle aligned icon"></i>' +
-                            '<div class="content">' +
-                                '<div class="header">'+name+'</div>' +
-                                '<div class="description">' +
-                                    '<p>' + description + '</p>' +
-                                tagItems +
-                                '</div>' +
-                            '</div>' +
-                         '</a>'
-            $projectList.append(item);
-        })
+    grid.innerHTML = ""
 
-        const allTags = new Set()
-        projects.forEach(project => {
-            project.tags.forEach(tag => allTags.add(tag))
-        })
+    filtered.forEach(function(project, i) {
+        const cfg = sourceConfig[project.source] || sourceConfig.github
+        const tagPills = project.tags.map(t => buildTagPill(t, true)).join("")
+        const delay = (i % 30) * 20
 
-        Array.from(allTags).sort().forEach(tag => {
-            const item = '<div class="item" data-value=' + tag + '>' + tag + '</div>'
-            $tagOptions.append(item)
+        const card = document.createElement("a")
+        card.href = project.url
+        card.target = "_blank"
+        card.rel = "noopener noreferrer"
+        card.className = "project-card flex flex-col gap-3 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-brand-400 dark:hover:border-brand-600 hover:shadow-lg dark:hover:shadow-slate-950/50 no-underline group"
+        card.style.animationDelay = delay + "ms"
+
+        card.innerHTML =
+            '<div class="flex items-start justify-between gap-2">' +
+                '<span class="text-sm font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug break-words min-w-0">' + project.name + '</span>' +
+                '<span class="shrink-0 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium ' + cfg.badgeClass + '">' +
+                    cfg.svg + cfg.label +
+                '</span>' +
+            '</div>' +
+            '<p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed flex-1">' + project.description + '</p>' +
+            '<div class="flex flex-wrap gap-1 mt-auto">' + tagPills + '</div>'
+
+        grid.appendChild(card)
+    })
+
+    // Attach tag pill listeners after render
+    grid.querySelectorAll(".tag-pill").forEach(function(pill) {
+        pill.addEventListener("click", function(e) {
+            e.preventDefault()
+            e.stopPropagation()
+            addTag(pill.dataset.tag)
         })
+    })
+
+    const total = projects.length
+    const shown = filtered.length
+    if (activeTags.size > 0 || textQuery) {
+        resultCount.textContent = shown + " of " + total + " results"
+    } else {
+        resultCount.textContent = total + " entries"
     }
 
-    function handleFilter(value) {
-        if (value) {
-            const tags = '.item.' + value.split(',').join('.')
-            const projectIds = new Set()
-            $(tags).each(function() {
-                projectIds.add($(this).attr('id'))
-            })
-            console.log(projectIds)
-            $projectList.children('.item').each(function() {
-                const $this = $(this)
-                if (!projectIds.has($this.attr('id'))) {
-                    $this.hide()
-                } else {
-                    $this.show()
-                }
-            })
-        } else {
-            $projectList.children('.item').each(function() {
-                $(this).show()
-            })
+    if (shown === 0) {
+        emptyState.classList.remove("hidden")
+        emptyState.classList.add("flex")
+    } else {
+        emptyState.classList.add("hidden")
+        emptyState.classList.remove("flex")
+    }
+}
+
+// ─── Tag filter logic ─────────────────────────────────────────────────────────
+function renderActiveTags() {
+    if (activeTags.size === 0) {
+        activeTagsEl.innerHTML = ""
+        return
+    }
+    let html = ""
+    activeTags.forEach(function(tag) {
+        html += '<button data-tag="' + tag + '" class="active-tag-pill inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-brand-500 text-white hover:bg-brand-600 transition-colors">' +
+            tag +
+            '<svg class="w-3 h-3 ml-0.5 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>' +
+        '</button>'
+    })
+    activeTagsEl.innerHTML = html
+    activeTagsEl.querySelectorAll(".active-tag-pill").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            removeTag(btn.dataset.tag)
+        })
+    })
+}
+
+function addTag(tag) {
+    activeTags.add(tag)
+    renderActiveTags()
+    renderTagList()
+    renderCards()
+}
+
+function removeTag(tag) {
+    activeTags.delete(tag)
+    renderActiveTags()
+    renderTagList()
+    renderCards()
+}
+
+function renderTagList(filter) {
+    const query = (filter !== undefined ? filter : tagSearch.value).toLowerCase()
+    const allTags = getAllTags()
+    const visible = allTags.filter(t => t.includes(query))
+
+    tagList.innerHTML = ""
+    visible.forEach(function(tag) {
+        const isActive = activeTags.has(tag)
+        const btn = document.createElement("button")
+        btn.dataset.tag = tag
+        btn.className = "w-full text-left px-3 py-1.5 text-sm rounded-lg transition-colors " +
+            (isActive
+                ? "bg-brand-500 text-white font-medium"
+                : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800")
+        btn.textContent = tag
+        if (isActive) {
+            const check = document.createElement("span")
+            check.className = "float-right text-white"
+            check.textContent = "✓"
+            btn.appendChild(check)
         }
+        btn.addEventListener("click", function() {
+            if (isActive) {
+                removeTag(tag)
+            } else {
+                addTag(tag)
+            }
+            renderTagList()
+        })
+        tagList.appendChild(btn)
+    })
+}
+
+function getAllTags() {
+    const all = new Set()
+    projects.forEach(p => p.tags.forEach(t => all.add(t)))
+    return Array.from(all).sort()
+}
+
+// ─── Dropdown toggle ──────────────────────────────────────────────────────────
+filterBtn.addEventListener("click", function(e) {
+    e.stopPropagation()
+    const open = !tagDropdown.classList.contains("hidden")
+    tagDropdown.classList.toggle("hidden", open)
+    if (!open) {
+        tagSearch.focus()
     }
+})
+
+document.addEventListener("click", function(e) {
+    if (!document.getElementById("filter-container").contains(e.target)) {
+        tagDropdown.classList.add("hidden")
+    }
+})
+
+tagSearch.addEventListener("input", function() {
+    renderTagList(tagSearch.value)
+})
+
+clearBtn.addEventListener("click", function() {
+    activeTags.clear()
+    tagSearch.value = ""
+    renderActiveTags()
+    renderTagList()
+    renderCards()
+})
+
+// ─── Text search ──────────────────────────────────────────────────────────────
+textSearchEl.addEventListener("input", function() {
+    textQuery = textSearchEl.value.trim()
+    renderCards()
+})
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+document.addEventListener("DOMContentLoaded", function() {
+    renderTagList()
+    renderCards()
 })
 
 const githubUrl = "https://github.com/ivangfr/"
