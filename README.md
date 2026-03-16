@@ -12,7 +12,7 @@ A single-page portfolio listing Ivan Franchin's GitHub Proof-of-Concept reposito
 
 ## Screenshot
 
-<!-- Add a screenshot here -->
+![live-site-ui-light](documentation/live-site-ui-light.png)
 
 ## Tech Stack
 
