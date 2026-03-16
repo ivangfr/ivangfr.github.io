@@ -225,7 +225,7 @@ const projects = [
         name: "https-springboot-react",
         url: "https://github.com/ivangfr/https-springboot-react",
         description: "The goal of this project is to play with HTTPS and enable it in Spring Boot applications. For it, we will implement a Spring Boot Rest API that will have its endpoints ready to accept and server over HTTPS. Furthermore, a Spring Boot Shell Java application and a Frontend React application will be implemented to consume movies-api.",
-        tags: ["javascript", "java", "spring-web-mvc", "spring-boot", "react", "spring-data-jpa", "h2", "spring-shell", "semantic-ui-react", "springdoc-openapi", "https", "ssl", "tls", "certificate", "pkcs12", "keytool"],
+        tags: ["javascript", "java", "spring-web-mvc", "spring-boot", "react", "spring-data-jpa", "h2", "spring-shell", "mui", "springdoc-openapi", "https", "ssl", "tls", "certificate", "pkcs12", "keytool"],
         source: "github"
     },
     {
