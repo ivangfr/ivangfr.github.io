@@ -12,7 +12,6 @@ This is a **vanilla JavaScript static website** hosted on GitHub Pages at `ivang
 
 **Runtime dependencies (CDN only — no local installs):**
 - Tailwind CSS (via `https://cdn.tailwindcss.com` — Play CDN, configured inline in `index.html`)
-- Google Analytics 4 (`gtag.js`)
 
 There is **no jQuery** and **no Semantic UI** in this project.
 
@@ -20,7 +19,9 @@ There is **no jQuery** and **no Semantic UI** in this project.
 
 There is **no build step, no package manager, no linter, and no test suite** in this project.
 
-**To preview the site locally**, use any static file server:
+**To preview the site locally**, open `index.html` directly in your browser — no build step or server required.
+
+Alternatively, use any static file server for a more production-like environment:
 ```bash
 python3 -m http.server 8080
 # then open http://localhost:8080 in a browser
@@ -37,7 +38,7 @@ npx serve .
 
 The entire application lives in two files:
 
-- **`index.html`** — declares the Tailwind CSS layout structure (navbar, tag filter panel, search input, project grid, empty state). Contains no inline JavaScript logic beyond the Google Analytics snippet and the Tailwind config block.
+- **`index.html`** — declares the Tailwind CSS layout structure (navbar, tag filter panel, search input, project grid, empty state). Contains no inline JavaScript logic beyond the Tailwind config block.
 - **`app.js`** — contains:
   1. State variables (`activeTags` Set, `textQuery` string).
   2. DOM reference constants (obtained with `document.getElementById`).
