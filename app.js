@@ -667,14 +667,14 @@ const projects = [
         name: "How to Publish your Website for Free on GitHub Pages",
         url: "https://medium.com/@ivangfr/no-more-excuses-how-to-publish-your-website-for-free-on-github-pages-today-8ae0fb8c9c16",
         description: "Step-by-step guide on how to publish your Website for Free on GitHub Pages",
-        tags: ["github", "github-pages"],
+        tags: ["github", "github-pages", "hosting", "static-website"],
         source: "medium"
     },
     {
         name: "How to add Google Analytics on GitHub Pages",
         url: "https://medium.com/@ivangfr/a-step-by-step-guide-to-add-google-analytics-on-github-pages-7466a514805f",
         description: "Step-by-step guide on how to add Google Analytics on GitHub Pages and tracking your Website’s performance",
-        tags: ["github", "github-pages", "google", "google-analytics"],
+        tags: ["github", "github-pages", "google", "google-analytics", "hosting", "static-website"],
         source: "medium"
     },
     {
