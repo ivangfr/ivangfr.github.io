@@ -2,6 +2,7 @@
 
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-0ea5e9)](https://ivangfr.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ivan.franchin-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ivan.franchin)
 
 A single-page portfolio listing Ivan Franchin's GitHub Proof-of-Concept repositories and Medium articles. Entries can be filtered by technology tag, searched by name or description, and the page supports dark/light mode.
 
@@ -73,7 +74,7 @@ Push to the `main` branch. GitHub Pages automatically serves the updated site â€
 
 If you find this useful, consider buying me a coffee:
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/ivan.franchin)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ivan.franchin-FFDD00?logo=buymeacoffee&logoColor=black&style=for-the-badge)](https://buymeacoffee.com/ivan.franchin)
 
 ## License
 
