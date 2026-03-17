@@ -78,4 +78,4 @@ If you find this useful, consider buying me a coffee:
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](./LICENSE).
