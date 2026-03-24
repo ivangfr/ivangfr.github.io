@@ -352,7 +352,7 @@ const projects = [
         name: "springboot-react-basic-auth",
         url: "https://github.com/ivangfr/springboot-react-basic-auth",
         description: "The goal of this project is to implement an application called book-app to manage books. For it, we will implement a back-end Spring Boot application called book-api and a front-end React application called book-ui. Besides, we will use Basic Authentication to secure both applications.",
-        tags: ["javascript", "java", "docker", "npm", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "basic-authentication", "spring-data-jpa", "semantic-ui-react", "springdoc-openapi"],
+        tags: ["javascript", "java", "docker", "npm", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "basic-authentication", "spring-data-jpa", "springdoc-openapi", "eslint", "mantine", "vite"],
         source: "github"
     },
     {
@@ -1714,6 +1714,13 @@ const projects = [
         source: "medium"
     },
     {
+        name: "Hailuo AI Review: Turning Text Into Video",
+        url: "https://medium.com/@ivangfr/hailuo-ai-review-turning-text-into-video-08d59542a064",
+        description: "My Hands-On Experience Creating Videos with Hailuo AI’s Simple Text-to-Video Feature",
+        tags: ["hailuo", "text-to-video", "video-creation", "ai-review", "ai"],
+        source: "medium"
+    },
+    {
         name: "Securing a Spring Boot REST API using Keycloak for IAM",
         url: "https://medium.com/@ivangfr/securing-a-spring-boot-rest-api-using-keycloak-for-iam-213579e9f1b0",
         description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
@@ -1900,6 +1907,27 @@ const projects = [
         url: "https://medium.com/@ivangfr/performance-benchmark-spring-boot-4-0-2-vs-quarkus-3-31-1-vs-micronaut-4-10-7-b7d637646704",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut",
         tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
+        source: "medium"
+    },
+    {
+        name: "Spring Boot 4.0.2 Benchmark (Java 21 vs. 25): Web, Reactive, CDS, AOT, Virtual Threads, JVM, and Native",
+        url: "https://itnext.io/spring-boot-4-0-2-benchmark-java-21-vs-25-web-reactive-cds-aot-v-threads-jvm-and-native-ffda008c6033",
+        description: "An In-depth Analysis of Performance and Efficiency Using Spring Boot 4.0.2 Dockerized with Various Configurations when using Java 21 or 25",
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "native", "jvm", "cds", "aot", "graalvm", "spring-webflux", "virtual-threads"],
+        source: "medium"
+    },
+    {
+        name: "How I Reduce GIF and Screenshot Sizes for My Technical Articles on macOS",
+        url: "https://itnext.io/how-i-reduce-gif-and-screenshot-sizes-for-my-technical-articles-on-macos-7fea331afc68",
+        description: "Using FFmpeg, Gifsicle, and pngquant to create lightweight media for documentation",
+        tags: ["macos", "ffmpeg", "gifsicle", "pngquant", "documentation"],
+        source: "medium"
+    },
+    {
+        name: "I Postponed This React Migration for Months—AI Finished It in 2 Minutes",
+        url: "https://medium.com/@ivangfr/i-postponed-this-react-migration-for-months-ai-finished-it-in-2-minutes-ef77322f56c4",
+        description: "How OpenCode and GitHub Copilot replaced a deprecated UI framework and rewrote 11 React components automatically",
+        tags: ["github-copilot", "opencode", "react", "mantine", "ai", "migration"],
         source: "medium"
     }
 ]
