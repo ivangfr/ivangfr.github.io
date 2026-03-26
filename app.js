@@ -289,7 +289,7 @@ const projects = [
         name: "springboot-react-social-login",
         url: "https://github.com/ivangfr/springboot-react-social-login",
         description: "The goal of this project is to implement an application called movie-app to manage movies. For it, we will implement a back-end Spring Boot application called movie-api and a front-end React application called movie-ui. Additionally, we will use OAuth2 (Social Login) to secure both applications.",
-        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "social-login", "oauth2-client", "semantic-ui-react", "google-oauth2", "springdoc-openapi", "github-oauth2", "github-oauth-login", "google-oauth-login"],
+        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "social-login", "oauth2-client", "google-oauth2", "springdoc-openapi", "github-oauth2", "github-oauth-login", "google-oauth-login", "eslint", "mantine", "vite"],
         source: "github"
     },
     {
