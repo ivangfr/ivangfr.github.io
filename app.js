@@ -303,7 +303,7 @@ const projects = [
         name: "springboot-react-jwt-token",
         url: "https://github.com/ivangfr/springboot-react-jwt-token",
         description: "The goal of this project is to implement an application called order-app to manage orders. For it, we will implement a back-end Spring Boot application called order-api and a front-end React application called order-ui. Besides, we will use JWT Authentication to secure both applications.",
-        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "jwt-authentication", "semantic-ui-react", "jwt", "springdoc-openapi"],
+        tags: ["javascript", "java", "docker", "spring-web-mvc", "spring-boot", "react", "postgresql", "spring-security", "jsonwebtoken", "spring-data-jpa", "jwt-authentication", "jwt", "springdoc-openapi", "eslint", "mantine", "vite"],
         source: "github"
     },
     {
