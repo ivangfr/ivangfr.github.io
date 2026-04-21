@@ -345,7 +345,7 @@ const projects = [
         name: "springboot-kafka-websocket",
         url: "https://github.com/ivangfr/springboot-kafka-websocket",
         description: "The goal of this project is to implement two Spring Boot applications: bitcoin-api and bitcoin-client. The bitcoin-api application simulates BTC price changes, while the bitcoin-client application listens to these changes and updates a real-time UI. The bitcoin-client UI is secured using Basic Authentication.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "websocket", "spring-security", "basic-authentication", "spring-data-jpa", "spring-cloud-stream", "springdoc-openapi"],
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "kafka", "spring-boot", "thymeleaf", "websocket", "spring-security", "basic-authentication", "spring-data-jpa", "spring-cloud-stream", "springdoc-openapi", "tailwindcss"],
         source: "github"
     },
     {
@@ -1928,6 +1928,20 @@ const projects = [
         url: "https://medium.com/@ivangfr/i-postponed-this-react-migration-for-months-ai-finished-it-in-2-minutes-ef77322f56c4",
         description: "How OpenCode and GitHub Copilot replaced a deprecated UI framework and rewrote 11 React components automatically",
         tags: ["github-copilot", "opencode", "react", "mantine", "ai", "migration"],
+        source: "medium"
+    },
+    {
+        name: "AI Is Making You Worse at Learning",
+        url: "https://medium.com/@ivangfr/ai-is-making-you-worse-at-learning-58f9b2eff83e",
+        description: "A new study shows that using AI tools the wrong way can quietly weaken your skills instead of improving them",
+        tags: ["ai", "learning", "study"],
+        source: "medium"
+    },
+    {
+        name: "Performance Benchmark (Java 21 vs. 25): Spring Boot 4.0.2 vs. Quarkus 3.31.1 vs. Micronaut 4.10.7",
+        url: "https://medium.com/@ivangfr/performance-benchmark-java-21-vs-25-spring-boot-4-0-2-vs-quarkus-3-31-1-vs-micronaut-4-10-7-b08329dc9917",
+        description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut when using Java 21 or 25",
+        tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
         source: "medium"
     }
 ]
