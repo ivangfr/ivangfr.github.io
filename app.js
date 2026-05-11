@@ -664,6 +664,13 @@ const projects = [
         source: "github"
     },
     {
+        name: "spring-boot-activemq-mailpit",
+        url: "https://github.com/ivangfr/spring-boot-activemq-mailpit",
+        description: "The goal of this project is to demonstrate how to implement an email scheduling application using Spring Boot, ActiveMQ, PostgreSQL, and Mailpit. The application allows users to send emails immediately or schedule them for a later time. It also provides a web UI to view the history of scheduled emails and cancel pending ones.",
+        tags: ["java", "docker", "spring-boot", "postgresql", "activemq", "spring-data-jpa", "spring-web-mvc", "tailwindcss", "mailpit"],
+        source: "github"
+    },
+    {
         name: "How to Publish your Website for Free on GitHub Pages",
         url: "https://medium.com/@ivangfr/no-more-excuses-how-to-publish-your-website-for-free-on-github-pages-today-8ae0fb8c9c16",
         description: "Step-by-step guide on how to publish your Website for Free on GitHub Pages",
@@ -1942,6 +1949,27 @@ const projects = [
         url: "https://medium.com/@ivangfr/performance-benchmark-java-21-vs-25-spring-boot-4-0-2-vs-quarkus-3-31-1-vs-micronaut-4-10-7-b08329dc9917",
         description: "An In-Depth Analysis of Performance and Efficiency in Web, Reactive, JVM, and Native Applications using Spring Boot, Quarkus, and Micronaut when using Java 21 or 25",
         tags: ["java", "spring-boot", "quarkus", "micronaut", "docker", "graalvm", "jvm", "native", "web", "spring-webflux"],
+        source: "medium"
+    },
+    {
+        name: "Optimizing Spring Boot: App Ready 50% Faster, 48% Less CPU, 16% Less Memory — Zero Code Changes",
+        url: "https://medium.com/@ivangfr/optimizing-spring-boot-app-ready-50-faster-48-less-cpu-16-less-memory-zero-code-changes-de15a12fb398",
+        description: "Detailed benchmarks comparing Uber JAR, CDS, AOT Cache, and Spring AOT configurations",
+        tags: ["java", "spring-boot", "cds", "aot", "jvm"],
+        source: "medium"
+    },
+    {
+        name: "Save Thousands on AWS with Spring Boot Optimizations — Zero Code Changes",
+        url: "https://medium.com/@ivangfr/save-thousands-on-aws-with-spring-boot-optimizations-zero-code-changes-97512a42804a",
+        description: "How to reduce your cloud bill by up to 25% without modifying a single line of code",
+        tags: ["aws", "java", "spring-boot", "cds", "aot", "jvm"],
+        source: "medium"
+    },
+    {
+        name: "Build an Email Scheduler with Spring Boot, ActiveMQ, PostgreSQL, and Mailpit",
+        url: "https://medium.com/@ivangfr/build-an-email-scheduler-with-spring-boot-activemq-postgresql-and-mailpit-3c1d0562c0dc",
+        description: "Learn to queue emails with configurable delays and implement a cancellation feature",
+        tags: ["java", "docker", "spring-boot", "postgresql", "activemq", "spring-data-jpa", "spring-web-mvc", "tailwindcss", "mailpit"],
         source: "medium"
     }
 ]
