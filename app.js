@@ -379,8 +379,8 @@ const projects = [
     {
         name: "axon-springboot-websocket",
         url: "https://github.com/ivangfr/axon-springboot-websocket",
-        description: "The goal is to explore Axon. We will develop a food-ordering app comprising 3 Spring Boot applications: customer-service, restaurant-service, and food-ordering-service. These services are implemented with CQRS and Event Sourcing, utilizing the Axon Framework. They connect to axon-server, which serves as the Event Store and Message Routing solution.",
-        tags: ["mysql", "java", "docker", "spring-web-mvc", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "semantic-ui", "spring-data-jpa", "axon", "postgresql", "axon-server", "springdoc-openapi"],
+        description: "The goal is to play with Axon. We implemented a food-ordering app that consists of 3 Spring Boot apps: customer-, restaurant-, and food-ordering-service. These services were implemented with CQRS and Event Sourcing using the Axon Framework. The services are connected to axon-server, which serves as the Event Store and Message Routing solution.",
+        tags: ["mysql", "java", "docker", "spring-web-mvc", "cqrs", "spring-boot", "mongodb", "thymeleaf", "websocket", "event-sourcing", "spring-data-jpa", "axon-framework", "postgresql", "axon-server", "tailwindcss"],
         source: "github"
     },
     {
@@ -407,7 +407,7 @@ const projects = [
     {
         name: "https-springboot-react",
         url: "https://github.com/ivangfr/https-springboot-react",
-        description: "The goal of this project is to play with HTTPS and enable it in Spring Boot applications. For it, we will implement a Spring Boot Rest API that will have its endpoints ready to accept and server over HTTPS. Furthermore, a Spring Boot Shell Java application and a Frontend React application will be implemented to consume movies-api.",
+        description: "The goal of this project is to play with HTTPS and enable it in Spring Boot applications. For it, we will implement a Spring Boot REST API, called movies-api that will have its endpoints ready to accept and server over HTTPS. Furthermore, a Spring Boot Shell Java application, called movies-shell, and a Frontend React application, called movies-ui, will be implemented to consume movies-api.",
         tags: ["javascript", "java", "spring-web-mvc", "spring-boot", "react", "spring-data-jpa", "h2", "spring-shell", "mui", "springdoc-openapi", "https", "ssl", "tls", "certificate", "pkcs12", "keytool"],
         source: "github"
     },
@@ -589,7 +589,7 @@ const projects = [
     {
         name: "spring-cloud-stream-solace-pubsub",
         url: "https://github.com/ivangfr/spring-cloud-stream-solace-pubsub",
-        description: "The goal of this project is to play with Solace PubSub+. For it, we will implement a producer and consumer of different types of news about many countries and cities.",
+        description: "A publish/subscribe demo using Solace PubSub+ and Spring Cloud Stream. A REST API publishes news events to topic ps/news/{type}/{country}/{city}, with consumer instances filtering by news type, country or city to showcase topic-based routing.",
         tags: ["java", "docker", "spring-boot", "spring-cloud-stream", "spring-webflux", "solace-pubsub"],
         source: "github"
     },
@@ -884,14 +884,14 @@ const projects = [
         name: "Implementing and Securing a Simple Spring Boot REST API using Keycloak for IAM",
         url: "https://medium.com/@ivangfr/how-to-secure-a-spring-boot-app-with-keycloak-5a931ee12c5a",
         description: "Step-by-step guide on implementing and securing Simple API application using Keycloak as Identity and Access Management",
-        tags: ["java", "spring-web-mvc", "spring-boot", "keycloak", "spring-security", "oauth2-resource-server"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "keycloak", "spring-security", "oauth2-resource-server", "rest-api"],
         source: "medium"
     },
     {
         name: "Testing a secured Simple Spring Boot REST API that uses Keycloak for IAM using Testcontainers",
         url: "https://medium.com/@ivangfr/testing-a-simple-spring-boot-rest-api-secured-with-keycloak-using-testcontainers-a514ef997a74",
         description: "Using Testcontainers to spin up a Keycloak Docker container while testing a Simple API",
-        tags: ["spring-boot", "keycloak", "testcontainers", "java", "spring-web-mvc", "spring-security", "oauth2-resource-server", "integration-testing", "docker"],
+        tags: ["spring-boot", "keycloak", "testcontainers", "java", "spring-web-mvc", "spring-security", "oauth2-resource-server", "integration-testing", "docker", "rest-api"],
         source: "medium"
     },
     {
@@ -919,14 +919,14 @@ const projects = [
         name: "Implementing and Securing a Simple Spring Boot REST API using Okta as IdP",
         url: "https://medium.com/@ivangfr/implementing-and-securing-a-simple-spring-boot-rest-api-with-okta-a5143696cd60",
         description: "Step-by-step guide on implementing the Simple API, securing it and configuring Okta as Identity Provider",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "okta"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "okta", "rest-api"],
         source: "medium"
     },
     {
         name: "Testing a Simple Spring Boot REST API secured with Okta",
         url: "https://medium.com/@ivangfr/testing-a-simple-spring-boot-rest-api-secured-with-okta-ecc7fecabd68",
         description: "Implementing test cases to validate whether Simple API is working properly",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "okta", "unit-testing"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "okta", "unit-testing", "rest-api"],
         source: "medium"
     },
     {
@@ -1031,49 +1031,49 @@ const projects = [
         name: "Using Kong to secure a Simple Spring Boot REST API with Basic Authentication plugin",
         url: "https://medium.com/@ivangfr/using-kong-to-secure-a-simple-spring-boot-rest-api-with-basic-authentication-plugin-90f3529043f3",
         description: "Configuring the Basic Authentication plugin in Kong to secure a sensitive endpoint in Simple API application",
-        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "basic-authentication"],
+        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "basic-authentication", "rest-api"],
         source: "medium"
     },
     {
         name: "Using Kong to secure a Simple Spring Boot REST API with LDAP Authentication plugin",
         url: "https://medium.com/@ivangfr/using-kong-to-secure-a-simple-spring-boot-rest-api-with-ldap-authentication-plugin-3a499e01382a",
         description: "Configuring the LDAP Authentication plugin in Kong to secure a sensitive endpoint in Simple API application",
-        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "ldap", "openldap"],
+        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "ldap", "openldap", "rest-api"],
         source: "medium"
     },
     {
         name: "Using Kong to secure a Simple Spring Boot REST API with Kong OIDC plugin and Keycloak",
         url: "https://medium.com/@ivangfr/using-kong-to-secure-a-simple-spring-boot-rest-api-with-kong-oidc-plugin-and-keycloak-c8fa8de32e6e",
         description: "Configuring Kong OIDC plugin in Kong and Keycloak to secure a sensitive endpoint in Simple API application",
-        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "kong-oidc", "keycloak"],
+        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "kong-oidc", "keycloak", "rest-api"],
         source: "medium"
     },
     {
         name: "Using Kong to configure Rate Limiting to a Simple Spring Boot REST API",
         url: "https://medium.com/@ivangfr/using-kong-to-configure-rate-limiting-to-a-simple-spring-boot-rest-api-33b1899077d",
         description: "Configuring Rate Limiting plugin in Kong to manage the frequency of requests sent to Simple API endpoints",
-        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "rate-limiting"],
+        tags: ["kong", "java", "spring-web-mvc", "spring-boot", "rate-limiting", "rest-api"],
         source: "medium"
     },
     {
         name: "How to run a Simple Spring Boot REST API secured by a Keycloak Cluster in Minikube (Kubernetes)",
         url: "https://medium.com/@ivangfr/how-to-run-a-simple-spring-boot-rest-api-secured-by-a-keycloak-cluster-in-minikube-ed626453335f",
         description: "Use Minikube to simulate a production-like solution compose of three Simple API instances secured by a cluster of three Keycloak instances",
-        tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "spring-web-mvc", "spring-security", "oauth2-resource-server", "postgresql", "udp"],
+        tags: ["spring-boot", "keycloak", "minikube", "kubectl", "helm", "jib", "java", "spring-web-mvc", "spring-security", "oauth2-resource-server", "postgresql", "udp", "rest-api"],
         source: "medium"
     },
     {
         name: "Implementing and Securing a Simple Spring Boot REST API with LDAP",
         url: "https://medium.com/@ivangfr/implementing-and-securing-a-simple-spring-boot-rest-api-with-ldap-7279528ef746",
         description: "Step-by-step guide on implementing Simple API application and securing it with LDAP",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "ldap", "openldap", "docker"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "ldap", "openldap", "docker", "rest-api"],
         source: "medium"
     },
     {
         name: "Testing a Simple Spring Boot REST API secured with LDAP using Testcontainers",
         url: "https://medium.com/@ivangfr/testing-a-simple-spring-boot-rest-api-secured-with-ldap-using-testcontainers-698f407dfd0",
         description: "Using Testcontainers to spin up an OpenLDAP Docker container while testing the Simple API application",
-        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "ldap", "openldap", "docker", "integration-testing", "testcontainers"],
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-security", "ldap", "openldap", "docker", "integration-testing", "testcontainers", "rest-api"],
         source: "medium"
     },
     {
@@ -1661,14 +1661,14 @@ const projects = [
         name: "Implementing a Quarkus REST API using PostgreSQL as Database",
         url: "https://medium.com/@ivangfr/implementing-a-quarkus-rest-api-using-postgresql-as-database-c7a4fa70a734",
         description: "Step-by-step guide on how to implement the Movie API, a Quarkus application that uses PostgreSQL as database",
-        tags: ["java", "quarkus", "postgresql", "docker"],
+        tags: ["java", "quarkus", "postgresql", "docker", "rest-api"],
         source: "medium"
     },
     {
         name: "Implementing a Micronaut REST API using PostgreSQL as Database",
         url: "https://medium.com/@ivangfr/implementing-a-micronaut-rest-api-using-postgresql-as-database-6b6671743440",
         description: "Step-by-step guide on how to implement the Movie API, a Micronaut application that uses PostgreSQL as database",
-        tags: ["java", "micronaut", "postgresql", "docker"],
+        tags: ["java", "micronaut", "postgresql", "docker", "rest-api"],
         source: "medium"
     },
     {
@@ -1703,14 +1703,14 @@ const projects = [
         name: "Securing a Quarkus REST API using Keycloak for IAM",
         url: "https://medium.com/@ivangfr/securing-a-quarkus-rest-api-using-keycloak-for-iam-76e875a65282",
         description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
-        tags: ["java", "quarkus", "keycloak", "docker"],
+        tags: ["java", "quarkus", "keycloak", "docker", "rest-api"],
         source: "medium"
     },
     {
         name: "Securing a Micronaut REST API using Keycloak for IAM",
         url: "https://medium.com/@ivangfr/securing-a-micronaut-rest-api-using-keycloak-for-iam-5e812eb46594",
         description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
-        tags: ["java", "micronaut", "keycloak", "docker"],
+        tags: ["java", "micronaut", "keycloak", "docker", "rest-api"],
         source: "medium"
     },
     {
@@ -1731,21 +1731,21 @@ const projects = [
         name: "Securing a Spring Boot REST API using Keycloak for IAM",
         url: "https://medium.com/@ivangfr/securing-a-spring-boot-rest-api-using-keycloak-for-iam-213579e9f1b0",
         description: "Step-by-step guide on securing Movie API application using Keycloak for Identity and Access Management",
-        tags: ["java", "spring-boot", "keycloak", "docker"],
+        tags: ["java", "spring-boot", "keycloak", "docker", "rest-api"],
         source: "medium"
     },
     {
         name: "Implementing a Quarkus Reactive REST API using MongoDB as Database",
         url: "https://medium.com/@ivangfr/implementing-a-quarkus-reactive-rest-api-using-mongodb-as-database-ca76d8ef5f07",
         description: "Step-by-step guide on how to implement the Book Reactive API, a Quarkus application that uses MongoDB as database",
-        tags: ["java", "quarkus", "mongodb", "docker"],
+        tags: ["java", "quarkus", "mongodb", "docker", "rest-api"],
         source: "medium"
     },
     {
         name: "Implementing a Micronaut Reactive REST API using MongoDB as Database",
         url: "https://medium.com/@ivangfr/implementing-a-micronaut-reactive-rest-api-using-mongodb-as-database-c819e5d196f1",
         description: "Step-by-step guide on how to implement the Book Reactive API, a Micronaut application that uses MongoDB as database",
-        tags: ["java", "micronaut", "mongodb", "docker"],
+        tags: ["java", "micronaut", "mongodb", "docker", "rest-api"],
         source: "medium"
     },
     {
@@ -1970,6 +1970,20 @@ const projects = [
         url: "https://medium.com/@ivangfr/build-an-email-scheduler-with-spring-boot-activemq-postgresql-and-mailpit-3c1d0562c0dc",
         description: "Learn to queue emails with configurable delays and implement a cancellation feature",
         tags: ["java", "docker", "spring-boot", "postgresql", "activemq", "spring-data-jpa", "spring-web-mvc", "tailwindcss", "mailpit"],
+        source: "medium"
+    },
+    {
+        name: "Solace PubSub+ vs Kafka: Different Approaches to Topic Routing",
+        url: "https://itnext.io/solace-pubsub-vs-kafka-different-approaches-to-topic-routing-593374ef02ee",
+        description: "Comparing topic routing: how Solace’s hierarchical wildcards differ from Kafka’s flat topic model",
+        tags: ["java", "spring-boot", "solace-pubsub", "kafka", "topic-routing"],
+        source: "medium"
+    },
+    {
+        name: "Event Sourcing vs Traditional CRUD: A Side-by-Side Comparison with Real Spring Boot Code",
+        url: "https://medium.com/@ivangfr/event-sourcing-vs-traditional-crud-a-side-by-side-comparison-with-real-spring-boot-code-16d0879fd689",
+        description: "Two Approaches to the Same Data — One REST Endpoint, Two Radically Different Architectures",
+        tags: ["java", "cqrs", "spring-boot", "event-sourcing", "axon-framework", "crud", "rest-api"],
         source: "medium"
     }
 ]
