@@ -772,55 +772,55 @@ const projects = [
         name: "Understanding Relationships in JPA: One-to-One with Simple Primary Key",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-one-to-one-with-simple-primary-key-7c32f7e13a6a",
         description: "Discussing \"One-to-One with Simple Primary Key\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-one", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-one", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Understanding Relationships in JPA: One-to-One with Shared Primary Key",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-one-to-one-with-shared-primary-key-36596416fe56",
         description: "Discussing \"One-to-One with Shared Primary Key\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-one", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-one", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Understanding Relationships in JPA: One-to-Many with Simple Primary Key",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-one-to-many-with-simple-primary-key-e2e975c67c31",
         description: "Discussing \"One-to-Many with Simple Primary Key\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-many", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-many", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Understanding Relationships in JPA: One-to-Many with Composite Primary Key",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-one-to-many-with-composite-primary-key-1d7724a2bf63",
         description: "Discussing \"One-to-Many with Composite Primary Key\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-many", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "one-to-many", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Understanding Relationships in JPA: Many-to-Many with Simple Primary Key",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-many-to-many-with-simple-primary-key-b38209e5c9b4",
         description: "Discussing \"Many-to-Many with Simple Primary Key\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "many-to-many", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "many-to-many", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Understanding Relationships in JPA: Many-to-Many with Simple Primary Key and Extra Column",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-many-to-many-with-simple-primary-key-and-extra-column-817e8bdda465",
         description: "Discussing \"Many-to-Many with Simple Primary Key and Extra Column\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "many-to-many", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "many-to-many", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Understanding Relationships in JPA: Many-to-Many with Composite Primary Key and Extra Column",
         url: "https://medium.com/@ivangfr/understanding-relationships-in-jpa-many-to-many-with-composite-primary-key-and-extra-column-a939b107c7cd",
         description: "Discussing \"Many-to-Many with Composite Primary Key and Extra Column\" and examining how JPA/Hibernate generates the corresponding tables",
-        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "many-to-many", "jpa-relationships"],
+        tags: ["java", "spring-boot", "postgresql", "spring-data-jpa", "many-to-many", "jpa-relationships", "hibernate"],
         source: "medium"
     },
     {
         name: "Implementing Social Login in a Spring Boot and React App",
         url: "https://medium.com/@ivangfr/implementing-social-login-in-a-spring-boot-and-react-app-6ce073c9983c",
-        description: "Step-by-step guide on implementing Social Login in a Spring Boot and React App",
+        description: "Step-by-step guide on implementing Social Login in a Spring Boot and React App",
         tags: ["java", "spring-boot", "react", "spring-security", "social-login", "oauth2-client", "github-oauth2"],
         source: "medium"
     },
@@ -1500,7 +1500,7 @@ const projects = [
         name: "Synchronizing Spring Boot schedulers with ShedLock",
         url: "https://medium.com/@ivangfr/synchronizing-spring-boot-schedulers-with-shedlock-6c13aa4912d3",
         description: "How to use Optimistic Locking and ShedLock to synchronize Crypto Service schedulers when publishing to Apache Kafka",
-        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "spring-data-mongodb", "shedlock", "kafdrop", "kafka", "spring-cloud-stream"],
+        tags: ["java", "docker", "spring-web-mvc", "spring-boot", "mongodb", "spring-data-mongodb", "shedlock", "kafdrop", "kafka", "spring-cloud-stream", "locking"],
         source: "medium"
     },
     {
@@ -1974,7 +1974,7 @@ const projects = [
     },
     {
         name: "Solace PubSub+ vs Kafka: Different Approaches to Topic Routing",
-        url: "https://itnext.io/solace-pubsub-vs-kafka-different-approaches-to-topic-routing-593374ef02ee",
+        url: "https://medium.com/@ivangfr/solace-pubsub-vs-kafka-different-approaches-to-topic-routing-593374ef02ee",
         description: "Comparing topic routing: how Solace’s hierarchical wildcards differ from Kafka’s flat topic model",
         tags: ["java", "spring-boot", "solace-pubsub", "kafka", "topic-routing"],
         source: "medium"
@@ -1984,6 +1984,41 @@ const projects = [
         url: "https://medium.com/@ivangfr/event-sourcing-vs-traditional-crud-a-side-by-side-comparison-with-real-spring-boot-code-16d0879fd689",
         description: "Two Approaches to the Same Data — One REST Endpoint, Two Radically Different Architectures",
         tags: ["java", "cqrs", "spring-boot", "event-sourcing", "axon-framework", "crud", "rest-api"],
+        source: "medium"
+    },
+    {
+        name: "From Zero to Event-Driven: Migrating a Traditional CRUD App to Axon Framework",
+        url: "https://medium.com/@ivangfr/from-zero-to-event-driven-migrating-a-traditional-crud-app-to-axon-framework-9a0e8a791bfb",
+        description: "A Step-by-Step Refactoring Journey — Same Domain, Radically Different Architecture",
+        tags: ["java", "cqrs", "spring-boot", "event-sourcing", "axon-framework", "crud", "rest-api"],
+        source: "medium"
+    },
+    {
+        name: "The 7 JPA Relationship Patterns Every Spring Boot Developer Should Know",
+        url: "https://medium.com/@ivangfr/the-7-jpa-relationship-patterns-every-spring-boot-developer-should-know-f8ca70507644",
+        description: "Learn when to use OneToOne, OneToMany, ManyToMany, composite keys, and join entities through a production-ready Spring Boot project.",
+        tags: ["java", "spring-boot", "jpa", "hibernate", "jpa-relationships", "one-to-one", "one-to-many", "many-to-many"],
+        source: "medium"
+    },
+    {
+        name: "Batch Processing with JPA and Hibernate",
+        url: "https://medium.com/@ivangfr/batch-processing-with-jpa-and-hibernate-0831e219586c",
+        description: "Stop inserting one row at a time—batch your way to fast bulk operations with Spring Boot and JPA",
+        tags: ["java", "spring-boot", "jpa", "hibernate", "batch-processing"],
+        source: "medium"
+    },
+    {
+        name: "JPA Optimistic vs Pessimistic Locking in Practice",
+        url: "https://medium.com/@ivangfr/jpa-optimistic-vs-pessimistic-locking-in-practice-f6dd100eddb2",
+        description: "Stop wondering which locking strategy to use—see both in action with a real game-like Spring Boot project",
+        tags: ["java", "spring-boot", "jpa", "hibernate", "locking"],
+        source: "medium"
+    },
+    {
+        name: "Spring Data Elasticsearch vs Spring Data JPA: Same Syntax, Completely Different Worlds",
+        url: "https://medium.com/@ivangfr/spring-data-elasticsearch-vs-spring-data-jpa-same-syntax-completely-different-worlds-3cf8ddc31f50",
+        description: "A side-by-side comparison of the same app with both approaches—and why many teams end up using both.",
+        tags: ["java", "spring-boot", "spring-data-elasticsearch", "spring-data-jpa", "elasticsearch", "postgresql"],
         source: "medium"
     }
 ]
