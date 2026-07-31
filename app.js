@@ -631,8 +631,8 @@ const projects = [
     {
         name: "spring-boot-grpc-client-server",
         url: "https://github.com/ivangfr/spring-boot-grpc-client-server",
-        description: "The goal of this project is to implement two Spring Boot applications using gRPC: the server, called movie-grpc-server, and the shell client, named movie-grpc-client. The library movie-grpc-lib defines the gRPC interface that both the server and client applications use.",
-        tags: ["java", "spring-web-mvc", "spring-boot", "protocol-buffers", "postgresql", "spring-data-jpa", "grpc", "client-server"],
+        description: "The goal of this project is to implement two Spring Boot applications using gRPC: the server, called movie-grpc-server, and the shell client, named movie-grpc-client.",
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-grpc", "protocol-buffers", "postgresql", "spring-data-jpa", "grpc", "client-server"],
         source: "github"
     },
     {
@@ -2019,6 +2019,20 @@ const projects = [
         url: "https://medium.com/@ivangfr/spring-data-elasticsearch-vs-spring-data-jpa-same-syntax-completely-different-worlds-3cf8ddc31f50",
         description: "A side-by-side comparison of the same app with both approaches—and why many teams end up using both.",
         tags: ["java", "spring-boot", "spring-data-elasticsearch", "spring-data-jpa", "elasticsearch", "postgresql"],
+        source: "medium"
+    },
+    {
+        name: "Hardening a Load-Balanced Nginx + Keycloak + Spring Boot Setup with SSL/TLS",
+        url: "https://medium.com/@ivangfr/hardening-a-load-balanced-nginx-keycloak-spring-boot-setup-with-ssl-tls-61371bde514f",
+        description: "Adding encryption, rate limiting, passive health checks, and enhanced logging to your reverse proxy cluster",
+        tags: ["java", "spring-boot", "nginx", "keycloak", "spring-security", "oauth2-resource-server", "load-balancer", "docker"],
+        source: "medium"
+    },
+    {
+        name: "Implementing gRPC Server and Client with Spring Boot and Spring gRPC",
+        url: "https://medium.com/@ivangfr/implementing-grpc-server-and-client-with-spring-boot-and-spring-grpc-3eda996eeb8f",
+        description: "How to implement two Spring Boot apps, Text Processor Server and Text Processor Client, that communicate over gRPC",
+        tags: ["java", "spring-web-mvc", "spring-boot", "spring-grpc", "protocol-buffers", "grpc", "client-server"],
         source: "medium"
     }
 ]
